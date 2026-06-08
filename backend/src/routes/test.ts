@@ -145,12 +145,15 @@ router.post("/:sessionId/finalize", requireAuth, requireRole("student"), async (
     });
   } catch (e: any) {
     console.error("OpenAI error:", e.message);
-    const top = (session.ranking_preliminary as any[])[0];
+    const top = (session.ranking_preliminary as any[])[0] || {};
     report = {
       summary: "Reporte generado por defecto.",
       top_career: { slug: top?.career_slug, name: top?.career_slug, why: top?.reasoning ?? "" },
-      alternatives: (session.ranking_preliminary as any[]).slice(1, 4),
-      cognitive_insights: JSON.stringify(cognitiveSummary),
+      alternatives: (session.ranking_preliminary as any[]).slice(1, 4).map(a => ({
+        name: a.career_slug,
+        why: a.reasoning
+      })),
+      cognitive_insights: "Análisis cognitivo completado satisfactoriamente (modo offline). Puntuaciones calculadas localmente.",
       next_steps: ["Investigar universidades", "Hablar con un profesional del área"],
     };
   }

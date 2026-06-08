@@ -36,10 +36,13 @@ export function ReportPage() {
           <p className="text-slate-700">{r.summary}</p>
         </div>
 
-        <div className="card bg-gradient-to-br from-brand-morado to-brand-lavanda text-white">
+        <div className="card bg-gradient-to-br from-brand-morado to-brand-lavanda text-white relative">
           <p className="text-sm opacity-80 mb-1">Carrera más compatible</p>
           <h2 className="text-3xl mb-2 capitalize">{r.top_career?.name}</h2>
-          <p className="opacity-90">{r.top_career?.why}</p>
+          <p className="opacity-90 mb-4">{r.top_career?.why}</p>
+          <a href={`/estudiante/carreras/${r.top_career?.slug}`} className="inline-block bg-white text-brand-morado font-medium px-4 py-2 rounded-lg text-sm hover:bg-slate-50 transition">
+            Experimentar un día en esta carrera
+          </a>
         </div>
 
         <div className="card">

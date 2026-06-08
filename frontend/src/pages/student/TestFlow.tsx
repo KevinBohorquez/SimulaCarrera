@@ -93,7 +93,10 @@ export function TestFlow() {
                   <a href={`/estudiante/carreras/${r.career_slug}`} target="_blank" rel="noreferrer" className="font-semibold capitalize hover:text-brand-morado">{r.career_slug.replaceAll("-", " ")}</a>
                   <div className="text-sm text-slate-600 mt-1">{r.reasoning}</div>
                 </div>
-                <div className="text-2xl font-bold text-brand-morado">{r.score}</div>
+                <div className="flex items-center gap-4">
+                  <a href={`/estudiante/carreras/${r.career_slug}`} target="_blank" className="btn-outline text-xs py-1.5 px-3">Ver detalles y simular</a>
+                  <div className="text-2xl font-bold text-brand-morado">{r.score}</div>
+                </div>
               </div>
             ))}
           </div>
