@@ -1,0 +1,23 @@
+import { createClient } from "@supabase/supabase-js";
+import "dotenv/config";
+
+const url = process.env.SUPABASE_URL!;
+const anon = process.env.SUPABASE_ANON_KEY!;
+const service = process.env.SUPABASE_SERVICE_ROLE_KEY!;
+
+if (!url || !anon || !service) {
+  console.warn("[supabase] Faltan variables de entorno SUPABASE_*");
+}
+
+// Cliente admin: bypassa RLS. Úsalo solo en endpoints de confianza.
+export const supabaseAdmin = createClient(url, service, {
+  auth: { autoRefreshToken: false, persistSession: false },
+});
+
+// Cliente con el JWT del usuario: respeta RLS.
+export function supabaseAsUser(jwt: string) {
+  return createClient(url, anon, {
+    global: { headers: { Authorization: `Bearer ${jwt}` } },
+    auth: { autoRefreshToken: false, persistSession: false },
+  });
+}
