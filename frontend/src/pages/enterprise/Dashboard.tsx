@@ -2,92 +2,299 @@ import { useState } from "react";
 import { AppShell } from "@/components/AppShell";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import { api } from "@/lib/api";
-import { Plus, Edit2, X } from "lucide-react";
+import { Link } from "react-router-dom";
+import {
+  AlertCircle,
+  ArrowUpRight,
+  Building2,
+  Edit2,
+  LayoutGrid,
+  Loader2,
+  MapPin,
+  Network,
+  Plus,
+  School,
+  Sparkles,
+  Users,
+  X,
+} from "lucide-react";
+
+const planColor: Record<string, string> = {
+  starter: "bg-slate-100 text-slate-600",
+  estandar: "bg-blue-100 text-blue-700",
+  pro: "bg-violet-100 text-violet-700",
+  enterprise: "bg-amber-100 text-amber-700",
+};
+
+const typeLabel: Record<string, string> = {
+  school: "Colegio",
+  academy: "Academia / Instituto",
+};
 
 export function EnterpriseDashboard() {
   const queryClient = useQueryClient();
-  const q = useQuery({ queryKey: ["enterprise-inst"], queryFn: () => api<any>("/api/institutions") });
-  
+
+  const { data, isLoading, isError, error } = useQuery({
+    queryKey: ["enterprise-inst"],
+    queryFn: () => api<any>("/api/institutions"),
+    retry: 1,
+  });
+
   const [showModal, setShowModal] = useState(false);
   const [editing, setEditing] = useState<any>(null);
-  
   const [form, setForm] = useState({ name: "", city: "", student_quota: 50, type: "school" });
 
   const mut = useMutation({
-    mutationFn: (data: any) => {
-      if (editing) return api(`/api/institutions/${editing.id}`, { method: "PATCH", body: JSON.stringify(data) });
-      return api("/api/institutions", { method: "POST", body: JSON.stringify(data) });
-    },
+    mutationFn: (payload: any) =>
+      editing
+        ? api(`/api/institutions/${editing.id}`, { method: "PATCH", body: JSON.stringify(payload) })
+        : api("/api/institutions", { method: "POST", body: JSON.stringify(payload) }),
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ["enterprise-inst"] });
       closeModal();
-    }
+    },
   });
 
-  const openAdd = () => { setEditing(null); setForm({ name: "", city: "", student_quota: 50, type: "school" }); setShowModal(true); };
-  const openEdit = (inst: any) => { setEditing(inst); setForm({ name: inst.name, city: inst.city || "", student_quota: inst.student_quota, type: inst.type }); setShowModal(true); };
-  const closeModal = () => { setShowModal(false); setEditing(null); };
+  const openAdd = () => {
+    setEditing(null);
+    setForm({ name: "", city: "", student_quota: 50, type: "school" });
+    setShowModal(true);
+  };
+
+  const openEdit = (inst: any) => {
+    setEditing(inst);
+    setForm({
+      name: inst.name,
+      city: inst.city ?? "",
+      student_quota: inst.student_quota,
+      type: inst.type,
+    });
+    setShowModal(true);
+  };
+
+  const closeModal = () => {
+    setShowModal(false);
+    setEditing(null);
+  };
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     mut.mutate({ ...form, student_quota: Number(form.student_quota) });
   };
 
+  const sedes: any[] = data?.institutions?.filter((i: any) => i.type !== "enterprise_network") ?? [];
+  const totalQuota = sedes.reduce((sum, sede) => sum + Number(sede.student_quota ?? 0), 0);
+  const activePlans = new Set(sedes.map((sede) => sede.plan ?? "starter")).size;
+
   return (
-    <AppShell title="Panel Enterprise">
-      <div className="flex justify-between items-center mb-6">
-        <p className="text-slate-600">Sedes de tu red:</p>
-        <button onClick={openAdd} className="btn-primary flex items-center gap-2"><Plus size={18} /> Nueva Sede</button>
-      </div>
-      
-      <div className="grid md:grid-cols-2 gap-4">
-        {q.data?.institutions?.filter((i: any) => i.type !== "enterprise_network").map((i: any) => (
-          <div key={i.id} className="card relative group">
-            <h3 className="font-semibold pr-8">{i.name}</h3>
-            <p className="text-sm text-slate-500">{i.city ?? "—"} · Plan {i.plan}</p>
-            <p className="text-xs text-slate-400 mt-2">Cuota: {i.student_quota} alumnos</p>
-            
-            <div className="mt-4 pt-4 border-t flex justify-end gap-2">
-              <button onClick={() => openEdit(i)} className="text-sm text-slate-500 hover:text-brand-morado flex items-center gap-1">
-                <Edit2 size={14} /> Editar
-              </button>
-              <a href={`/enterprise/sede/${i.id}/alumnos`} className="btn-primary text-xs px-3 py-1.5">
-                Ver Sede
-              </a>
+    <AppShell title="Red Enterprise">
+      <section className="relative overflow-hidden rounded-2xl border border-purple-100 bg-white p-6 md:p-8 shadow-sm mb-8">
+        <div className="absolute right-0 top-0 h-full w-1/2 bg-gradient-to-l from-brand-lila/50 to-transparent" />
+        <div className="relative flex flex-col lg:flex-row lg:items-end justify-between gap-6">
+          <div className="max-w-2xl">
+            <div className="inline-flex items-center gap-2 rounded-full border border-purple-200 bg-purple-50 px-3 py-1 text-xs font-semibold text-brand-morado mb-4">
+              <Sparkles size={13} />
+              Gestion centralizada
             </div>
+            <h2 className="text-3xl md:text-4xl font-bold text-slate-950 leading-tight">
+              Administra tus sedes desde un solo panel
+            </h2>
+            <p className="mt-3 text-sm md:text-base text-slate-500 leading-relaxed">
+              Crea sedes, revisa cupos y entra a la gestion operativa de alumnos, reportes y ciclos academicos.
+            </p>
           </div>
-        ))}
-      </div>
+          <button onClick={openAdd} className="btn-primary flex items-center gap-2 self-start lg:self-auto">
+            <Plus size={16} /> Nueva sede
+          </button>
+        </div>
+
+        <div className="relative grid sm:grid-cols-3 gap-3 mt-7">
+          <div className="rounded-xl border border-slate-100 bg-white/80 p-4">
+            <div className="flex items-center gap-2 text-slate-500 text-xs font-medium">
+              <Network size={14} /> Sedes
+            </div>
+            <p className="text-2xl font-bold text-slate-950 mt-2">{sedes.length}</p>
+          </div>
+          <div className="rounded-xl border border-slate-100 bg-white/80 p-4">
+            <div className="flex items-center gap-2 text-slate-500 text-xs font-medium">
+              <Users size={14} /> Cupo total
+            </div>
+            <p className="text-2xl font-bold text-slate-950 mt-2">{totalQuota}</p>
+          </div>
+          <div className="rounded-xl border border-slate-100 bg-white/80 p-4">
+            <div className="flex items-center gap-2 text-slate-500 text-xs font-medium">
+              <School size={14} /> Planes activos
+            </div>
+            <p className="text-2xl font-bold text-slate-950 mt-2">{sedes.length ? activePlans : 0}</p>
+          </div>
+        </div>
+      </section>
+
+      {isLoading && (
+        <div className="flex items-center justify-center py-20 text-brand-morado gap-3 rounded-2xl border border-purple-100 bg-white">
+          <Loader2 size={24} className="animate-spin" />
+          <span className="text-slate-500">Cargando sedes...</span>
+        </div>
+      )}
+
+      {isError && (
+        <div className="rounded-2xl border border-red-100 bg-red-50 p-6 flex items-start gap-4">
+          <AlertCircle size={22} className="text-red-500 flex-shrink-0 mt-0.5" />
+          <div>
+            <p className="font-semibold text-red-700">No se pudo conectar con el servidor</p>
+            <p className="text-sm text-red-500 mt-1">{(error as any)?.message ?? "ERR_CONNECTION_REFUSED"}</p>
+            <p className="text-xs text-red-400 mt-2">
+              Verifica que el backend este corriendo en el puerto configurado en{" "}
+              <code className="bg-red-100 px-1 rounded">frontend/.env - VITE_API_URL</code>.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {!isLoading && !isError && sedes.length === 0 && (
+        <div className="text-center py-20 border-2 border-dashed border-purple-100 rounded-2xl bg-white">
+          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-purple-50 text-brand-morado">
+            <LayoutGrid size={30} />
+          </div>
+          <p className="font-semibold text-slate-800 mb-1">Aun no tienes sedes creadas</p>
+          <p className="text-sm text-slate-400 mb-5 max-w-md mx-auto">
+            Cuando agregues sedes, apareceran aqui con accesos rapidos a alumnos, reportes y ciclos.
+          </p>
+          <button onClick={openAdd} className="btn-primary inline-flex items-center gap-2">
+            <Plus size={16} /> Crear primera sede
+          </button>
+        </div>
+      )}
+
+      {sedes.length > 0 && (
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
+          {sedes.map((sede: any) => (
+            <div
+              key={sede.id}
+              className="group relative overflow-hidden bg-white rounded-2xl border border-slate-100 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-100/60 hover:border-purple-200"
+            >
+              <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-morado via-purple-400 to-brand-celeste" />
+              <div className="flex items-start justify-between mb-4">
+                <div className="w-11 h-11 rounded-xl bg-brand-lila text-brand-morado flex items-center justify-center transition-all duration-300 group-hover:bg-brand-morado group-hover:text-white">
+                  <Building2 size={20} />
+                </div>
+                <span className={`text-xs font-semibold px-2.5 py-1 rounded-full ${planColor[sede.plan] ?? planColor.starter}`}>
+                  {sede.plan ?? "starter"}
+                </span>
+              </div>
+
+              <h3 className="font-bold text-slate-900 text-lg leading-tight mb-1">{sede.name}</h3>
+
+              {sede.city && (
+                <p className="text-sm text-slate-500 flex items-center gap-1 mb-1">
+                  <MapPin size={13} /> {sede.city}
+                </p>
+              )}
+
+              <p className="text-xs text-slate-400 mb-1">{typeLabel[sede.type] ?? sede.type}</p>
+
+              <div className="mt-4">
+                <div className="flex justify-between text-xs text-slate-500 mb-1">
+                  <span className="flex items-center gap-1">
+                    <Users size={12} /> Cuota de alumnos
+                  </span>
+                  <span className="font-semibold text-slate-700">{sede.student_quota}</span>
+                </div>
+                <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                  <div className="h-full bg-gradient-to-r from-brand-morado to-brand-celeste rounded-full w-1/3 transition-all" />
+                </div>
+              </div>
+
+              <div className="mt-5 pt-4 border-t border-slate-50 flex items-center justify-between">
+                <button
+                  onClick={() => openEdit(sede)}
+                  className="text-xs text-slate-400 hover:text-brand-morado flex items-center gap-1 transition-colors"
+                >
+                  <Edit2 size={13} /> Editar
+                </button>
+                <Link to={`/enterprise/sede/${sede.id}`} className="btn-primary text-xs px-4 py-1.5 flex items-center gap-1">
+                  Ver sede <ArrowUpRight size={14} />
+                </Link>
+              </div>
+            </div>
+          ))}
+        </div>
+      )}
 
       {showModal && (
-        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-          <div className="bg-white rounded-xl shadow-xl w-full max-w-md p-6 relative">
-            <button onClick={closeModal} className="absolute top-4 right-4 text-slate-400 hover:text-slate-600"><X size={20} /></button>
-            <h2 className="text-xl font-bold mb-4">{editing ? "Editar Sede" : "Nueva Sede"}</h2>
+        <div
+          className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50 p-4"
+          onClick={(e) => {
+            if (e.target === e.currentTarget) closeModal();
+          }}
+        >
+          <div className="bg-white rounded-2xl shadow-2xl w-full max-w-md p-7 relative animate-fade-in-up">
+            <button onClick={closeModal} className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors">
+              <X size={20} />
+            </button>
+
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 rounded-xl bg-brand-lila text-brand-morado flex items-center justify-center">
+                <Building2 size={20} />
+              </div>
+              <h2 className="text-xl font-bold text-slate-900">{editing ? "Editar sede" : "Nueva sede"}</h2>
+            </div>
+
             <form onSubmit={submit} className="space-y-4">
               <div>
-                <label className="label">Nombre de la Sede</label>
-                <input required className="input" value={form.name} onChange={e => setForm({...form, name: e.target.value})} />
+                <label className="label">Nombre de la sede *</label>
+                <input
+                  required
+                  className="input"
+                  placeholder="Ej: Colegio San Martin Lima"
+                  value={form.name}
+                  onChange={(e) => setForm({ ...form, name: e.target.value })}
+                />
               </div>
+
               <div>
                 <label className="label">Ciudad</label>
-                <input className="input" value={form.city} onChange={e => setForm({...form, city: e.target.value})} />
+                <input className="input" placeholder="Ej: Lima" value={form.city} onChange={(e) => setForm({ ...form, city: e.target.value })} />
               </div>
+
               <div>
-                <label className="label">Cupo de Alumnos</label>
-                <input required type="number" min="1" className="input" value={form.student_quota} onChange={e => setForm({...form, student_quota: parseInt(e.target.value) || 0})} />
+                <label className="label">Cupo de alumnos *</label>
+                <input
+                  required
+                  type="number"
+                  min="1"
+                  className="input"
+                  value={form.student_quota}
+                  onChange={(e) => setForm({ ...form, student_quota: parseInt(e.target.value) || 0 })}
+                />
               </div>
+
               <div>
-                <label className="label">Tipo</label>
-                <select className="input" value={form.type} onChange={e => setForm({...form, type: e.target.value})}>
+                <label className="label">Tipo de institucion</label>
+                <select className="input" value={form.type} onChange={(e) => setForm({ ...form, type: e.target.value })}>
                   <option value="school">Colegio</option>
                   <option value="academy">Academia / Instituto</option>
                 </select>
               </div>
-              <button disabled={mut.isPending} className="btn-primary w-full mt-2">
-                {mut.isPending ? "Guardando..." : "Guardar Sede"}
+
+              {mut.isError && (
+                <div className="flex items-start gap-2 text-sm text-red-600 bg-red-50 border border-red-100 rounded-lg px-3 py-2">
+                  <AlertCircle size={16} className="flex-shrink-0 mt-0.5" />
+                  <span>{(mut.error as any)?.message ?? "Error al guardar. Verifica que el backend este corriendo."}</span>
+                </div>
+              )}
+
+              <button disabled={mut.isPending} className="btn-primary w-full py-2.5 mt-2 flex items-center justify-center gap-2">
+                {mut.isPending ? (
+                  <>
+                    <Loader2 size={16} className="animate-spin" /> Guardando...
+                  </>
+                ) : (
+                  <>
+                    <Plus size={16} /> {editing ? "Guardar cambios" : "Crear sede"}
+                  </>
+                )}
               </button>
-              {mut.isError && <p className="text-red-500 text-sm mt-2">{mut.error?.message}</p>}
             </form>
           </div>
         </div>

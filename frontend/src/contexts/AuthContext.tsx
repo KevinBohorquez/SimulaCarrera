@@ -34,16 +34,26 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }
 
   useEffect(() => {
+    // Carga inicial de sesión
     supabase.auth.getSession().then(({ data }) => {
       setSession(data.session);
       if (data.session?.user) loadProfile(data.session.user.id).finally(() => setLoading(false));
       else setLoading(false);
     });
-    const { data: sub } = supabase.auth.onAuthStateChange((_e, s) => {
-      setSession(s);
-      if (s?.user) loadProfile(s.user.id);
-      else setProfile(null);
+
+    // Solo reaccionar a eventos relevantes para no provocar re-renders
+    // que desmontarían el formulario de login y borrarían los campos
+    const { data: sub } = supabase.auth.onAuthStateChange((event, s) => {
+      if (event === "SIGNED_IN" || event === "TOKEN_REFRESHED") {
+        setSession(s);
+        if (s?.user) loadProfile(s.user.id);
+      } else if (event === "SIGNED_OUT") {
+        setSession(null);
+        setProfile(null);
+      }
+      // Ignorar: INITIAL_SESSION, PASSWORD_RECOVERY, USER_UPDATED, etc.
     });
+
     return () => sub.subscription.unsubscribe();
   }, []);
 
