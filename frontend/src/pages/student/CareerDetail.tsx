@@ -1,12 +1,14 @@
 import { Link, useParams } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { AppShell } from "@/components/AppShell";
+import LaborMarketPanel from "@/components/LaborMarketPanel";
 import { api } from "@/lib/api";
 
 export function CareerDetail() {
   const { slug } = useParams();
   const c = useQuery({ queryKey: ["career", slug], queryFn: () => api<any>(`/api/careers/${slug}`) });
   const career = c.data?.career;
+  const laborMarket = c.data?.labor_market;
   const sims = useQuery({
     enabled: !!career?.id,
     queryKey: ["sims", career?.id],
@@ -37,20 +39,31 @@ export function CareerDetail() {
             </ul>
           </div>
 
+          {laborMarket && (
+            <LaborMarketPanel data={laborMarket} />
+          )}
+
           {sims.data?.simulations?.length > 0 && (
-            <div className="card">
-              <h3 className="text-lg mb-3">Simulaciones disponibles</h3>
-              <div className="space-y-2">
-                {sims.data.simulations.map((s: any) => (
-                  <div key={s.id} className="flex justify-between items-center p-3 rounded-lg bg-brand-lila/20">
-                    <div>
-                      <div className="font-medium">{s.title}</div>
-                      <div className="text-xs text-slate-500">{s.estimated_minutes} min · {s.blocks.length} bloques</div>
-                    </div>
-                    <Link to={`/estudiante/simulacion/${career.id}?sim=${s.id}`} className="btn-primary">Simular</Link>
-                  </div>
-                ))}
+            <div className="card overflow-hidden p-0">
+              <div className="p-6 pb-0">
+                <h3 className="text-lg mb-1">Simulación inmersiva</h3>
+                <p className="text-sm text-slate-500 mb-4">Vive un día real en esta carrera con escenarios, imágenes y feedback de IA.</p>
               </div>
+              {sims.data.simulations.map((s: any) => (
+                <div key={s.id} className="relative">
+                  {s.blocks?.[0]?.image_url && (
+                    <img src={s.blocks[0].image_url} alt="" className="w-full h-40 object-cover" />
+                  )}
+                  <div className="p-6 pt-4">
+                    <div className="font-semibold text-lg">{s.title}</div>
+                    <p className="text-sm text-slate-600 mt-1">{s.description}</p>
+                    <div className="flex justify-between items-center mt-4">
+                      <span className="text-xs text-slate-500">{s.blocks?.length ?? 0} escenarios · ~{(s.blocks?.length ?? 3) * 3} min</span>
+                      <Link to={`/estudiante/simulacion/${career.id}?sim=${s.id}`} className="btn-primary">Comenzar</Link>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           )}
         </div>

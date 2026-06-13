@@ -74,7 +74,6 @@ router.get("/:id/pdf", requireAuth, async (req, res) => {
     institutionName: inst?.name ?? null,
     generatedAt: new Date(report.created_at),
     report: payload,
-    fichas: (fichas ?? []) as any,
   });
 
   // Subir (upsert) a Storage privado

@@ -2,14 +2,34 @@ import { AppShell } from "@/components/AppShell";
 import { Link } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { api } from "@/lib/api";
-import { BookOpen, PlayCircle, FileText } from "lucide-react";
+import { BookOpen, PlayCircle, FileText, Sparkles } from "lucide-react";
 
 export function StudentDashboard() {
   const reports = useQuery({ queryKey: ["my-reports"], queryFn: () => api<any>("/api/reports") });
+  const status = useQuery({ queryKey: ["test-status"], queryFn: () => api<any>("/api/test/status") });
   const last = reports.data?.reports?.[0];
 
   return (
     <AppShell title="Tu camino vocacional">
+      <div className="card bg-gradient-to-r from-brand-morado to-brand-lavanda text-white mb-8 p-8">
+        <div className="flex items-start gap-3">
+          <Sparkles size={24} className="shrink-0 mt-1" />
+          <div>
+            <h2 className="text-xl font-bold mb-2">Test vocacional con IA</h2>
+            <p className="text-white/85 text-sm mb-4 max-w-xl">
+              Diagnóstico personalizado → ranking de carreras con Gemini → simulación inmersiva con imágenes → test cognitivo → reporte final.
+            </p>
+            {status.data && (
+              <span className="text-xs bg-white/20 px-2 py-1 rounded-full">
+                IA: {status.data.ai_enabled
+                  ? `activa · ${status.data.provider} · ${status.data.model}`
+                  : "sin IA — añade GROQ_API_KEY (gratis)"}
+              </span>
+            )}
+          </div>
+        </div>
+      </div>
+
       <div className="grid md:grid-cols-3 gap-4 mb-8">
         <Link to="/estudiante/test" className="card hover:border-brand-morado/40">
           <PlayCircle className="text-brand-morado mb-2" />
