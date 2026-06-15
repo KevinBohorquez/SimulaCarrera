@@ -18,9 +18,29 @@ import uploads from "./routes/uploads.js";
 
 const app = express();
 const PORT = Number(process.env.PORT ?? 4000);
+const HOST = process.env.HOST ?? "0.0.0.0";
+
+function getAllowedOrigins(): string[] {
+  const raw = [process.env.CORS_ORIGIN, process.env.APP_URL].filter(Boolean).join(",");
+  return raw.split(",").map((o) => o.trim()).filter(Boolean);
+}
+
+const allowedOrigins = getAllowedOrigins();
 
 app.use(helmet());
-app.use(cors({ origin: process.env.CORS_ORIGIN?.split(",") ?? "*", credentials: true }));
+app.use(
+  cors({
+    origin(origin, callback) {
+      if (!origin || allowedOrigins.length === 0 || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        console.warn(`[cors] blocked origin: ${origin}`);
+        callback(null, false);
+      }
+    },
+    credentials: true,
+  }),
+);
 app.use(express.json({ limit: "2mb" }));
 app.use(morgan("dev"));
 
@@ -43,4 +63,7 @@ app.use((err: any, _req: express.Request, res: express.Response, _next: express.
   res.status(500).json({ error: "internal_error", detail: err?.message });
 });
 
-app.listen(PORT, () => console.log(`✓ SimulaCarrera API listening on :${PORT}`));
+app.listen(PORT, HOST, () => {
+  console.log(`✓ SimulaCarrera API listening on ${HOST}:${PORT}`);
+  if (allowedOrigins.length) console.log(`  CORS origins: ${allowedOrigins.join(", ")}`);
+});

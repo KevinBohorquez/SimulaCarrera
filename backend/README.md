@@ -52,5 +52,9 @@ El JWT lo obtiene el frontend tras `supabase.auth.signInWithPassword(...)`.
 ## Deploy
 
 - **Railway / Render / Fly.io / VPS**: `npm run build && npm start`. Sirve en el `PORT` que les pidas.
-- Configura las mismas variables de entorno en el proveedor.
-- Si quieres docker: `FROM node:20-alpine` + copia + `npm ci && npm run build && CMD ["node","dist/server.js"]`.
+- En **Railway** (monorepo): en Settings del servicio, pon **Root Directory** = `backend`.
+- Variables obligatorias en producción: `SUPABASE_*`, `GROQ_API_KEY` (o otro proveedor IA), `CORS_ORIGIN`, `APP_URL`.
+- Ejemplo producción:
+  - `CORS_ORIGIN=https://simula-carrera.vercel.app`
+  - `APP_URL=https://simula-carrera.vercel.app`
+- Verifica con `GET /health` antes de probar el frontend.
