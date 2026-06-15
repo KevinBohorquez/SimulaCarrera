@@ -1,6 +1,12 @@
 import { supabase } from "./supabase";
 
-const BASE = import.meta.env.VITE_API_URL as string;
+function normalizeBaseUrl(url: string): string {
+  const trimmed = url.trim().replace(/\/$/, "");
+  if (!/^https?:\/\//i.test(trimmed)) return `https://${trimmed}`;
+  return trimmed;
+}
+
+export const API_BASE = normalizeBaseUrl(import.meta.env.VITE_API_URL as string);
 
 async function authHeader(): Promise<HeadersInit> {
   const { data } = await supabase.auth.getSession();
@@ -14,7 +20,7 @@ export async function api<T = any>(path: string, init: RequestInit = {}): Promis
     ...(await authHeader()),
     ...(init.headers ?? {}),
   };
-  const res = await fetch(`${BASE}${path}`, { ...init, headers });
+  const res = await fetch(`${API_BASE}${path}`, { ...init, headers });
   if (!res.ok) {
     let body: any = null;
     try { body = await res.json(); } catch {}

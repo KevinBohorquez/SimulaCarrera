@@ -2,7 +2,7 @@ import { useRef, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { AppShell } from "@/components/AppShell";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
-import { api } from "@/lib/api";
+import { api, API_BASE } from "@/lib/api";
 import { supabase } from "@/lib/supabase";
 import { ArrowLeft, FileDown, Loader2, Plus, Upload, UserRound } from "lucide-react";
 
@@ -76,7 +76,7 @@ export function StudentsAdmin() {
     setCsvResult(null);
     try {
       const { data } = await supabase.auth.getSession();
-      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/uploads/students-csv${qStr}`, {
+      const res = await fetch(`${API_BASE}/api/uploads/students-csv${qStr}`, {
         method: "POST",
         body: fd,
         headers: { Authorization: `Bearer ${data.session?.access_token}` },
