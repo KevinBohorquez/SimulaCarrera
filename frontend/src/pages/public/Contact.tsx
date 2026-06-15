@@ -1,10 +1,18 @@
 import { useState } from "react";
+import { useLocation } from "react-router-dom";
 import { PublicNav, PublicFooter } from "./Landing";
 import { api } from "@/lib/api";
 import { Send, CheckCircle2, Mail, User, Building2, MessageSquare } from "lucide-react";
 
+type ContactLocationState = {
+  message?: string;
+};
+
 export function Contact() {
-  const [form, setForm] = useState({ name: "", email: "", organization: "", message: "" });
+  const location = useLocation();
+  const initialMessage =
+    (location.state as ContactLocationState | null)?.message ?? "";
+  const [form, setForm] = useState({ name: "", email: "", organization: "", message: initialMessage });
   const [busy, setBusy] = useState(false);
   const [done, setDone] = useState(false);
   const [err, setErr] = useState<string | null>(null);
