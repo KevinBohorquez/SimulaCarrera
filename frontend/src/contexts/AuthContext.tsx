@@ -28,7 +28,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [profile, setProfile] = useState<Profile | null>(null);
   const [loading, setLoading] = useState(true);
 
-  async function loadProfile(userId: string) {
+  async function loadProfile(userId: string): Promise<void> {
     const { data } = await supabase.from("users").select("*").eq("id", userId).maybeSingle();
     setProfile((data as Profile) ?? null);
   }
@@ -58,8 +58,9 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   }, []);
 
   async function signIn(email: string, password: string) {
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    const { error, data } = await supabase.auth.signInWithPassword({ email, password });
     if (error) throw error;
+    if (data.session?.user) await loadProfile(data.session.user.id);
   }
   async function signOut() {
     await supabase.auth.signOut();

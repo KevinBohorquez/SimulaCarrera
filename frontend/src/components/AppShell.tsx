@@ -3,7 +3,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { LogOut, GraduationCap } from "lucide-react";
 import { ReactNode } from "react";
 
-export function AppShell({ title, children }: { title: string; children: ReactNode }) {
+export function AppShell({ title, children, hideTitle }: { title: string; children: ReactNode; hideTitle?: boolean }) {
   const { profile, signOut } = useAuth();
   const nav = useNavigate();
 
@@ -15,8 +15,8 @@ export function AppShell({ title, children }: { title: string; children: ReactNo
   };
 
   return (
-    <div className="min-h-screen bg-[#FAF8FE]">
-      <header className="bg-white border-b border-slate-100">
+    <div className="min-h-screen bg-gradient-to-b from-[#F8F4FF] to-[#FAF8FE]">
+      <header className="sticky top-0 z-50 bg-[#EADFFE]/95 backdrop-blur border-b border-purple-100/60 shadow-sm shadow-purple-100/20">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           <Link to={profile ? homeByRole[profile.role] : "/"} className="flex items-center gap-2 text-brand-morado font-bold text-lg">
             <GraduationCap size={22} /> SimulaCarrera
@@ -30,7 +30,7 @@ export function AppShell({ title, children }: { title: string; children: ReactNo
         </div>
       </header>
       <main className="max-w-7xl mx-auto px-6 py-8">
-        <h1 className="text-2xl mb-6">{title}</h1>
+        {!hideTitle && <h1 className="text-2xl font-bold text-slate-900 mb-6">{title}</h1>}
         {children}
       </main>
     </div>
