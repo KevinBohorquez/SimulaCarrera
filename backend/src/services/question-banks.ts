@@ -2,7 +2,7 @@ import { readFileSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
-const ROOT = join(dirname(fileURLToPath(import.meta.url)), "../../../database/bancodepreguntas");
+const ROOT = join(dirname(fileURLToPath(import.meta.url)), "../data/bancodepreguntas");
 
 export interface RiasecItem {
   item_code: string;

@@ -1,0 +1,3147 @@
+[
+  {
+    "scenario_id": "SIM_ADM_001",
+    "carrera": "Administración de Empresas",
+    "contexto_narrativo": "Es el día del festival escolar y tu grupo se encarga del puesto de comida. Faltan vasos y el dinero de la caja chica no cuadra con las ventas. La fila de clientes está creciendo.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Revisar los recibos detalladamente para encontrar el error y hacer un inventario rápido de lo que queda.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Animar al equipo a vender combos que no usen vasos para recuperar fondos y mantener a la gente entretenida.",
+        "sjt_score": 2,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Improvisar sirviendo las bebidas en envases reciclados limpios o tazones para no detener las ventas.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Poner dinero de tu bolsillo para que nadie se moleste y regalar las bebidas que quedan a los que ya pagaron.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Respirar profundo, pedir a todos que se calmen y pausar las ventas cinco minutos para reorganizar sin pánico.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ADM_002",
+    "carrera": "Administración de Empresas",
+    "contexto_narrativo": "Organizas un viaje de fin de curso. Tienes que elegir entre un transporte lujoso pero caro, o uno económico que permite gastar más en actividades, pero tu salón está dividido y discutiendo.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hacer un cuadro comparativo de costos y beneficios, presentándolo para que todos voten informados.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Tomar la palabra frente a todos, hacer bromas para calmar el ambiente y liderar una votación rápida a mano alzada.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Sugerir una tercera opción de viaje más cerca que nadie había pensado para no necesitar transporte pagado.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Darle la razón a los que gritan más fuerte para evitar que se peleen contigo y terminar la reunión.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No tomar los insultos de tus compañeros como personales y escuchar calmadamente a ambos lados antes de decidir.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ADM_003",
+    "carrera": "Administración de Empresas",
+    "contexto_narrativo": "Para un proyecto escolar, tu equipo debe vender 100 pulseras, pero a falta de una semana solo han vendido 20. El grupo está desmotivado.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Dividir las 80 pulseras restantes entre los miembros y establecer una meta diaria obligatoria para cada uno.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Organizar un pequeño evento musical en el recreo y venderlas gritando promociones por el micrófono.",
+        "sjt_score": 2,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Modificar las pulseras cortándolas y tejiéndolas diferente para que parezcan un producto nuevo y más atractivo.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Comprar tú mismo 30 pulseras para que el equipo no se sienta tan mal por el fracaso.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Ignorar las quejas del grupo, mantener la mente fría y seguir vendiendo una por una sin estresarse.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ADM_004",
+    "carrera": "Administración de Empresas",
+    "contexto_narrativo": "Dos de tus mejores amigos en un grupo de trabajo no se hablan y se niegan a colaborar, lo que retrasa la entrega final del proyecto.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Crear un cronograma estricto donde cada uno haga su parte por separado y tú unas todo al final.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Sentarlos a los dos en la cafetería, dirigir la conversación y obligarlos a negociar una tregua por el equipo.",
+        "sjt_score": 2,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Cambiar el formato del proyecto a un video o podcast donde no necesiten verse las caras directamente.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Hacer tú el trabajo de ambos para que no discutan más y no se rompa la amistad.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Mantenerte neutral, no dejar que su enojo te afecte y recordarles fríamente la nota que está en juego.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ADM_005",
+    "carrera": "Administración de Empresas",
+    "contexto_narrativo": "Dos de tus mejores amigos en un grupo de trabajo no se hablan y se niegan a colaborar, lo que retrasa la entrega final del proyecto (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Crear un cronograma estricto donde cada uno haga su parte por separado y tú unas todo al final.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Sentarlos a los dos en la cafetería, dirigir la conversación y obligarlos a negociar una tregua por el equipo.",
+        "sjt_score": 2,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Cambiar el formato del proyecto a un video o podcast donde no necesiten verse las caras directamente.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Hacer tú el trabajo de ambos para que no discutan más y no se rompa la amistad.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Mantenerte neutral, no dejar que su enojo te afecte y recordarles fríamente la nota que está en juego.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ARQ_001",
+    "carrera": "Arquitectura",
+    "contexto_narrativo": "Tu familia se muda a una casa más pequeña. Tienes que compartir tu habitación con tu hermano, pero los muebles actuales no caben bien y bloquean la luz de la ventana.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Tomar medidas exactas del cuarto y dibujar un plano en papel antes de mover cualquier mueble.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Convocar a tus amigos para que te ayuden a mover todo rápidamente mientras escuchan música y prueban opciones.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Desarmar un ropero viejo y usar las maderas para construir repisas flotantes que ahorren espacio en el suelo.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que tu hermano elija el mejor lado del cuarto y acomodarte tú en la esquina oscura para evitar peleas.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Aceptar tranquilamente que el cuarto es pequeño y adaptar tus cosas sin frustrarte por la falta de espacio.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ARQ_002",
+    "carrera": "Arquitectura",
+    "contexto_narrativo": "Debes armar el escenario para la obra de teatro del colegio usando solo cajas de cartón recicladas, pero algunas están húmedas y pierden fuerza.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Clasificar las cajas por grosor, dejando las más firmes como base y las húmedas como adornos ligeros.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Dirigir a un grupo de voluntarios dando indicaciones claras en voz alta para apilar todo más rápido.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Cortar las cajas húmedas y crear formas asimétricas modernas, cambiando el estilo clásico del escenario.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Desechar todas las cajas húmedas y pedir disculpas al director de la obra por hacer un escenario más pequeño.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No entrar en pánico cuando una torre de cajas se cae, suspirar y volver a armarla desde cero con calma.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ARQ_003",
+    "carrera": "Arquitectura",
+    "contexto_narrativo": "Estás armando una maqueta de la ciudad para un proyecto. Pegaste mal una calle principal y si la arrancas, dañarás los edificios de papel de alrededor.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Cortar con mucho cuidado usando un cúter exacto solo la zona afectada y reemplazar esa pequeña pieza.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Llamar a tus compañeros, explicarles el error abiertamente y pedir que te ayuden a despegarlo entre todos.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Convertir el error en una característica nueva, pintando esa calle mal puesta como si fuera un túnel o puente.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Asumir toda la culpa y ofrecer hacer tú solo toda la maqueta de nuevo para que tus amigos no se molesten.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Controlar tu frustración, aceptar que no se verá perfecta y seguir avanzando con el resto del proyecto.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ARQ_004",
+    "carrera": "Arquitectura",
+    "contexto_narrativo": "El director pide a tu clase que redecore la biblioteca escolar. Hay muchos libros viejos tirados y el espacio se siente sofocante y desordenado.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hacer un inventario visual, agrupar libros por tamaño y alinearlos en las paredes para liberar el centro.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Convencer a los estudiantes menores para que formen una cadena humana y mover los libros rápidamente al patio.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Apilar los libros inservibles formando mesas o sillones creativos para que los alumnos se sienten a leer.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar todo como está para no correr el riesgo de botar un libro que a algún profesor le guste mucho.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Trabajar en medio del desorden y el polvo sin quejarte, manteniendo el enfoque en limpiar una mesa a la vez.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ARQ_005",
+    "carrera": "Arquitectura",
+    "contexto_narrativo": "El director pide a tu clase que redecore la biblioteca escolar. Hay muchos libros viejos tirados y el espacio se siente sofocante y desordenado (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hacer un inventario visual, agrupar libros por tamaño y alinearlos en las paredes para liberar el centro.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Convencer a los estudiantes menores para que formen una cadena humana y mover los libros rápidamente al patio.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Apilar los libros inservibles formando mesas o sillones creativos para que los alumnos se sienten a leer.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar todo como está para no correr el riesgo de botar un libro que a algún profesor le guste mucho.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Trabajar en medio del desorden y el polvo sin quejarte, manteniendo el enfoque en limpiar una mesa a la vez.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_CIV_001",
+    "carrera": "Ingeniería Civil",
+    "contexto_narrativo": "Estás construyendo un castillo de arena gigante en la playa, pero cada vez que intentas hacerlo más alto, las paredes se derrumban por su propio peso.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Aplanar y ensanchar mucho más la base del castillo, compactando la arena con agua antes de volver a subir.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Llamar a gritos a otros niños de la playa para que formen un equipo rápido y traigan más arena húmeda.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Cambiar el diseño de una torre alta a una ciudad plana con muchos puentes subterráneos creativos.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que tu hermanito siga poniendo arena seca arriba, aunque sepas que se caerá, para que él sea feliz.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No frustrarte cuando el castillo se cae por tercera vez, solo suspirar y volver a empezar pacientemente.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_CIV_002",
+    "carrera": "Ingeniería Civil",
+    "contexto_narrativo": "Llovió mucho en el colegio y hay un charco gigante bloqueando la salida. Pones unas tablas de madera para cruzar, pero se tambalean cuando alguien las pisa.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Buscar piedras pesadas y colocarlas en los bordes de la madera para estabilizar los puntos de apoyo.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Pasar primero saltando sobre las tablas y animar a los demás a pasar rápido para demostrar que es seguro.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Buscar un camino totalmente diferente abriendo un agujero en un arbusto cercano para evitar el agua.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Cargar a tus amigos en la espalda para cruzar por el agua y que ellos no se mojen sus zapatos.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Quedarte parado en el lodo tranquilamente sosteniendo la tabla con tus manos para que todos crucen sin miedo.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_CIV_003",
+    "carrera": "Ingeniería Civil",
+    "contexto_narrativo": "Estás armando una tienda de campaña, pero hace mucho viento y la tela sale volando antes de que puedas clavar las estacas en la tierra suelta.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Alinear la carpa a favor del viento y clavar las estacas en un ángulo de 45 grados bajo tierra para mayor anclaje.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Gritarle instrucciones claras a tus amigos sobre qué esquina sostener mientras tú unes las varillas.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Amarrar las esquinas a los troncos de los árboles cercanos y mochilas pesadas en lugar de usar la tierra.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Sostener tú mismo la carpa toda la noche con las manos para que tus amigos puedan dormir sin que se vuele.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Mantenerte calmado y no entrar en pánico cuando una ráfaga fuerte les arranca la carpa de las manos.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_CIV_004",
+    "carrera": "Ingeniería Civil",
+    "contexto_narrativo": "Debes acomodar el equipaje de 5 personas en el maletero del auto. Hay cajas frágiles, mochilas blandas y maletas muy pesadas de plástico.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Poner las maletas duras al fondo como base, rellenar huecos con mochilas y dejar lo frágil arriba sin que se mueva.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Hacer un reto de Tetris con la familia, compitiendo alegremente para ver quién acomoda su maleta más rápido.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Sacar la ropa de las mochilas y meterla suelta en los huecos de la maletera para aprovechar cada centímetro de espacio.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que cada uno tire su mochila donde quiera para que no discutan, aunque tengas que aplastar tus cosas.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Sacar y meter todo tres veces sin enojarte hasta que por fin cierre la puerta trasera del auto.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_CIV_005",
+    "carrera": "Ingeniería Civil",
+    "contexto_narrativo": "Debes acomodar el equipaje de 5 personas en el maletero del auto. Hay cajas frágiles, mochilas blandas y maletas muy pesadas de plástico (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Poner las maletas duras al fondo como base, rellenar huecos con mochilas y dejar lo frágil arriba sin que se mueva.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Hacer un reto de Tetris con la familia, compitiendo alegremente para ver quién acomoda su maleta más rápido.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Sacar la ropa de las mochilas y meterla suelta en los huecos de la maletera para aprovechar cada centímetro de espacio.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que cada uno tire su mochila donde quiera para que no discutan, aunque tengas que aplastar tus cosas.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Sacar y meter todo tres veces sin enojarte hasta que por fin cierre la puerta trasera del auto.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_CON_001",
+    "carrera": "Contabilidad",
+    "contexto_narrativo": "Tú guardas el dinero del fondo del salón para la graduación. Tras una actividad, hay un billete falso y el dinero total ya no alcanza para pagar el local mañana.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hacer un recuento cruzado de quién pagó qué, revisar el saldo real y calcular exactamente cuánto falta por persona.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Convocar una reunión urgente, hablar fuerte y claro para organizar una colecta relámpago entre todos los salones.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Negociar con el dueño del local ofreciéndole limpiar el lugar al día siguiente a cambio de un descuento por el dinero faltante.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Poner tus ahorros personales en secreto para cubrir el billete falso y que nadie sospeche ni se pelee.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No asustarte por el problema, guardar el billete falso como evidencia y planear los siguientes pasos fríamente.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_CON_002",
+    "carrera": "Contabilidad",
+    "contexto_narrativo": "Sales a comer con 10 amigos. Pidieron platos de diferentes precios, algunos compartieron entradas y otros no. Llega una sola cuenta y nadie sabe cuánto poner.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Tomar la cuenta, un lápiz y calcular exactamente el consumo individual más su porcentaje de propina.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Bromear sobre el enredo, pedir la atención de la mesa y empezar a recolectar el dinero dirigiendo a la gente.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Proponer que todos paguen lo mismo dividiendo en partes iguales usando una app de pagos rápidos.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Pagar tú el plato de los que no tienen cambio o les falta dinero para no incomodar al mesero.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Mantener la paciencia mientras todos discuten por las monedas, esperando tranquilamente a que terminen de organizarse.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_CON_003",
+    "carrera": "Contabilidad",
+    "contexto_narrativo": "El club de ciencias te pide ayuda porque compraron demasiados materiales a inicio de año y ahora no tienen dinero para imprimir el boletín final.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hacer una lista detallada de los materiales sobrantes, ponerles un precio justo y organizar una venta de garaje.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Ir salón por salón haciendo una pequeña presentación carismática para pedir donaciones para el boletín.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Cambiar el formato del boletín físico a un blog digital gratuito que pueden diseñar con los materiales que ya tienen.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Regalar los materiales a otro club que los necesite para llevarse bien, cancelando la idea del boletín final.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Aceptar las críticas por la mala gestión sin enojarte y revisar los recibos antiguos con total calma.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_CON_004",
+    "carrera": "Contabilidad",
+    "contexto_narrativo": "Tus padres te dan una mesada mensual. A mitad de mes gastaste todo en un concierto y ahora necesitas dinero para un pasaje de tren importante.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Anotar tus gastos futuros, recortar todas las compras de snacks y vender algo que no uses para recuperar el dinero.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Ofrecer tus servicios a los vecinos lavando autos o paseando perros, conversando con todos para conseguir clientes rápido.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Buscar una ruta en bicicleta o caminando que reemplace el pasaje de tren, explorando nuevos caminos por la ciudad.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Pedirle dinero a un amigo y decirle que no sabes cuándo le pagarás, pero que te entienda por tu urgencia.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Asumir las consecuencias de tu mala decisión sin hacer berrinches ni llorar, aceptando que tendrás que caminar.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_CON_005",
+    "carrera": "Contabilidad",
+    "contexto_narrativo": "Tus padres te dan una mesada mensual. A mitad de mes gastaste todo en un concierto y ahora necesitas dinero para un pasaje de tren importante (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Anotar tus gastos futuros, recortar todas las compras de snacks y vender algo que no uses para recuperar el dinero.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Ofrecer tus servicios a los vecinos lavando autos o paseando perros, conversando con todos para conseguir clientes rápido.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Buscar una ruta en bicicleta o caminando que reemplace el pasaje de tren, explorando nuevos caminos por la ciudad.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Pedirle dinero a un amigo y decirle que no sabes cuándo le pagarás, pero que te entienda por tu urgencia.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Asumir las consecuencias de tu mala decisión sin hacer berrinches ni llorar, aceptando que tendrás que caminar.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DAT_001",
+    "carrera": "Ciencia de Datos",
+    "contexto_narrativo": "Quieres ganar un torneo de un videojuego escolar. Notas que algunos equipos ganan más en ciertos mapas, pero nadie sabe exactamente por qué.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Anotar en una tabla las victorias, derrotas y personajes usados por cada equipo para encontrar el patrón exacto.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Ir a hablar con los equipos ganadores, preguntarles directamente sus secretos y compartirlo con tu grupo.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Inventar una estrategia completamente impredecible y nunca antes vista para confundir los patrones de los rivales.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que el equipo rival elija el mapa para ser cortes y jugar simplemente por diversión.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Perder varias partidas seguidas probando teorías, manteniéndote calmado sin enojarte por las derrotas.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DAT_002",
+    "carrera": "Ciencia de Datos",
+    "contexto_narrativo": "Eres el encargado de armar la lista de canciones para la fiesta de graduación. Tienes cientos de peticiones de tus compañeros y todas son de géneros diferentes.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Contar qué canciones se repiten más, agruparlas por ritmo y ordenarlas para que la fiesta suba de energía poco a poco.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Ponerte de DJ en vivo, observar cómo reacciona la gente en la pista y cambiar las canciones animando con el micrófono.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Mezclar canciones de rock con reguetón usando una aplicación para crear versiones únicas que nadie espera.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Poner absolutamente todas las canciones en orden alfabético para que nadie se sienta excluido.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Aceptar las quejas de los que no escuchan su canción de inmediato, manteniendo la calma y explicando que ya sonará.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DAT_003",
+    "carrera": "Ciencia de Datos",
+    "contexto_narrativo": "Ayudas a la biblioteca a encontrar libros perdidos. No hay un sistema moderno, solo cajas llenas de tarjetas de préstamo escritas a mano y muy desordenadas.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Ordenar las tarjetas por fecha y apellido rigurosamente, cruzando la información para ver quién tuvo el libro último.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Entrevistar a los alumnos en los pasillos preguntando en voz alta quién recuerda haber visto los libros de esa sección.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Crear un código de colores con marcadores para agrupar las tarjetas visualmente por tema y no por nombre.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Ignorar los libros perdidos y limpiar las mesas para que al menos el bibliotecario esté contento contigo.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Leer cientos de tarjetas borrosas durante horas sin desesperarte por el aburrimiento o el polvo.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DAT_004",
+    "carrera": "Ciencia de Datos",
+    "contexto_narrativo": "Tu equipo de fútbol escolar pierde todos los partidos. El entrenador te pide ayuda para entender qué están haciendo mal observando los videos de los juegos.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Anotar en una hoja cuántos pases fallan en cada zona de la cancha para identificar el lado más débil del equipo.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Reunir al equipo entero frente al televisor y hacer que todos debatan en voz alta cada jugada que ven.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Mirar los videos en reversa o a doble velocidad para ver si notas movimientos raros en la formación general.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Borrar los videos de las peores goleadas para que tus compañeros no se sientan tristes al verlos.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Observar los errores repetidos sin frustrarte ni gritarle a la pantalla, manteniendo un análisis frío.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DAT_005",
+    "carrera": "Ciencia de Datos",
+    "contexto_narrativo": "Tu equipo de fútbol escolar pierde todos los partidos. El entrenador te pide ayuda para entender qué están haciendo mal observando los videos de los juegos (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Anotar en una hoja cuántos pases fallan en cada zona de la cancha para identificar el lado más débil del equipo.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Reunir al equipo entero frente al televisor y hacer que todos debatan en voz alta cada jugada que ven.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Mirar los videos en reversa o a doble velocidad para ver si notas movimientos raros en la formación general.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Borrar los videos de las peores goleadas para que tus compañeros no se sientan tristes al verlos.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Observar los errores repetidos sin frustrarte ni gritarle a la pantalla, manteniendo un análisis frío.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DER_001",
+    "carrera": "Derecho",
+    "contexto_narrativo": "Durante un partido en el recreo, el balón rompe una ventana. El profesor quiere castigar a todo el salón, pero tú sabes que fue un accidente culpa de un hoyo en el piso.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Revisar el reglamento escolar y redactar una carta formal explicando el estado del patio para apelar el castigo grupal.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Pararte frente al profesor y defender a tus compañeros en voz alta, argumentando con mucha energía por qué es injusto.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Proponer un juicio simulado en el salón donde se presenten las pruebas del hoyo en el piso como evidencia.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Aceptar el castigo sin decir nada para no contradecir al profesor y evitar que se enoje más.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Soportar la injusticia del profesor momentáneamente sin gritar, esperando el momento adecuado para hablar con la directora calmadamente.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DER_002",
+    "carrera": "Derecho",
+    "contexto_narrativo": "Dos de tus amigos reclaman ser los dueños de una idea para un proyecto de ciencias. Ambos tienen pruebas a medias y el profesor te pide que decidas a quién darle el crédito.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Pedirles a ambos que muestren las fechas de sus apuntes y hacer preguntas objetivas para encontrar la verdad paso a paso.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Organizar un debate en grupo donde ambos presenten su caso y dejar que todo el equipo vote por el mejor expositor.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Convencerlos de fusionar sus ideas en un proyecto completamente nuevo y diferente para que ambos sean coautores.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Darle la razón al amigo que se ve más triste para que no llore y termine rápido el conflicto.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No dejarte presionar por la molestia de tus amigos y tomarte tu tiempo para analizar todo sin estresarte.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DER_003",
+    "carrera": "Derecho",
+    "contexto_narrativo": "El consejo estudiantil impone una regla que prohíbe usar sudaderas en invierno. Muchos estudiantes se están enfermando, pero los directores no quieren escuchar quejas.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Recolectar firmas de los padres, investigar normativas de salud estudiantil y solicitar una reunión formal con el director.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Liderar una protesta pacífica en el patio, animando a todos a usar sudaderas el mismo día como símbolo de unidad.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Diseñar una prenda híbrida que cumpla con el código de uniforme pero abrigue igual, burlando la regla creativamente.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Pedirle disculpas a los directores por las quejas de los demás y aguantar el frío para ser un estudiante obediente.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Enfrentar las reuniones tensas con los directores manteniendo un tono de voz calmado y sin perder los estribos.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DER_004",
+    "carrera": "Derecho",
+    "contexto_narrativo": "Estás jugando un juego de mesa complejo con amigos. Alguien encuentra un vacío en las instrucciones escritas que le permite ganar haciendo trampa legalmente.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Detener el juego, leer cuidadosamente el manual y proponer una interpretación lógica basada en el espíritu general del juego.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Argumentar a gritos y entre risas por qué esa jugada es injusta hasta convencer a todos de no permitirla.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Inventar en ese momento una nueva regla que anule el vacío legal y haga el juego más divertido e impredecible.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que tu amigo gane usando el truco para que la tarde termine en paz y nadie se moleste.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No enojarte si pierdes por esa trampa, aceptar calmadamente la derrota y sugerir arreglar la regla para la próxima.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DER_005",
+    "carrera": "Derecho",
+    "contexto_narrativo": "Estás jugando un juego de mesa complejo con amigos. Alguien encuentra un vacío en las instrucciones escritas que le permite ganar haciendo trampa legalmente (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Detener el juego, leer cuidadosamente el manual y proponer una interpretación lógica basada en el espíritu general del juego.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Argumentar a gritos y entre risas por qué esa jugada es injusta hasta convencer a todos de no permitirla.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Inventar en ese momento una nueva regla que anule el vacío legal y haga el juego más divertido e impredecible.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que tu amigo gane usando el truco para que la tarde termine en paz y nadie se moleste.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No enojarte si pierdes por esa trampa, aceptar calmadamente la derrota y sugerir arreglar la regla para la próxima.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DIS_001",
+    "carrera": "Diseño Gráfico",
+    "contexto_narrativo": "Hiciste un cartel para la feria de ciencias, pero pusiste tanto texto que desde lejos solo se ve como una mancha gris y nadie se detiene a leerlo.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Rehacer el cartel jerarquizando la información: un título gigante, viñetas cortas y márgenes limpios para facilitar la lectura.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Pararte frente al cartel y llamar a gritos a la gente, explicándoles verbalmente todo lo que está escrito.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Recortar el texto en formas geométricas y pegarlo haciendo un collage abstracto para llamar la atención por la rareza.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Esconder tu cartel debajo de la mesa porque un compañero dijo que estaba feo y no quieres incomodarlo.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Aceptar las críticas de que nadie lo lee sin sentirte ofendido y observar fríamente qué carteles sí funcionan.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DIS_002",
+    "carrera": "Diseño Gráfico",
+    "contexto_narrativo": "Debes elegir el color de las camisetas para las olimpiadas escolares. El color favorito del salón choca horriblemente con el logo del colegio, dificultando su lectura.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Buscar una paleta de colores complementaria que respete el logo y presentar mockups limpios para demostrar por qué funciona mejor.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Hacer una encuesta en vivo en el salón, animando a todos a votar por la combinación que tú sabes que se ve mejor.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Aplicar un efecto visual al logo, como un borde brillante o una sombra exagerada, para que resalte sin importar el color de fondo.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Imprimir las camisetas con el color que eligió la mayoría, aunque el logo no se entienda, para no llevar la contra.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Lidiar pacíficamente con los reclamos de tus compañeros cuando les dices que su color favorito no sirve, sin alterarte.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DIS_003",
+    "carrera": "Diseño Gráfico",
+    "contexto_narrativo": "El director te pide arreglar el periódico mural escolar que está lleno de recortes de revistas desordenados, fotos borrosas y letras de diferentes tamaños.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Quitar todo, crear una cuadrícula con cinta, establecer una sola fuente para los títulos y alinear las imágenes simétricamente.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Convocar a los de primer año para que pinten con las manos el fondo, haciendo un mural interactivo y muy ruidoso.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Usar hilos de colores para conectar las fotos y textos como si fuera el tablero de un detective, dándole un estilo caótico pero intencional.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar los recortes de los demás para no herir sus sentimientos y solo agregarles un marco bonito alrededor.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Limpiar el desastre lentamente, ignorando las miradas raras de los profesores, manteniendo la concentración total en tu tarea.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DIS_004",
+    "carrera": "Diseño Gráfico",
+    "contexto_narrativo": "Tienes que presentar un trabajo en diapositivas, pero la computadora del salón no tiene internet ni fuentes instaladas. Solo puedes usar las herramientas básicas del sistema.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Usar fuentes básicas, alinear perfectamente los textos, usar mucho espacio en blanco y colores de alto contraste para un diseño minimalista.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Hacer la presentación usando solo tu voz y gestos corporales, pasando diapositivas casi vacías para mantener la atención en ti.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Dibujar figuras usando los símbolos del teclado (ASCII art) para crear fondos visuales muy inusuales e ingeniosos.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Rendirte y decirle al profesor que no puedes presentar porque no tienes tus letras favoritas, pidiendo perdón.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No frustrarte por las limitaciones técnicas, sonreír frente a la pantalla en blanco y armar algo simple sin quejarte.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_DIS_005",
+    "carrera": "Diseño Gráfico",
+    "contexto_narrativo": "Tienes que presentar un trabajo en diapositivas, pero la computadora del salón no tiene internet ni fuentes instaladas. Solo puedes usar las herramientas básicas del sistema (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Usar fuentes básicas, alinear perfectamente los textos, usar mucho espacio en blanco y colores de alto contraste para un diseño minimalista.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Hacer la presentación usando solo tu voz y gestos corporales, pasando diapositivas casi vacías para mantener la atención en ti.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Dibujar figuras usando los símbolos del teclado (ASCII art) para crear fondos visuales muy inusuales e ingeniosos.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Rendirte y decirle al profesor que no puedes presentar porque no tienes tus letras favoritas, pidiendo perdón.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No frustrarte por las limitaciones técnicas, sonreír frente a la pantalla en blanco y armar algo simple sin quejarte.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_EDU_001",
+    "carrera": "Educación",
+    "contexto_narrativo": "Un compañero de tu grupo de estudio se niega a participar porque dice que es terrible en matemáticas y que nunca lo entenderá.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hacerle una guía paso a paso, dividiendo el problema gigante en sumas pequeñas y lógicas que él ya sabe hacer.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Animarlo con mucha energía, chocarle los cinco y hacer bromas para que pierda el miedo a equivocarse en voz alta.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Explicarle las matemáticas usando una analogía completamente diferente, como si fueran reglas de su videojuego o deporte favorito.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Hacerle tú mismo la tarea para que no se sienta triste ni frustrado frente a los demás.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Mantener mucha paciencia y no frustrarte, aunque te grite que no entiende por décima vez.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_EDU_002",
+    "carrera": "Educación",
+    "contexto_narrativo": "Estás tratando de explicar las reglas de un juego de mesa nuevo, pero la mitad del grupo está distraída hablando de otras cosas y no entienden.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Leer el manual en voz alta y pedir que todos guarden silencio hasta terminar de explicar cada regla sistemáticamente.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Empezar una ronda de práctica moviendo las piezas, guiando a todos con voz fuerte y entusiasmo mientras juegan.",
+        "sjt_score": 2,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Inventar tus propias reglas más simples y creativas usando el mismo tablero para que aprendan más rápido.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que los distraídos ganen haciendo trampa para que no se aburran y la tarde siga en paz.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No molestarte por el ruido, sonreír y volver a explicar las reglas con calma a quien te lo pida individualmente.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_EDU_003",
+    "carrera": "Educación",
+    "contexto_narrativo": "Organizas un círculo de lectura, pero notas que los de primer año se aburren mucho, mientras que los mayores quieren leer más rápido.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Establecer tiempos exactos de lectura y hacer preguntas de comprensión estructuradas para igualar el nivel de todos.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Dramatizar la lectura, haciendo voces exageradas para cada personaje y manteniendo a todos despiertos con tu energía.",
+        "sjt_score": 2,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Cambiar el libro por un formato de cómic o película interactiva que mezcle las edades en un mismo interés.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que los mayores se vayan y solo leerle a los pequeños lo que ellos quieran para que nadie se queje.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Soportar las quejas de ambos bandos sin estresarte y seguir leyendo en un tono calmado y constante.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_EDU_004",
+    "carrera": "Educación",
+    "contexto_narrativo": "Dos amigos en tu equipo de proyecto se la pasan peleando y distrayendo a los demás. No están avanzando nada en el trabajo.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Dividir el trabajo en tareas individuales estrictas para que no necesiten interactuar y tú revises el avance.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Enfrentarlos directamente frente al grupo, exigiendo en voz alta que dejen de pelear y se pongan a trabajar.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Diseñar un ejercicio de roles divertido donde cada uno defienda la postura del otro para que hagan las paces.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Hacer tú toda la parte de ellos para evitar el conflicto y que el profesor no los regañe.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Actuar como un mediador neutral, escuchando sin alterarte las quejas de ambos bandos.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_EDU_005",
+    "carrera": "Educación",
+    "contexto_narrativo": "Dos amigos en tu equipo de proyecto se la pasan peleando y distrayendo a los demás. No están avanzando nada en el trabajo (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Dividir el trabajo en tareas individuales estrictas para que no necesiten interactuar y tú revises el avance.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Enfrentarlos directamente frente al grupo, exigiendo en voz alta que dejen de pelear y se pongan a trabajar.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Diseñar un ejercicio de roles divertido donde cada uno defienda la postura del otro para que hagan las paces.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Hacer tú toda la parte de ellos para evitar el conflicto y que el profesor no los regañe.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Actuar como un mediador neutral, escuchando sin alterarte las quejas de ambos bandos.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ENF_001",
+    "carrera": "Enfermería",
+    "contexto_narrativo": "Durante una excursión escolar, un amigo se raspa feo la rodilla. Al ver la sangre, entra en pánico y empieza a llorar descontroladamente.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Buscar el botiquín, lavar la herida con agua limpia y poner una venda siguiendo las normas básicas de primeros auxilios.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Hablarle fuerte pero con entusiasmo, contándole una historia graciosa para distraerlo del dolor.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Improvisar una venda usando una camiseta limpia cortada con creatividad al no tener botiquín.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Decirle que no pasa nada y dejarlo seguir caminando sin limpiarse para que no llore más.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Ver la sangre sin asustarte ni impresionarte, manteniendo un rostro sereno que le transmita paz.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ENF_002",
+    "carrera": "Enfermería",
+    "contexto_narrativo": "Te toca cuidar a tu hermano menor que está enfermo. Tiene que tomar un jarabe que sabe muy mal y cierra la boca llorando para evitarlo.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Anotar la hora exacta en un papel y darle la dosis con una jeringa medidora explicando por qué es importante.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Hacer sonidos de avión, aplaudir y celebrar ruidosamente cada vez que toma un poquito del jarabe.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Mezclar estratégicamente el jarabe con su jugo favorito o un poco de miel para esconder el sabor por completo.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que no se lo tome hoy para que te quiera mucho y deje de llorar.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Soportar su berrinche durante media hora sin gritarle, esperando pacientemente a que se rinda.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ENF_003",
+    "carrera": "Enfermería",
+    "contexto_narrativo": "Estás en un campamento repartiendo la merienda. Sabes que algunos compañeros tienen alergias graves, pero las etiquetas de los sándwiches se cayeron.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Detener todo, abrir cada sándwich para verificar los ingredientes visualmente y hacer una nueva lista estricta.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Gritar a todo el grupo para que se reúnan y pregunten uno por uno antes de morder cualquier cosa.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Desarmar los sándwiches dudosos y usar los ingredientes seguros para armar brochetas divertidas sin pan.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Darle a un amigo alérgico un pedacito muy chiquito del sándwich misterioso porque te rogaba tener hambre.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No dejar que el pánico te bloquee, respirar hondo y controlar la crisis sin mostrar miedo a tus compañeros.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ENF_004",
+    "carrera": "Enfermería",
+    "contexto_narrativo": "En el día de deportes, tu mejor amigo se marea por el sol. Él quiere seguir jugando a toda costa para no decepcionar al equipo.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Llevarlo a la sombra inmediatamente, darle sorbos de agua calculados y vigilar su respiración por 10 minutos.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Pedir a toda la barra que le aplauda por su esfuerzo mientras lo sacas del campo para animarlo.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Usar una toalla mojada doblada como turbante para bajar su temperatura corporal de forma inusual pero efectiva.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejarlo jugar 5 minutos más porque te da pena arruinarle su momento especial.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Ignorar sus insultos cuando se enoja contigo por sacarlo, manteniéndote firme y muy calmado.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_ENF_005",
+    "carrera": "Enfermería",
+    "contexto_narrativo": "En el día de deportes, tu mejor amigo se marea por el sol. Él quiere seguir jugando a toda costa para no decepcionar al equipo (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Llevarlo a la sombra inmediatamente, darle sorbos de agua calculados y vigilar su respiración por 10 minutos.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Pedir a toda la barra que le aplauda por su esfuerzo mientras lo sacas del campo para animarlo.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Usar una toalla mojada doblada como turbante para bajar su temperatura corporal de forma inusual pero efectiva.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejarlo jugar 5 minutos más porque te da pena arruinarle su momento especial.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Ignorar sus insultos cuando se enoja contigo por sacarlo, manteniéndote firme y muy calmado.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_IND_001",
+    "carrera": "Ingeniería Industrial",
+    "contexto_narrativo": "Tu grupo tiene que preparar 100 panes con jamón para una donación. Todos están chocando en la cocina, manchándose y tardando mucho por cada pan.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Organizar una línea de trabajo: uno corta el pan, otro pone jamón, otro envuelve. Cada uno hace solo su tarea sin moverse.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Poner música fuerte, cantar y animar al equipo para que trabajen más rápido con buena energía.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Alinear todos los panes abiertos en la mesa y poner el jamón lanzándolo como si fuera un juego de puntería para ir rápido.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que cada uno prepare los panes como quiera para que nadie se ofenda si le das órdenes.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No estresarte por el desorden de tus amigos, concentrarte en tu pan y prepararlo tranquilamente.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_IND_002",
+    "carrera": "Ingeniería Industrial",
+    "contexto_narrativo": "La fila de la cafetería escolar es un caos. Los alumnos tardan tanto en pagar que cuando reciben la comida, el recreo ya se acabó.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Sugerir al director separar la zona donde se pide la comida de la zona donde se paga para que avancen dos filas a la vez.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Pararte al lado de la fila como policía de tránsito, indicando en voz alta a la gente que avance rápido.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Proponer crear combos prearmados en bolsas selladas que cuesten una moneda exacta, para no tener que dar vuelto.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que los que tienen más hambre se metan delante de ti en la fila para ser generoso.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Esperar tu turno durante veinte minutos sin quejarte ni pelear con los que se cuelan.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_IND_003",
+    "carrera": "Ingeniería Industrial",
+    "contexto_narrativo": "Todas las mañanas llegas tarde al colegio porque pierdes mucho tiempo buscando tu uniforme, empacando libros y desayunando.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Dejar el uniforme doblado, la mochila lista y la taza servida la noche anterior para reducir los pasos en la mañana.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Apostar con tus hermanos corriendo por la casa para ver quién se viste y come más rápido.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Dormir con la camisa del colegio puesta para saltarte el paso de cambiarte por completo al despertar.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que tu familia use el baño primero para no molestarlos, aunque eso signifique llegar tarde otra vez.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No entrar en pánico ni llorar cuando ves que faltan 5 minutos para que cierre la puerta del colegio.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_IND_004",
+    "carrera": "Ingeniería Industrial",
+    "contexto_narrativo": "En la clase de arte solo hay dos tijeras y tres pegamentos para treinta alumnos. Todos pierden el tiempo esperando que otro termine de usar los materiales.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Agrupar las mesas en estaciones. Una estación solo recorta y otra solo pega, y los alumnos rotan cada diez minutos.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Negociar hablando fuerte por todo el salón, intercambiando tijeras por plumones como si fuera un mercado.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Cortar el papel rasgándolo con los dedos y mojarlo para pegarlo, creando un arte rústico sin usar herramientas.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Regalarle la tijera a un amigo para que termine, dejándote a ti sin poder entregar tu tarea a tiempo.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Quedarte sentado pacientemente mirando a la pared por veinte minutos hasta que te pasen el pegamento.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_IND_005",
+    "carrera": "Ingeniería Industrial",
+    "contexto_narrativo": "En la clase de arte solo hay dos tijeras y tres pegamentos para treinta alumnos. Todos pierden el tiempo esperando que otro termine de usar los materiales (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Agrupar las mesas en estaciones. Una estación solo recorta y otra solo pega, y los alumnos rotan cada diez minutos.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Negociar hablando fuerte por todo el salón, intercambiando tijeras por plumones como si fuera un mercado.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Cortar el papel rasgándolo con los dedos y mojarlo para pegarlo, creando un arte rústico sin usar herramientas.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Regalarle la tijera a un amigo para que termine, dejándote a ti sin poder entregar tu tarea a tiempo.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Quedarte sentado pacientemente mirando a la pared por veinte minutos hasta que te pasen el pegamento.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_MED_001",
+    "carrera": "Medicina Humana",
+    "contexto_narrativo": "Un amigo tuyo se dobla de dolor de estómago en el recreo. No sabes si comió algo malo, si le duele un golpe o si es algo más grave.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hacerle preguntas clave: qué desayunó, cuándo empezó el dolor y presionar suavemente su barriga para ver dónde duele más.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Correr desesperadamente por el patio preguntando a todos a gritos si comieron la misma empanada de la cafetería.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Recomendarle que se cuelgue boca abajo en los juegos del parque porque escuchaste que eso acomoda la digestión.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Darle tus dulces favoritos para que se sienta feliz y deje de llorar por el dolor.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Sentarte a su lado muy calmado, sin decir nada ni actuar, solo acompañándolo mientras se retuerce.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_MED_002",
+    "carrera": "Medicina Humana",
+    "contexto_narrativo": "El perro de tu vecino está actuando muy raro: no quiere comer, duerme demasiado y se rasca la nariz constantemente. Tu vecino te pide consejo.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Anotar los tres síntomas exactos, medir cuánto tiempo lleva así y aconsejar llamar al veterinario con esa información.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Llamar a todos los amigos del barrio por teléfono para hacer un debate sobre qué podría tener el perro.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Sugerir que le den té de manzanilla con miel porque lo leíste en un foro antiguo de remedios caseros.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Darle mucha comida chatarra para perros para animarlo, aunque empeores su condición.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No asustarte si el perro respira extraño, manteniéndote frío y objetivo para no asustar más a tu vecino.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_MED_003",
+    "carrera": "Medicina Humana",
+    "contexto_narrativo": "Durante el saludo a la bandera bajo un sol muy fuerte, el estudiante frente a ti se desmaya y cae al piso sin moverse.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Revisar si respira, levantar ligeramente sus piernas para mejorar la circulación y enviar a un profesor por ayuda médica.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Gritar fuerte dando órdenes a todos los demás niños para que retrocedan y hagan un círculo de aire.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Echarle agua helada de tu botella en toda la cara para provocar un shock térmico y que despierte.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Intentar levantarlo de inmediato jalándolo de los brazos para que el director no se moleste por interrumpir el himno.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Mantener una tranquilidad extrema al ver que no reacciona, sin dejar que el pánico de los otros te contagie.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_MED_004",
+    "carrera": "Medicina Humana",
+    "contexto_narrativo": "Tienes un dolor de cabeza fuerte. Buscas en internet y encuentras mil soluciones diferentes, desde tomar agua hasta comer ajo crudo.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Ignorar los blogs aleatorios y buscar información en una página médica oficial o de un hospital reconocido.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Publicar en tus redes sociales preguntando a tus seguidores qué hacen ellos para curar el dolor de cabeza.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Intentar masajear puntos de presión extraños en tu mano o pie para ver si la acupresión funciona.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Tomar unas pastillas dudosas que te dio un amigo solo para no ofenderlo al rechazar su ayuda.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Soportar el dolor en silencio durante horas, manteniendo la calma total sin tomar nada.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_MED_005",
+    "carrera": "Medicina Humana",
+    "contexto_narrativo": "Tienes un dolor de cabeza fuerte. Buscas en internet y encuentras mil soluciones diferentes, desde tomar agua hasta comer ajo crudo (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Ignorar los blogs aleatorios y buscar información en una página médica oficial o de un hospital reconocido.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Publicar en tus redes sociales preguntando a tus seguidores qué hacen ellos para curar el dolor de cabeza.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Intentar masajear puntos de presión extraños en tu mano o pie para ver si la acupresión funciona.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Tomar unas pastillas dudosas que te dio un amigo solo para no ofenderlo al rechazar su ayuda.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Soportar el dolor en silencio durante horas, manteniendo la calma total sin tomar nada.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_MKT_001",
+    "carrera": "Marketing",
+    "contexto_narrativo": "Quieres convencer a tus amigos de ver una película clásica que a ti te encanta, pero ellos ven el póster antiguo y piensan que es aburrida.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Averiguar qué actores o temas les gustan y hacerles un resumen que destaque solo las partes de acción que disfrutarán.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Imitar con mucha emoción las mejores escenas de la película frente a ellos para contagiarlos con tu entusiasmo.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Venderles la idea de verla irónicamente para reírse de los efectos especiales viejos y hacer un juego de eso.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Aceptar ver la película moderna que ellos quieren para evitar una discusión, guardando tu idea.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No ofenderte ni tomarlo personal cuando se burlan de tus gustos antiguos.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_MKT_002",
+    "carrera": "Marketing",
+    "contexto_narrativo": "Hiciste galletas para vender en el recreo, pero se te cayeron y se rompieron en pedazos. Tienen buen sabor, pero se ven feas y nadie las quiere comprar.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Bajarles el precio un poco y poner carteles claros que digan 'Sabor intacto a menor costo'.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Gritar por el patio regalando pruebas gratis en la boca de tus amigos para que comprueben que saben bien.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Cambiarles el nombre a 'Lluvia de galletas' y venderlas como un producto especial para echarle encima al helado.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Regalarlas todas para que la gente no hable mal de ti por vender comida rota.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Soportar las burlas sobre tus galletas feas manteniendo una sonrisa y sin desanimarte.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_MKT_003",
+    "carrera": "Marketing",
+    "contexto_narrativo": "Pegaste afiches para buscar miembros para tu club de ajedrez, pero la pared está llena de afiches coloridos de otros clubes y nadie nota el tuyo.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Mover estratégicamente tus afiches a lugares donde la gente se detiene, como frente a los baños o en el bebedero.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Pararte al lado de la pared y detener a la gente saludándolos para señalarles tu cartel personalmente.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Diseñar el afiche al revés o hacerlo parecer una multa falsa de estacionamiento para que la gente se asuste y lo lea.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar de pegar afiches para no tapar el trabajo de los demás clubes y ser respetuoso.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Esperar semanas pacientemente sin frustrarte a que alguien por casualidad decida leer la pared.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_MKT_004",
+    "carrera": "Marketing",
+    "contexto_narrativo": "Estás postulando para presidente del salón. Sabes que tus propuestas son buenas, pero tu rival es el chico más popular que solo promete cosas imposibles.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hacer una encuesta anónima para descubrir el problema más urgente del salón y enfocar toda tu campaña en solucionarlo.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Dar un discurso lleno de energía, chistes y movimientos exagerados para igualar su nivel de entretenimiento.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Inventar un personaje misterioso usando una máscara de papel para dar tus discursos y generar curiosidad masiva.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Prometer también que no habrá más tareas para que la gente te aplauda y no se moleste contigo.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Ignorar los abucheos cuando das tu discurso serio y mantener tu postura firme sin mostrar debilidad.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_MKT_005",
+    "carrera": "Marketing",
+    "contexto_narrativo": "Estás postulando para presidente del salón. Sabes que tus propuestas son buenas, pero tu rival es el chico más popular que solo promete cosas imposibles (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hacer una encuesta anónima para descubrir el problema más urgente del salón y enfocar toda tu campaña en solucionarlo.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Dar un discurso lleno de energía, chistes y movimientos exagerados para igualar su nivel de entretenimiento.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Inventar un personaje misterioso usando una máscara de papel para dar tus discursos y generar curiosidad masiva.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Prometer también que no habrá más tareas para que la gente te aplauda y no se moleste contigo.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Ignorar los abucheos cuando das tu discurso serio y mantener tu postura firme sin mostrar debilidad.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_NUT_001",
+    "carrera": "Nutrición y Dietética",
+    "contexto_narrativo": "Tu grupo se va de excursión a la montaña por 8 horas. Eres el encargado de los bocadillos y necesitas que todos tengan energía sin sentirse pesados.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Llevar una combinación equilibrada de carbohidratos simples como fruta y proteínas como nueces para energía constante.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Repartir la comida de manera entusiasta cada cierto tiempo, celebrando y motivando a todos a seguir caminando.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Preparar barras de energía caseras experimentales mezclando semillas y algas que nadie en tu grupo ha probado antes.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Comprar solo papas fritas y chocolates llenos de azúcar porque eso fue lo que todos te pidieron.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No desesperarte cuando tus amigos se quejan de que tienen hambre a la mitad del camino.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_NUT_002",
+    "carrera": "Nutrición y Dietética",
+    "contexto_narrativo": "Una amiga tuya ha decidido dejar de comer casi por completo porque quiere verse más delgada para la fiesta de graduación de este viernes.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Explicarle lógicamente por qué su cuerpo necesita combustible y sugerirle intercambiar comida chatarra por alimentos saludables y llenadores.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Llenarla de cumplidos ruidosos frente a todos sobre lo bien que se ve para subirle el autoestima rápido.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Inventar un reto de cocina saludable divertido probando recetas raras con coliflor en vez de masa tradicional.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Hacer la misma dieta extrema que ella para que no se sienta sola y sienta tu apoyo incondicional.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Escuchar sus complejos de peso sin juzgarla ni alterarte, manteniendo una postura neutral y relajada.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_NUT_003",
+    "carrera": "Nutrición y Dietética",
+    "contexto_narrativo": "Haces una cena en tu casa. Un amigo es vegetariano, otro no puede tomar leche y el tercero solo come pollo frito.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Planear una mesa de tacos donde cada quien arme su plato combinando libremente pollo, frijoles, vegetales y salsas sin lácteos.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Hacer un programa de televisión de cocina falso en vivo para animarlos mientras cocinas 3 platos distintos.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Pedir comida de un restaurante de fusión extraña que mezcla comida vegana con sabores intensos para confundirlos a todos.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Pedir solo pollo frito y decirle al vegetariano que se coma solo las papas para no complicar el pedido.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Cocinar tranquilamente a pesar de las quejas y exigencias de tus tres amigos en la cocina.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_NUT_004",
+    "carrera": "Nutrición y Dietética",
+    "contexto_narrativo": "A tu hermano menor no le gustan los vegetales y hace berrinche. Tus padres te piden que lo hagas comer sano sin pelear con él.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Servir porciones muy pequeñas de vegetales junto a su plato favorito y explicarle con calma para qué sirven.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Jugar a los monstruos come-árboles, haciendo ruidos y persiguiéndolo por la mesa con el brócoli.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Licuar las verduras hasta hacerlas puré y mezclarlas en secreto dentro de la salsa de sus fideos favoritos.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Rendirte y darle helado en lugar de la cena para que te dé un abrazo y te deje en paz.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Sentarte a la mesa ignorando sus gritos y llantos por media hora, sin enojarte ni ceder.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_NUT_005",
+    "carrera": "Nutrición y Dietética",
+    "contexto_narrativo": "A tu hermano menor no le gustan los vegetales y hace berrinche. Tus padres te piden que lo hagas comer sano sin pelear con él (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Servir porciones muy pequeñas de vegetales junto a su plato favorito y explicarle con calma para qué sirven.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Jugar a los monstruos come-árboles, haciendo ruidos y persiguiéndolo por la mesa con el brócoli.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Licuar las verduras hasta hacerlas puré y mezclarlas en secreto dentro de la salsa de sus fideos favoritos.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Rendirte y darle helado en lugar de la cena para que te dé un abrazo y te deje en paz.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Sentarte a la mesa ignorando sus gritos y llantos por media hora, sin enojarte ni ceder.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_PSI_001",
+    "carrera": "Psicología",
+    "contexto_narrativo": "De repente, uno de tus mejores amigos ha empezado a ignorarte, responde con monosílabos y cruza los brazos cuando estás cerca sin razón aparente.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Invitarlo a un lugar tranquilo a solas y preguntarle directamente si hiciste algo que lo incomodara, escuchando sin interrumpir.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Hacerle muchas cosquillas o bromas pesadas frente a todos para obligarlo a romper el hielo y reírse.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Escribirle una carta simbólica o hacerle un dibujo extraño que exprese cómo te sientes con su rechazo.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Fingir que estás súper feliz y actuar normal para no incomodarlo ni tener una conversación incómoda.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Darle su espacio personal sin sentirte ofendido o triste, entendiendo que quizá tiene problemas en casa.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_PSI_002",
+    "carrera": "Psicología",
+    "contexto_narrativo": "Dos amigos tuyos pelean por chat. Uno escribe muy serio sin emojis y el otro sobrepiensa creyendo que lo están insultando, aunque no sea cierto.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hablar con cada uno por separado para explicarles cómo es el estilo de comunicación del otro y traducir el malentendido.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Llamarlos a ambos en una videollamada al mismo tiempo y forzarlos a hablarse cara a cara mientras tú diriges la charla.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Sugerirles que por todo el día solo se comuniquen usando memes o fotos para quitar la tensión de las palabras.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Darle la razón a ambos cuando hablas con ellos por separado, solo para caerles bien a los dos.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Leer sus largas quejas llenas de drama sin involucrarte emocionalmente y responderles con neutralidad.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_PSI_003",
+    "carrera": "Psicología",
+    "contexto_narrativo": "Faltan cinco minutos para que una compañera exponga frente a la clase y está hiperventilando del miedo, sintiendo que va a llorar.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hacer que se siente, guiarla para que respire profundo contando hasta cuatro y repasar el primer párrafo de su tema.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Darle palmadas en la espalda, chocarle los cinco y decirle en voz muy alta '¡Eres la mejor, vas a destruir ese escenario!'.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Pedirle que se imagine a todos los alumnos del salón con disfraces ridículos de payasos para engañar a su cerebro.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Mentirle al profesor diciendo que ella está muy enferma para que no tenga que exponer hoy.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Transmitirle paz manteniéndote totalmente relajado a su lado, sin asustarte por sus lágrimas.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_PSI_004",
+    "carrera": "Psicología",
+    "contexto_narrativo": "En tu grupo de amigos, hay una persona muy callada a la que siempre interrumpen. Notas que ella intenta hablar, pero los demás no la dejan.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Dirigirte directamente a ella cuando haya un silencio y preguntarle específicamente '¿Y tú qué opinabas sobre esto?'.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Gritar '¡Un momento todos, hagan silencio que ella quiere decir algo!' imponiendo orden de forma llamativa.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Traer un objeto cualquiera, como una goma, y proponer el juego de que solo puede hablar quien sostenga la goma.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Quedarte callado tú también para no incomodar a los que hablan más fuerte y evitar roces.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Observar la dinámica injusta del grupo pacientemente sin intervenir, estudiando por qué se comportan así.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_PSI_005",
+    "carrera": "Psicología",
+    "contexto_narrativo": "En tu grupo de amigos, hay una persona muy callada a la que siempre interrumpen. Notas que ella intenta hablar, pero los demás no la dejan (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Dirigirte directamente a ella cuando haya un silencio y preguntarle específicamente '¿Y tú qué opinabas sobre esto?'.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Gritar '¡Un momento todos, hagan silencio que ella quiere decir algo!' imponiendo orden de forma llamativa.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Traer un objeto cualquiera, como una goma, y proponer el juego de que solo puede hablar quien sostenga la goma.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Quedarte callado tú también para no incomodar a los que hablan más fuerte y evitar roces.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Observar la dinámica injusta del grupo pacientemente sin intervenir, estudiando por qué se comportan así.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_PUB_001",
+    "carrera": "Publicidad",
+    "contexto_narrativo": "Te encargan promocionar la charla de orientación vocacional del colegio. Es un tema aburrido para muchos, y el año pasado casi nadie asistió.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Hacer carteles destacando datos útiles y reales, como 'Conoce cómo asegurar tu primer trabajo'.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Agarrar un megáfono y caminar por los pasillos gritando frases pegajosas invitando a todos a ir.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Lanzar una campaña de intriga con carteles misteriosos que solo digan 'Tu futuro cambia este viernes'.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Pedirle por favor a tus amigos que vayan solo para que no te regañen, aceptando que la charla es muy mala.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Entregar invitaciones aburridas una por una aguantando que te cierren la puerta en la cara sin enojarte.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_PUB_002",
+    "carrera": "Publicidad",
+    "contexto_narrativo": "Debes tomar una foto de los brownies de tu salón para subirla a las redes sociales y generar más ventas.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Limpiar la mesa, usar buena luz natural y poner el precio claro al lado del producto.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Tomarte una selfie mordiendo un brownie con una sonrisa gigante y amigos riendo en el fondo.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Tomar un acercamiento extremo del chocolate derritiéndose para despertar el antojo visual de quien lo vea.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Subir una foto borrosa que tomó tu amigo porque te rogó usar su cámara y no quieres herir sus sentimientos.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Subir la foto y no revisar los likes ni sentirte ansioso si nadie la comenta en todo el día.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_PUB_003",
+    "carrera": "Publicidad",
+    "contexto_narrativo": "Estás repartiendo volantes en el pasillo, pero los estudiantes pasan rápido, ignorándote por completo o tirándolos al piso.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Cambiarte a una posición de embudo donde todos deban reducir la velocidad para pasar, y entregarlos en la mano.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Hacer un movimiento llamativo o saludar con mucha exageración para que se detengan a mirarte un segundo.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Doblar los volantes en forma de avión de papel o barquitos para que la curiosidad los obligue a agarrarlos.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Tirar los volantes a la basura porque notas que molestas a la gente y prefieres no incomodar más.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Quedarte quieto y sonriente sosteniendo los papeles en el aire por dos horas sin frustrarte por el rechazo.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_PUB_004",
+    "carrera": "Publicidad",
+    "contexto_narrativo": "El profesor menos querido del colegio organiza un club de lectura. Nadie quiere ir porque creen que él es muy amargado, pero tú sabes que es divertido.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Repartir un resumen escrito con datos concretos de las veces que el profesor puso notas justas o contó anécdotas buenas.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Defender al profesor a gritos en medio del salón, asegurando a todos que se equivocan con él.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Crear un meme gracioso y afectuoso sobre la frase típica del profesor para humanizarlo ante los demás.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Estar de acuerdo con tus amigos en que el profesor es terrible solo para encajar en el grupo.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Ir solo al club de lectura, ignorando la presión social y soportando las críticas de tus compañeros en paz.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_PUB_005",
+    "carrera": "Publicidad",
+    "contexto_narrativo": "El profesor menos querido del colegio organiza un club de lectura. Nadie quiere ir porque creen que él es muy amargado, pero tú sabes que es divertido (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Repartir un resumen escrito con datos concretos de las veces que el profesor puso notas justas o contó anécdotas buenas.",
+        "sjt_score": 1,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Defender al profesor a gritos en medio del salón, asegurando a todos que se equivocan con él.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Crear un meme gracioso y afectuoso sobre la frase típica del profesor para humanizarlo ante los demás.",
+        "sjt_score": 2,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Estar de acuerdo con tus amigos en que el profesor es terrible solo para encajar en el grupo.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Ir solo al club de lectura, ignorando la presión social y soportando las críticas de tus compañeros en paz.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_SIS_001",
+    "carrera": "Ingeniería de Sistemas",
+    "contexto_narrativo": "Alguien tropezó con los cables detrás del televisor y desconectó el internet, la consola y el cable. Ahora hay un nudo gigante y nadie sabe qué cable va dónde.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Desenredar uno por uno, identificar de qué aparato es, conectarlo y amarrarlos juntos con una cinta para el futuro.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Organizar a tus hermanos ordenándoles que sostengan un cable cada uno para desenredarlos en equipo.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Pintar los extremos de cada cable con marcadores de colores diferentes para crear un código visual personalizado.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Esconder todo el nudo debajo de un mueble sin conectarlos para que tus padres no te regañen por el desorden.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Agarrar el nudo gigante y seguir pacientemente la trayectoria de cada hilo durante media hora sin estresarte.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_SIS_002",
+    "carrera": "Ingeniería de Sistemas",
+    "contexto_narrativo": "Necesitas pasar un mensaje importante en un papel a un amigo al otro lado del salón, pero el profesor está muy atento castigando a los distraídos.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Trazar una ruta visual de compañeros seguros y calcular los momentos exactos en que el profesor voltea a la pizarra.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Hacer una pregunta en voz alta al profesor para distraerlo mientras otro compañero lanza el papel discretamente.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Escribir el mensaje en el borde de un libro y pasarlo como si le estuvieras prestando material escolar normal.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Lanzar el papel directamente para no hacer esperar a tu amigo, arriesgándote a que el profesor lo confisque.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "No ponerte nervioso ni sudar cuando el profesor pasa cerca de tu sitio mientras tienes el papel en la mano.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_SIS_003",
+    "carrera": "Ingeniería de Sistemas",
+    "contexto_narrativo": "Estás en el chat grupal del salón organizando la despedida. Hay 30 personas escribiendo al mismo tiempo, mandando memes y perdiendo los mensajes importantes.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Escribir un solo mensaje resumiendo los acuerdos, fijarlo en el chat y pedir que reaccionen con un emoji para votar.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Mandar audios largos hablando fuerte para dominar la conversación e imponer orden sobre los textos.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Crear rápidamente una hoja de cálculo en línea y mandar el link para que llenen sus opciones sin hablar.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Responderle a cada persona individualmente para ser educado, causando que el chat se llene de aún más mensajes.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Ignorar el spam de memes y leer tranquilamente hacia arriba para encontrar la información sin desesperarte.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_SIS_004",
+    "carrera": "Ingeniería de Sistemas",
+    "contexto_narrativo": "Estás buscando un documento clave en la computadora de tu amigo, pero su escritorio tiene mil archivos desordenados y él no recuerda cómo le puso al archivo.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Usar la barra de búsqueda aplicando filtros de la fecha de ayer y buscar solo extensiones de texto.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Llamar por teléfono a los demás miembros del grupo para preguntarles si alguien más tiene una copia guardada.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Agrupar todos los íconos por colores o formas extrañas hasta encontrar visualmente el que resalte como diferente.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Decirle que no importa y ofrecerte a hacer todo el trabajo de nuevo desde cero para que no se sienta mal.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Abrir carpeta por carpeta de forma calmada y metódica durante una hora sin reclamarle por su desorden.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_SIS_005",
+    "carrera": "Ingeniería de Sistemas",
+    "contexto_narrativo": "Estás buscando un documento clave en la computadora de tu amigo, pero su escritorio tiene mil archivos desordenados y él no recuerda cómo le puso al archivo (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Usar la barra de búsqueda aplicando filtros de la fecha de ayer y buscar solo extensiones de texto.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Llamar por teléfono a los demás miembros del grupo para preguntarles si alguien más tiene una copia guardada.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Agrupar todos los íconos por colores o formas extrañas hasta encontrar visualmente el que resalte como diferente.",
+        "sjt_score": 0,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Decirle que no importa y ofrecerte a hacer todo el trabajo de nuevo desde cero para que no se sienta mal.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Abrir carpeta por carpeta de forma calmada y metódica durante una hora sin reclamarle por su desorden.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_SOF_001",
+    "carrera": "Ingeniería de Software",
+    "contexto_narrativo": "Le escribes a tu amigo los pasos para pasar un nivel difícil de un videojuego. Él sigue tus instrucciones exactas, pero su personaje siempre muere.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Revisar mentalmente tus instrucciones para encontrar si saltaste un pequeño paso lógico y corregir la secuencia exacta.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Ir a su casa para jugar juntos, gritando emocionados en la pantalla y guiándolo en vivo.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Buscar una falla del juego (glitch) o un atajo no oficial en internet para saltarse el nivel completamente.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Tomar el control y pasarle tú mismo el nivel para que él no sufra ni se frustre más.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Repetirle las mismas instrucciones diez veces seguidas con una voz monótona y calmada, sin perder la paciencia.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_SOF_002",
+    "carrera": "Ingeniería de Software",
+    "contexto_narrativo": "Hacen un proyecto escrito en la nube. Varios compañeros editan a la vez, borrando accidentalmente los párrafos del otro y arruinando el documento.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Dividir el texto en secciones con colores, asignando una parte a cada uno para que nadie edite la zona del otro.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Llamarlos a todos en grupo y dirigir a gritos quién debe escribir qué cosa en tiempo real.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Pedir que cada uno escriba en un bloc de notas sin internet y luego copiar todo tú al final como un rompecabezas.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Dejar que borren tu parte y no decir nada para evitar pelear con tus amigos.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Apretar el botón de 'deshacer' cada vez que alguien borra algo tuyo, sin enojarte ni reclamarles.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_SOF_003",
+    "carrera": "Ingeniería de Software",
+    "contexto_narrativo": "El celular de tu mamá se congela a cada rato. Ella no sabe qué hacer y te pide arreglarlo sin borrar sus fotos valiosas.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Cerrar las aplicaciones una por una y revisar el uso de la batería para aislar exactamente qué programa causa la falla.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Llevar el teléfono a una tienda e interactuar con los técnicos para que ellos encuentren el problema.",
+        "sjt_score": 0,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Instalarle un sistema operativo modificado muy extraño que viste en un foro para hacerlo más rápido.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Regalarle tu celular nuevo y quedarte tú con el malogrado para ser buen hijo y que no se preocupe.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Soportar la pantalla congelada durante veinte minutos esperando a que cargue, sin golpear el celular por la ira.",
+        "sjt_score": 1,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_SOF_004",
+    "carrera": "Ingeniería de Software",
+    "contexto_narrativo": "El profesor te castiga dándote una caja con mil tarjetas revueltas. Debes ordenarlas alfabéticamente antes del recreo.",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Separarlas primero en pilas por la letra inicial (A, B, C...) y luego ordenar cada pila pequeña individualmente.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Convencer a cinco amigos charlando animadamente para que te ayuden a ordenar las tarjetas a cambio de un favor.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Construir un embudo de cartón para deslizar las tarjetas más rápido hacia las mesas divididas.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Decirle al profesor que ya las ordenaste aunque sea mentira, solo para que te deje salir y sonría.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Sentarte a acomodar las mil tarjetas una por una sin quejarte, aburrirte ni mostrar desesperación.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  },
+  {
+    "scenario_id": "SIM_SOF_005",
+    "carrera": "Ingeniería de Software",
+    "contexto_narrativo": "El profesor te castiga dándote una caja con mil tarjetas revueltas. Debes ordenarlas alfabéticamente antes del recreo (situación adicional de evaluación).",
+    "opciones": [
+      {
+        "opcion_id": "A",
+        "texto": "Separarlas primero en pilas por la letra inicial (A, B, C...) y luego ordenar cada pila pequeña individualmente.",
+        "sjt_score": 2,
+        "big_five_trait": "Responsabilidad"
+      },
+      {
+        "opcion_id": "B",
+        "texto": "Convencer a cinco amigos charlando animadamente para que te ayuden a ordenar las tarjetas a cambio de un favor.",
+        "sjt_score": 1,
+        "big_five_trait": "Extroversión"
+      },
+      {
+        "opcion_id": "C",
+        "texto": "Construir un embudo de cartón para deslizar las tarjetas más rápido hacia las mesas divididas.",
+        "sjt_score": 1,
+        "big_five_trait": "Apertura"
+      },
+      {
+        "opcion_id": "D",
+        "texto": "Decirle al profesor que ya las ordenaste aunque sea mentira, solo para que te deje salir y sonría.",
+        "sjt_score": -2,
+        "big_five_trait": "Amabilidad"
+      },
+      {
+        "opcion_id": "E",
+        "texto": "Sentarte a acomodar las mil tarjetas una por una sin quejarte, aburrirte ni mostrar desesperación.",
+        "sjt_score": 0,
+        "big_five_trait": "Estabilidad Emocional"
+      }
+    ]
+  }
+]
