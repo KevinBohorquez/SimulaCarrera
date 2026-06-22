@@ -154,6 +154,59 @@
 .test-option { @apply flex gap-3 p-4 rounded-xl border-2 border-slate-100 cursor-pointer transition-all duration-200; }
 .test-option:hover { @apply border-brand-morado/30 bg-brand-lila/10; }
 .test-option.selected { @apply border-brand-morado bg-brand-lila/30 shadow-sm; }
+.test-option-pending { @apply border-brand-morado bg-brand-morado/15 scale-[1.02] shadow-md ring-2 ring-brand-morado/40; }
+.test-option:disabled { @apply opacity-60 cursor-not-allowed; }
+
+/* Mapa de etapas (globos) */
+.test-phase-grid { @apply grid sm:grid-cols-2 gap-5; }
+.test-phase-bubble { @apply relative rounded-3xl p-[2px] bg-gradient-to-br from-slate-200 to-slate-100 transition-all duration-300; }
+.test-phase-bubble.unlocked,
+.test-phase-bubble:not(.locked) { @apply from-brand-morado/40 to-brand-lavanda/30; }
+.test-phase-bubble.complete { @apply from-green-400/50 to-emerald-300/40; }
+.test-phase-bubble.in-progress { @apply from-amber-400/50 to-brand-lila/40; }
+.test-phase-bubble.locked { @apply opacity-70 grayscale-[0.3]; }
+.test-phase-bubble-inner { @apply bg-white rounded-[22px] p-6 h-full flex flex-col items-center text-center; }
+.test-phase-num { @apply absolute top-4 left-4 w-7 h-7 rounded-full bg-slate-100 text-xs font-bold flex items-center justify-center text-slate-500; }
+.test-phase-icon { @apply w-14 h-14 rounded-2xl bg-brand-lila/40 text-brand-morado flex items-center justify-center mb-3; }
+.test-phase-title { @apply font-semibold text-lg text-slate-900 mb-1; }
+.test-phase-sub { @apply text-xs text-slate-500 mb-4 flex-1; }
+.test-phase-play { @apply inline-flex items-center gap-2 bg-brand-morado text-white rounded-full px-5 py-2.5 text-sm font-medium hover:bg-brand-lavanda transition-colors; }
+.test-phase-replay { @apply inline-flex items-center gap-1 text-sm text-brand-morado hover:underline; }
+.test-phase-status { @apply text-xs; }
+.test-phase-mini-bar { @apply w-full h-1.5 bg-slate-100 rounded-full mb-3 overflow-hidden; }
+.test-phase-mini-bar div { @apply h-full bg-brand-morado rounded-full transition-all; }
+
+/* RIASEC dimension tooltips */
+.riasec-dim-card { @apply overflow-visible; }
+.riasec-tooltip {
+  @apply absolute z-20 left-1/2 -translate-x-1/2 bottom-full mb-2 w-44 px-3 py-2 rounded-lg bg-slate-800 text-white text-xs text-left shadow-lg
+    opacity-0 invisible pointer-events-none transition-all duration-200;
+}
+.riasec-tooltip p { @apply mt-1 text-white/85 leading-snug font-normal; }
+.riasec-dim-card:hover .riasec-tooltip,
+.riasec-dim-card:focus-within .riasec-tooltip {
+  @apply opacity-100 visible;
+}
+.riasec-tooltip::after {
+  content: "";
+  @apply absolute left-1/2 -translate-x-1/2 top-full border-4 border-transparent border-t-slate-800;
+}
+.sjt-pick-option { @apply transition-all duration-300; }
+.sjt-option-exit {
+  animation: sjtOptionExit 0.5s ease forwards;
+  pointer-events: none;
+}
+@keyframes sjtOptionExit {
+  0% { opacity: 1; transform: scale(1); max-height: 8rem; }
+  100% { opacity: 0; transform: scale(0.96) translateX(-8px); max-height: 0; margin: 0; padding-top: 0; padding-bottom: 0; border-width: 0; }
+}
+.sjt-step-fade-in {
+  animation: sjtStepFadeIn 0.35s ease forwards;
+}
+@keyframes sjtStepFadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
 .ranking-card { @apply card flex items-center gap-4 transition-all; }
 .ranking-top { @apply border-brand-morado/30 bg-gradient-to-r from-brand-lila/20 to-white shadow-md; }
 .ranking-position { @apply w-10 h-10 rounded-full bg-brand-morado text-white flex items-center justify-center font-bold text-lg shrink-0; }

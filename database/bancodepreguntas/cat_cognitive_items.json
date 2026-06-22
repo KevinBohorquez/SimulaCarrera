@@ -1,0 +1,482 @@
+[
+{
+"item_id": "CAT_RV_001",
+"campo_cognitivo": "Razonamiento Verbal",
+"dificultad_b": -2.0,
+"enunciado": "Complete la analogía: CALIENTE es a FRÍO como DÍA es a:",
+"opciones": [
+{"letra": "a", "texto": "Luz", "es_correcta": false},
+{"letra": "b", "texto": "Noche", "es_correcta": true},
+{"letra": "c", "texto": "Sol", "es_correcta": false},
+{"letra": "d", "texto": "Tiempo", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RV_002",
+"campo_cognitivo": "Razonamiento Verbal",
+"dificultad_b": -1.5,
+"enunciado": "Complete la analogía: LIBRO es a LEER como LÁPIZ es a:",
+"opciones": [
+{"letra": "a", "texto": "Escribir", "es_correcta": true},
+{"letra": "b", "texto": "Borrar", "es_correcta": false},
+{"letra": "c", "texto": "Papel", "es_correcta": false},
+{"letra": "d", "texto": "Dibujo", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RV_003",
+"campo_cognitivo": "Razonamiento Verbal",
+"dificultad_b": -1.0,
+"enunciado": "¿Cuál es el sinónimo de la palabra 'RÁPIDO'?",
+"opciones": [
+{"letra": "a", "texto": "Lento", "es_correcta": false},
+{"letra": "b", "texto": "Veloz", "es_correcta": true},
+{"letra": "c", "texto": "Pesado", "es_correcta": false},
+{"letra": "d", "texto": "Pausado", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RV_004",
+"campo_cognitivo": "Razonamiento Verbal",
+"dificultad_b": -0.5,
+"enunciado": "Complete la serie: Enero, Marzo, Mayo, ...",
+"opciones": [
+{"letra": "a", "texto": "Junio", "es_correcta": false},
+{"letra": "b", "texto": "Julio", "es_correcta": true},
+{"letra": "c", "texto": "Agosto", "es_correcta": false},
+{"letra": "d", "texto": "Septiembre", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RV_005",
+"campo_cognitivo": "Razonamiento Verbal",
+"dificultad_b": 0.0,
+"enunciado": "Elija la palabra que no pertenece al grupo:",
+"opciones": [
+{"letra": "a", "texto": "Manzana", "es_correcta": false},
+{"letra": "b", "texto": "Pera", "es_correcta": false},
+{"letra": "c", "texto": "Zanahoria", "es_correcta": true},
+{"letra": "d", "texto": "Plátano", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RV_006",
+"campo_cognitivo": "Razonamiento Verbal",
+"dificultad_b": 0.5,
+"enunciado": "Si todos los mamíferos tienen pelo y el perro es un mamífero, entonces:",
+"opciones": [
+{"letra": "a", "texto": "El perro tiene pelo", "es_correcta": true},
+{"letra": "b", "texto": "El perro ladra", "es_correcta": false},
+{"letra": "c", "texto": "Los gatos tienen pelo", "es_correcta": false},
+{"letra": "d", "texto": "No se puede concluir", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RV_007",
+"campo_cognitivo": "Razonamiento Verbal",
+"dificultad_b": 1.0,
+"enunciado": "¿Qué significa el refrán 'A caballo regalado no se le mira el diente'?",
+"opciones": [
+{"letra": "a", "texto": "Los caballos necesitan dentistas", "es_correcta": false},
+{"letra": "b", "texto": "No se deben criticar los obsequios", "es_correcta": true},
+{"letra": "c", "texto": "Hay que revisar lo que se compra", "es_correcta": false},
+{"letra": "d", "texto": "Los regalos siempre son buenos", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RV_008",
+"campo_cognitivo": "Razonamiento Verbal",
+"dificultad_b": 1.5,
+"enunciado": "Complete la analogía: EPÍLOGO es a NOVELA como POSTRE es a:",
+"opciones": [
+{"letra": "a", "texto": "Dulce", "es_correcta": false},
+{"letra": "b", "texto": "Comida", "es_correcta": true},
+{"letra": "c", "texto": "Inicio", "es_correcta": false},
+{"letra": "d", "texto": "Plato", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RV_009",
+"campo_cognitivo": "Razonamiento Verbal",
+"dificultad_b": 2.0,
+"enunciado": "Elija el antónimo de 'EFÍMERO':",
+"opciones": [
+{"letra": "a", "texto": "Pasajero", "es_correcta": false},
+{"letra": "b", "texto": "Breve", "es_correcta": false},
+{"letra": "c", "texto": "Perenne", "es_correcta": true},
+{"letra": "d", "texto": "Sutil", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RV_010",
+"campo_cognitivo": "Razonamiento Verbal",
+"dificultad_b": 2.5,
+"enunciado": "Si 'Ningún A es B' y 'Todo C es A', ¿qué conclusión es lógicamente válida?",
+"opciones": [
+{"letra": "a", "texto": "Algún C es B", "es_correcta": false},
+{"letra": "b", "texto": "Ningún C es B", "es_correcta": true},
+{"letra": "c", "texto": "Todo B es C", "es_correcta": false},
+{"letra": "d", "texto": "Algún A no es C", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RN_001",
+"campo_cognitivo": "Razonamiento Numérico",
+"dificultad_b": -2.0,
+"enunciado": "¿Qué número sigue en la secuencia: 2, 4, 6, 8, ...?",
+"opciones": [
+{"letra": "a", "texto": "9", "es_correcta": false},
+{"letra": "b", "texto": "10", "es_correcta": true},
+{"letra": "c", "texto": "11", "es_correcta": false},
+{"letra": "d", "texto": "12", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RN_002",
+"campo_cognitivo": "Razonamiento Numérico",
+"dificultad_b": -1.5,
+"enunciado": "Si un lápiz cuesta $2, ¿cuánto cuestan 5 lápices?",
+"opciones": [
+{"letra": "a", "texto": "$7", "es_correcta": false},
+{"letra": "b", "texto": "$10", "es_correcta": true},
+{"letra": "c", "texto": "$12", "es_correcta": false},
+{"letra": "d", "texto": "$15", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RN_003",
+"campo_cognitivo": "Razonamiento Numérico",
+"dificultad_b": -1.0,
+"enunciado": "¿Cuál es el 50% de 80?",
+"opciones": [
+{"letra": "a", "texto": "30", "es_correcta": false},
+{"letra": "b", "texto": "40", "es_correcta": true},
+{"letra": "c", "texto": "50", "es_correcta": false},
+{"letra": "d", "texto": "60", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RN_004",
+"campo_cognitivo": "Razonamiento Numérico",
+"dificultad_b": -0.5,
+"enunciado": "Resuelva: 3 + 4 x 2 = ?",
+"opciones": [
+{"letra": "a", "texto": "14", "es_correcta": false},
+{"letra": "b", "texto": "11", "es_correcta": true},
+{"letra": "c", "texto": "10", "es_correcta": false},
+{"letra": "d", "texto": "9", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RN_005",
+"campo_cognitivo": "Razonamiento Numérico",
+"dificultad_b": 0.0,
+"enunciado": "Si 3x = 12, ¿cuál es el valor de x?",
+"opciones": [
+{"letra": "a", "texto": "3", "es_correcta": false},
+{"letra": "b", "texto": "4", "es_correcta": true},
+{"letra": "c", "texto": "5", "es_correcta": false},
+{"letra": "d", "texto": "6", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RN_006",
+"campo_cognitivo": "Razonamiento Numérico",
+"dificultad_b": 0.5,
+"enunciado": "Un tren viaja a 60 km/h. ¿Qué distancia recorrerá en 2.5 horas?",
+"opciones": [
+{"letra": "a", "texto": "120 km", "es_correcta": false},
+{"letra": "b", "texto": "150 km", "es_correcta": true},
+{"letra": "c", "texto": "180 km", "es_correcta": false},
+{"letra": "d", "texto": "200 km", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RN_007",
+"campo_cognitivo": "Razonamiento Numérico",
+"dificultad_b": 1.0,
+"enunciado": "Complete la secuencia: 1, 4, 9, 16, ...",
+"opciones": [
+{"letra": "a", "texto": "20", "es_correcta": false},
+{"letra": "b", "texto": "24", "es_correcta": false},
+{"letra": "c", "texto": "25", "es_correcta": true},
+{"letra": "d", "texto": "30", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RN_008",
+"campo_cognitivo": "Razonamiento Numérico",
+"dificultad_b": 1.5,
+"enunciado": "En una clase de 40 estudiantes, el 15% faltó. ¿Cuántos estudiantes asistieron?",
+"opciones": [
+{"letra": "a", "texto": "6", "es_correcta": false},
+{"letra": "b", "texto": "34", "es_correcta": true},
+{"letra": "c", "texto": "36", "es_correcta": false},
+{"letra": "d", "texto": "25", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RN_009",
+"campo_cognitivo": "Razonamiento Numérico",
+"dificultad_b": 2.0,
+"enunciado": "Si 2 máquinas producen 10 piezas en 5 minutos, ¿cuántas piezas producirán 4 máquinas en 10 minutos?",
+"opciones": [
+{"letra": "a", "texto": "20", "es_correcta": false},
+{"letra": "b", "texto": "40", "es_correcta": true},
+{"letra": "c", "texto": "50", "es_correcta": false},
+{"letra": "d", "texto": "80", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RN_010",
+"campo_cognitivo": "Razonamiento Numérico",
+"dificultad_b": 2.5,
+"enunciado": "¿Qué número sigue en la secuencia: 2, 3, 5, 9, 17, ...?",
+"opciones": [
+{"letra": "a", "texto": "25", "es_correcta": false},
+{"letra": "b", "texto": "31", "es_correcta": false},
+{"letra": "c", "texto": "33", "es_correcta": true},
+{"letra": "d", "texto": "35", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RA_001",
+"campo_cognitivo": "Razonamiento Abstracto y Espacial",
+"dificultad_b": -2.0,
+"enunciado": "Si una figura cambia de tamaño pequeño a mediano, el siguiente tamaño lógico es:",
+"opciones": [
+{"letra": "a", "texto": "Diminuto", "es_correcta": false},
+{"letra": "b", "texto": "Grande", "es_correcta": true},
+{"letra": "c", "texto": "Pequeño", "es_correcta": false},
+{"letra": "d", "texto": "Invisible", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RA_002",
+"campo_cognitivo": "Razonamiento Abstracto y Espacial",
+"dificultad_b": -1.5,
+"enunciado": "Triángulo es a tres lados como Hexágono es a:",
+"opciones": [
+{"letra": "a", "texto": "Cuatro lados", "es_correcta": false},
+{"letra": "b", "texto": "Cinco lados", "es_correcta": false},
+{"letra": "c", "texto": "Seis lados", "es_correcta": true},
+{"letra": "d", "texto": "Ocho lados", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RA_003",
+"campo_cognitivo": "Razonamiento Abstracto y Espacial",
+"dificultad_b": -1.0,
+"enunciado": "Una flecha apunta al Norte, luego rota 90 grados a la derecha. ¿A dónde apunta ahora?",
+"opciones": [
+{"letra": "a", "texto": "Sur", "es_correcta": false},
+{"letra": "b", "texto": "Este", "es_correcta": true},
+{"letra": "c", "texto": "Oeste", "es_correcta": false},
+{"letra": "d", "texto": "Norte", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RA_004",
+"campo_cognitivo": "Razonamiento Abstracto y Espacial",
+"dificultad_b": -0.5,
+"enunciado": "Imagine un papel cuadrado doblado por la mitad y luego otra vez por la mitad. Si hace un agujero en el centro y lo despliega, ¿cuántos agujeros verá?",
+"opciones": [
+{"letra": "a", "texto": "1", "es_correcta": false},
+{"letra": "b", "texto": "2", "es_correcta": false},
+{"letra": "c", "texto": "4", "es_correcta": true},
+{"letra": "d", "texto": "8", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RA_005",
+"campo_cognitivo": "Razonamiento Abstracto y Espacial",
+"dificultad_b": 0.0,
+"enunciado": "Una figura es un círculo negro dentro de un cuadrado blanco. La siguiente es un cuadrado blanco dentro de un círculo negro. Si la tercera es un triángulo negro dentro de un hexágono blanco, la cuarta será:",
+"opciones": [
+{"letra": "a", "texto": "Hexágono blanco dentro de triángulo negro", "es_correcta": true},
+{"letra": "b", "texto": "Triángulo blanco dentro de hexágono negro", "es_correcta": false},
+{"letra": "c", "texto": "Triángulo negro dentro de hexágono negro", "es_correcta": false},
+{"letra": "d", "texto": "Hexágono negro dentro de triángulo blanco", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RA_006",
+"campo_cognitivo": "Razonamiento Abstracto y Espacial",
+"dificultad_b": 0.5,
+"enunciado": "Un cubo 3x3x3 está pintado de rojo por fuera. Si se desarma en cubos 1x1x1, ¿cuántos cubos pequeños tienen exactamente tres caras pintadas?",
+"opciones": [
+{"letra": "a", "texto": "4", "es_correcta": false},
+{"letra": "b", "texto": "6", "es_correcta": false},
+{"letra": "c", "texto": "8", "es_correcta": true},
+{"letra": "d", "texto": "9", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RA_007",
+"campo_cognitivo": "Razonamiento Abstracto y Espacial",
+"dificultad_b": 1.0,
+"enunciado": "Una manecilla del reloj está en las 12. Rota 135 grados en sentido horario y luego 45 grados en sentido antihorario. ¿En qué número está?",
+"opciones": [
+{"letra": "a", "texto": "3", "es_correcta": true},
+{"letra": "b", "texto": "4", "es_correcta": false},
+{"letra": "c", "texto": "5", "es_correcta": false},
+{"letra": "d", "texto": "6", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RA_008",
+"campo_cognitivo": "Razonamiento Abstracto y Espacial",
+"dificultad_b": 1.5,
+"enunciado": "Si despliega un cilindro hueco y recto cortándolo por una línea recta vertical, la figura plana resultante es un:",
+"opciones": [
+{"letra": "a", "texto": "Círculo", "es_correcta": false},
+{"letra": "b", "texto": "Triángulo", "es_correcta": false},
+{"letra": "c", "texto": "Rectángulo", "es_correcta": true},
+{"letra": "d", "texto": "Trapecio", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_RA_009",
+"campo_cognitivo": "Razonamiento Abstracto y Espacial",
+"dificultad_b": 2.0,
+"enunciado": "Si la palabra 'MESA' se refleja en un espejo vertical a su derecha, ¿qué letra se ve primero (más cerca del espejo)?",
+"opciones": [
+{"letra": "a", "texto": "M", "es_correcta": false},
+{"letra": "b", "texto": "E", "es_correcta": false},
+{"letra": "c", "texto": "S", "es_correcta": false},
+{"letra": "d", "texto": "A", "es_correcta": true}
+]
+},
+{
+"item_id": "CAT_RA_010",
+"campo_cognitivo": "Razonamiento Abstracto y Espacial",
+"dificultad_b": 2.5,
+"enunciado": "Se rota una pirámide de base cuadrada 90 grados sobre su eje vertical. ¿Cuántas veces coincidirá su silueta con la original en una rotación completa de 360 grados?",
+"opciones": [
+{"letra": "a", "texto": "1", "es_correcta": false},
+{"letra": "b", "texto": "2", "es_correcta": false},
+{"letra": "c", "texto": "4", "es_correcta": true},
+{"letra": "d", "texto": "Infinita", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_CM_001",
+"campo_cognitivo": "Comprensión Mecánica",
+"dificultad_b": -2.0,
+"enunciado": "Si lanza una pelota hacia arriba, la fuerza que hace que vuelva a caer es:",
+"opciones": [
+{"letra": "a", "texto": "Fricción", "es_correcta": false},
+{"letra": "b", "texto": "Inercia", "es_correcta": false},
+{"letra": "c", "texto": "Gravedad", "es_correcta": true},
+{"letra": "d", "texto": "Presión", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_CM_002",
+"campo_cognitivo": "Comprensión Mecánica",
+"dificultad_b": -1.5,
+"enunciado": "Para aflojar una tuerca muy apretada, es mejor usar una llave con un mango:",
+"opciones": [
+{"letra": "a", "texto": "Más corto", "es_correcta": false},
+{"letra": "b", "texto": "Más largo", "es_correcta": true},
+{"letra": "c", "texto": "Más grueso", "es_correcta": false},
+{"letra": "d", "texto": "Curvo", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_CM_003",
+"campo_cognitivo": "Comprensión Mecánica",
+"dificultad_b": -1.0,
+"enunciado": "En un sistema de dos engranajes acoplados, si el engranaje A gira en sentido horario, el engranaje B:",
+"opciones": [
+{"letra": "a", "texto": "Gira en sentido horario", "es_correcta": false},
+{"letra": "b", "texto": "Gira en sentido antihorario", "es_correcta": true},
+{"letra": "c", "texto": "No se mueve", "es_correcta": false},
+{"letra": "d", "texto": "Se mueve alternadamente", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_CM_004",
+"campo_cognitivo": "Comprensión Mecánica",
+"dificultad_b": -0.5,
+"enunciado": "Si una rueda grande y una pequeña están conectadas por una correa, y la grande gira a 10 RPM, la pequeña girará a:",
+"opciones": [
+{"letra": "a", "texto": "Menos de 10 RPM", "es_correcta": false},
+{"letra": "b", "texto": "Exactamente 10 RPM", "es_correcta": false},
+{"letra": "c", "texto": "Más de 10 RPM", "es_correcta": true},
+{"letra": "d", "texto": "Se detendrá", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_CM_005",
+"campo_cognitivo": "Comprensión Mecánica",
+"dificultad_b": 0.0,
+"enunciado": "Para levantar una caja pesada usando una polea simple fija, la fuerza requerida es:",
+"opciones": [
+{"letra": "a", "texto": "La mitad del peso de la caja", "es_correcta": false},
+{"letra": "b", "texto": "El doble del peso de la caja", "es_correcta": false},
+{"letra": "c", "texto": "Igual al peso de la caja", "es_correcta": true},
+{"letra": "d", "texto": "Cero", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_CM_006",
+"campo_cognitivo": "Comprensión Mecánica",
+"dificultad_b": 0.5,
+"enunciado": "El propósito principal del aceite en un motor es:",
+"opciones": [
+{"letra": "a", "texto": "Reducir la fricción", "es_correcta": true},
+{"letra": "b", "texto": "Aumentar la combustión", "es_correcta": false},
+{"letra": "c", "texto": "Filtrar el aire", "es_correcta": false},
+{"letra": "d", "texto": "Enfriar la batería", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_CM_007",
+"campo_cognitivo": "Comprensión Mecánica",
+"dificultad_b": 1.0,
+"enunciado": "En una palanca de primer género (el punto de apoyo en medio), acercar el punto de apoyo a la carga hace que:",
+"opciones": [
+{"letra": "a", "texto": "Se requiera más esfuerzo", "es_correcta": false},
+{"letra": "b", "texto": "Se requiera menos esfuerzo", "es_correcta": true},
+{"letra": "c", "texto": "No cambie el esfuerzo", "es_correcta": false},
+{"letra": "d", "texto": "La carga pese más", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_CM_008",
+"campo_cognitivo": "Comprensión Mecánica",
+"dificultad_b": 1.5,
+"enunciado": "¿Qué ocurre con la presión de un fluido incompresible cuando fluye por una tubería que se estrecha (efecto Venturi)?",
+"opciones": [
+{"letra": "a", "texto": "La presión aumenta", "es_correcta": false},
+{"letra": "b", "texto": "La presión disminuye", "es_correcta": true},
+{"letra": "c", "texto": "La presión se mantiene igual", "es_correcta": false},
+{"letra": "d", "texto": "El fluido se detiene", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_CM_009",
+"campo_cognitivo": "Comprensión Mecánica",
+"dificultad_b": 2.0,
+"enunciado": "En un sistema de prensa hidráulica, si el émbolo pequeño tiene área A y el grande 10A, aplicar una fuerza F en el pequeño genera en el grande una fuerza de:",
+"opciones": [
+{"letra": "a", "texto": "F", "es_correcta": false},
+{"letra": "b", "texto": "5F", "es_correcta": false},
+{"letra": "c", "texto": "10F", "es_correcta": true},
+{"letra": "d", "texto": "100F", "es_correcta": false}
+]
+},
+{
+"item_id": "CAT_CM_010",
+"campo_cognitivo": "Comprensión Mecánica",
+"dificultad_b": 2.5,
+"enunciado": "Tres engranajes A, B y C están en contacto lineal continuo. Si A tiene 20 dientes, B tiene 40 y C tiene 10, y A da 1 vuelta, ¿cuántas vueltas da C?",
+"opciones": [
+{"letra": "a", "texto": "1", "es_correcta": false},
+{"letra": "b", "texto": "2", "es_correcta": true},
+{"letra": "c", "texto": "4", "es_correcta": false},
+{"letra": "d", "texto": "8", "es_correcta": false}
+]
+}
+]

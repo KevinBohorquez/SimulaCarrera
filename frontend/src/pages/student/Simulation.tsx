@@ -17,8 +17,8 @@ export function SimulationPlayer() {
   useEffect(() => {
     (async () => {
       try {
-        const s = await api<any>("/api/test/start", { method: "POST" });
-        setSessionId(s.session.id);
+        const { session } = await api<any>("/api/test/active-session");
+        if (session) setSessionId(session.id);
         const list = await api<any>(`/api/simulations/career/${careerId}`);
         const picked = simIdQ ? list.simulations.find((x: any) => x.id === simIdQ) : list.simulations[0];
         if (!picked) throw new Error("Sin simulaciones para esta carrera.");

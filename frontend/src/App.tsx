@@ -11,10 +11,18 @@ import { ProtectedRoute } from "./components/ProtectedRoute";
 import { useAuth } from "./contexts/AuthContext";
 
 import { StudentDashboard } from "./pages/student/Dashboard";
-import { TestFlow } from "./pages/student/TestFlow";
+import { BuyTest } from "./pages/student/BuyTest";
+import { TestHub } from "./pages/student/test/TestHub";
+import { TestStage1 } from "./pages/student/test/TestStage1";
+import { TestStage2 } from "./pages/student/test/TestStage2";
+import { TestStage3 } from "./pages/student/test/TestStage3";
+import { TestStage4 } from "./pages/student/test/TestStage4";
+import { ReportHistory } from "./pages/student/ReportHistory";
+import { AboutTests } from "./pages/student/AboutTests";
 import { ReportPage } from "./pages/student/Report";
 import { CareersBrowser } from "./pages/student/Careers";
 import { CareerDetail } from "./pages/student/CareerDetail";
+
 import { SimulationPlayer } from "./pages/student/Simulation";
 
 import { InstitutionalDashboard } from "./pages/institutional/Dashboard";
@@ -56,8 +64,17 @@ export default function App() {
 
       {/* Estudiante */}
       <Route path="/estudiante" element={<ProtectedRoute roles={["student"]}><StudentDashboard /></ProtectedRoute>} />
-      <Route path="/estudiante/test" element={<ProtectedRoute roles={["student"]}><TestFlow /></ProtectedRoute>} />
+      <Route path="/estudiante/comprar-test" element={<ProtectedRoute roles={["student"]}><BuyTest /></ProtectedRoute>} />
+      <Route path="/estudiante/test/:sessionId" element={<ProtectedRoute roles={["student"]}><TestHub /></ProtectedRoute>} />
+      <Route path="/estudiante/test/:sessionId/etapa/1" element={<ProtectedRoute roles={["student"]}><TestStage1 /></ProtectedRoute>} />
+      <Route path="/estudiante/test/:sessionId/etapa/2" element={<ProtectedRoute roles={["student"]}><TestStage2 /></ProtectedRoute>} />
+      <Route path="/estudiante/test/:sessionId/etapa/3" element={<ProtectedRoute roles={["student"]}><TestStage3 /></ProtectedRoute>} />
+      <Route path="/estudiante/test/:sessionId/etapa/4" element={<ProtectedRoute roles={["student"]}><TestStage4 /></ProtectedRoute>} />
+      <Route path="/estudiante/test" element={<Navigate to="/estudiante" replace />} />
+      <Route path="/estudiante/test/etapa/:num" element={<Navigate to="/estudiante" replace />} />
       <Route path="/estudiante/reporte/:id" element={<ProtectedRoute roles={["student"]}><ReportPage /></ProtectedRoute>} />
+      <Route path="/estudiante/reportes" element={<ProtectedRoute roles={["student"]}><ReportHistory /></ProtectedRoute>} />
+      <Route path="/estudiante/acerca-de-los-test" element={<ProtectedRoute roles={["student"]}><AboutTests /></ProtectedRoute>} />
       <Route path="/estudiante/carreras" element={<ProtectedRoute roles={["student"]}><CareersBrowser /></ProtectedRoute>} />
       <Route path="/estudiante/carreras/:slug" element={<ProtectedRoute roles={["student"]}><CareerDetail /></ProtectedRoute>} />
       <Route path="/estudiante/simulacion/:careerId" element={<ProtectedRoute roles={["student"]}><SimulationPlayer /></ProtectedRoute>} />

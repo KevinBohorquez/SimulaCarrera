@@ -9,9 +9,9 @@ function cogLevel(score: number) {
 function cogTip(cap: string, score: number) {
   const tips: Record<string, Record<string, string>> = {
     verbal: { alto: "Excelente para carreras con mucha comunicación escrita y oral.", medio: "Practica lectura crítica y redacción.", bajo: "Refuerza comprensión lectora con ejercicios diarios." },
-    "numérico": { alto: "Ideal para ingeniería, finanzas y ciencias exactas.", medio: "Resuelve problemas matemáticos gradualmente.", bajo: "Usa apps de práctica numérica 15 min/día." },
+    numerico: { alto: "Ideal para ingeniería, finanzas y ciencias exactas.", medio: "Resuelve problemas matemáticos gradualmente.", bajo: "Usa apps de práctica numérica 15 min/día." },
     abstracto: { alto: "Fuerte capacidad de razonamiento lógico y patrones.", medio: "Haz puzzles y ejercicios de lógica.", bajo: "Entrena reconocimiento de patrones con juegos." },
-    espacial: { alto: "Muy útil en arquitectura, ingeniería y diseño.", medio: "Practica visualización 3D y dibujo técnico.", bajo: "Explora modelos 3D y mapas mentales." },
+    mecanico: { alto: "Muy útil en ingeniería, arquitectura y ciencias aplicadas.", medio: "Practica problemas de física cotidiana.", bajo: "Explora mecanismos simples y diagramas de fuerzas." },
   };
   return tips[cap]?.[cogLevel(score)] ?? "Sigue practicando esta capacidad.";
 }
@@ -52,6 +52,8 @@ export function buildOfflineReport(opts: {
   cognitiveSummary: Record<string, number>;
   simulationResults: any[];
   careers: any[];
+  hollandCode?: string;
+  riasecScores?: Record<string, number>;
 }) {
   const top = opts.ranking[0];
   const topCareer = opts.careers.find((c) => c.slug === top?.career_slug);
@@ -61,7 +63,10 @@ export function buildOfflineReport(opts: {
   }));
 
   const simResult = opts.simulationResults[0];
-  const simFeedback = simResult?.feedback;
+  const bigFive = simResult?.big_five as Record<string, number> | undefined;
+  const topTraits = bigFive
+    ? Object.entries(bigFive).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([k]) => k.replace(/_/g, " "))
+    : [];
 
   const fichas = opts.ranking.slice(0, 4).map((r) => {
     const c = opts.careers.find((x) => x.slug === r.career_slug);
@@ -81,15 +86,19 @@ export function buildOfflineReport(opts: {
   });
 
   return {
-    summary: `${opts.studentName}, completaste tu evaluación vocacional integral. Tu perfil destaca por afinidades en ${topCareer?.area ?? "varias áreas"}, con ${top?.career_name ?? "tu carrera top"} como la opción más compatible (${top?.score ?? 0}%). El análisis combina tu diagnóstico personal, desempeño cognitivo y decisiones en simulación profesional.`,
-    personality_profile: top?.reasoning ?? "Tu perfil vocacional refleja intereses y aptitudes diversas que encajan con varias trayectorias profesionales.",
+    summary: `${opts.studentName}, completaste tu evaluación vocacional integral${opts.hollandCode ? ` con código Holland ${opts.hollandCode}` : ""}. Tu carrera más compatible es ${top?.career_name ?? "tu opción principal"} (${top?.score ?? 0}%). El análisis combina intereses RIASEC, simulación SJT y aptitudes cognitivas adaptativas.`,
+    personality_profile: opts.hollandCode
+      ? `Tu código RIASEC preliminar es ${opts.hollandCode}. ${top?.reasoning ?? ""}`
+      : top?.reasoning ?? "Tu perfil vocacional refleja intereses y aptitudes diversas que encajan con varias trayectorias profesionales.",
+    holland_code: opts.hollandCode,
+    riasec_scores: opts.riasecScores,
     top_career: {
       slug: top?.career_slug,
       name: top?.career_name ?? top?.career_slug,
       match_score: top?.score ?? 0,
       why: top?.reasoning ?? "",
-      strengths: simFeedback?.strengths ?? ["Capacidad de decisión", "Adaptabilidad", "Interés genuino"],
-      challenges: simFeedback?.growth_areas ?? ["Formación especializada", "Experiencia práctica"],
+      strengths: topTraits.length ? topTraits : ["Capacidad de decisión", "Adaptabilidad", "Interés genuino"],
+      challenges: ["Formación especializada", "Experiencia práctica"],
       day_in_life: topCareer?.description ?? `Un profesional en ${top?.career_name} enfrenta retos diarios que combinan técnica, comunicación y trabajo en equipo.`,
     },
     alternatives: opts.ranking.slice(1, 4).map((r) => ({
@@ -102,9 +111,12 @@ export function buildOfflineReport(opts: {
       ? `Tu perfil cognitivo muestra ${cognitive_scores.map((c) => `${c.capacity}: ${c.score}% (${c.level})`).join(", ")}. Esto sugiere fortalezas distintas según el tipo de carrera que elijas.`
       : "Completaste el test cognitivo que evalúa capacidades clave para el éxito académico.",
     cognitive_scores,
-    simulation_insights: simFeedback?.narrative
-      ?? (opts.simulationResults.length ? "Completaste una simulación profesional que validó tu estilo de decisión." : "Te recomendamos completar simulaciones para validar tu orientación."),
-    simulation_highlights: simFeedback?.strengths ?? ["Completaste el proceso de orientación", "Exploraste escenarios reales"],
+    simulation_insights: simResult
+      ? `En la simulación SJT obtuviste ${simResult.sjt_total ?? 0} puntos de criterio situacional. Tus rasgos Big Five más marcados: ${topTraits.join(", ") || "en evaluación"}.`
+      : "Completaste la simulación conductual SJT.",
+    simulation_highlights: topTraits.length ? topTraits : ["Completaste el proceso de orientación", "Exploraste escenarios reales"],
+    sjt_summary: simResult,
+    big_five: bigFive,
     career_fichas: fichas,
     alternatives_insight: opts.ranking.length > 1
       ? `Además de ${top?.career_name}, tu perfil también muestra afinidad con ${opts.ranking.slice(1, 3).map((r) => r.career_name).join(" y ")}. Estas alternativas comparten áreas de interés pero ofrecen enfoques distintos en el mercado laboral peruano.`

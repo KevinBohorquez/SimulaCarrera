@@ -22,7 +22,17 @@ export function AppShell({ title, children }: { title: string; children: ReactNo
             <GraduationCap size={22} /> SimulaCarrera
           </Link>
           <div className="flex items-center gap-4 text-sm">
-            {profile && <span className="text-slate-600">{profile.full_name ?? profile.email} · <span className="text-brand-morado font-medium">{profile.role}</span></span>}
+            {profile?.role === "student" && (
+              <Link to="/estudiante/acerca-de-los-test" className="text-slate-600 hover:text-brand-morado font-medium">
+                Acerca de los test
+              </Link>
+            )}
+            {profile && (
+              <span className="text-slate-600 hidden sm:inline">
+                {profile.full_name ?? profile.email} ·{" "}
+                <span className="text-brand-morado font-medium">{profile.role}</span>
+              </span>
+            )}
             <button onClick={async () => { await signOut(); nav("/login"); }} className="btn-ghost">
               <LogOut size={16} className="mr-1" /> Salir
             </button>

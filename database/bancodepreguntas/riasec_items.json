@@ -1,0 +1,1502 @@
+[
+{
+"item_code": "RIA_R_001",
+"dimension": "R",
+"enunciado": "Diseñar e instalar el cableado de red local para una oficina pequeña."
+},
+{
+"item_code": "RIA_R_002",
+"dimension": "R",
+"enunciado": "Reparar el motor de un automóvil o motocicleta que no arranca."
+},
+{
+"item_code": "RIA_R_003",
+"dimension": "R",
+"enunciado": "Cultivar y mantener un huerto de vegetales ecológicos."
+},
+{
+"item_code": "RIA_R_004",
+"dimension": "R",
+"enunciado": "Construir muebles de madera utilizando herramientas de carpintería."
+},
+{
+"item_code": "RIA_R_005",
+"dimension": "R",
+"enunciado": "Operar maquinaria pesada como excavadoras o tractores en una obra."
+},
+{
+"item_code": "RIA_R_006",
+"dimension": "R",
+"enunciado": "Instalar o reparar el sistema de tuberías de una casa."
+},
+{
+"item_code": "RIA_R_007",
+"dimension": "R",
+"enunciado": "Ensamblar los componentes electrónicos de una computadora de escritorio."
+},
+{
+"item_code": "RIA_R_008",
+"dimension": "R",
+"enunciado": "Trabajar al aire libre como guardabosques o vigilante de una reserva natural."
+},
+{
+"item_code": "RIA_R_009",
+"dimension": "R",
+"enunciado": "Soldar piezas de metal para crear o reparar estructuras."
+},
+{
+"item_code": "RIA_R_010",
+"dimension": "R",
+"enunciado": "Cuidar, alimentar y entrenar animales en una granja o zoológico."
+},
+{
+"item_code": "RIA_R_011",
+"dimension": "R",
+"enunciado": "Manejar camiones de carga pesada a través de rutas interestatales."
+},
+{
+"item_code": "RIA_R_012",
+"dimension": "R",
+"enunciado": "Instalar paneles solares en el techo de una vivienda."
+},
+{
+"item_code": "RIA_R_013",
+"dimension": "R",
+"enunciado": "Realizar mantenimiento a bicicletas, ajustando frenos y cambios."
+},
+{
+"item_code": "RIA_R_014",
+"dimension": "R",
+"enunciado": "Arreglar electrodomésticos dañados como lavadoras o refrigeradores."
+},
+{
+"item_code": "RIA_R_015",
+"dimension": "R",
+"enunciado": "Trabajar en una línea de ensamblaje en una fábrica automotriz."
+},
+{
+"item_code": "RIA_R_016",
+"dimension": "R",
+"enunciado": "Instalar baldosas o cerámica en el piso de un edificio en construcción."
+},
+{
+"item_code": "RIA_R_017",
+"dimension": "R",
+"enunciado": "Realizar podas y diseño de jardines en áreas públicas o privadas."
+},
+{
+"item_code": "RIA_R_018",
+"dimension": "R",
+"enunciado": "Reparar y pintar la carrocería de autos chocados."
+},
+{
+"item_code": "RIA_R_019",
+"dimension": "R",
+"enunciado": "Conducir una grúa para levantar materiales pesados en un puerto."
+},
+{
+"item_code": "RIA_R_020",
+"dimension": "R",
+"enunciado": "Trabajar con circuitos eléctricos de alta y baja tensión."
+},
+{
+"item_code": "RIA_R_021",
+"dimension": "R",
+"enunciado": "Cazar, pescar o participar en actividades de supervivencia en la naturaleza."
+},
+{
+"item_code": "RIA_R_022",
+"dimension": "R",
+"enunciado": "Cambiar el aceite y los neumáticos de varios vehículos en un taller."
+},
+{
+"item_code": "RIA_R_023",
+"dimension": "R",
+"enunciado": "Pilotar aviones comerciales o avionetas de fumigación."
+},
+{
+"item_code": "RIA_R_024",
+"dimension": "R",
+"enunciado": "Realizar topografía y medir terrenos antes de una construcción."
+},
+{
+"item_code": "RIA_R_025",
+"dimension": "R",
+"enunciado": "Cortar y preparar diferentes tipos de carne en una carnicería."
+},
+{
+"item_code": "RIA_R_026",
+"dimension": "R",
+"enunciado": "Restaurar muebles antiguos lijando y aplicando nuevos acabados."
+},
+{
+"item_code": "RIA_R_027",
+"dimension": "R",
+"enunciado": "Trabajar en minería o extracción de minerales en el campo."
+},
+{
+"item_code": "RIA_R_028",
+"dimension": "R",
+"enunciado": "Operar sistemas de riego para grandes extensiones de cultivo."
+},
+{
+"item_code": "RIA_R_029",
+"dimension": "R",
+"enunciado": "Utilizar tornos y fresadoras para fabricar piezas de precisión en metal."
+},
+{
+"item_code": "RIA_R_030",
+"dimension": "R",
+"enunciado": "Inspeccionar fallas estructurales en puentes o edificios antiguos."
+},
+{
+"item_code": "RIA_R_031",
+"dimension": "R",
+"enunciado": "Arreglar calzado y artículos de cuero de forma manual."
+},
+{
+"item_code": "RIA_R_032",
+"dimension": "R",
+"enunciado": "Instalar sistemas de aire acondicionado y ventilación."
+},
+{
+"item_code": "RIA_R_033",
+"dimension": "R",
+"enunciado": "Trabajar en alta mar como parte de la tripulación de un barco pesquero."
+},
+{
+"item_code": "RIA_R_034",
+"dimension": "R",
+"enunciado": "Criar abejas y realizar el proceso de extracción de miel."
+},
+{
+"item_code": "RIA_R_035",
+"dimension": "R",
+"enunciado": "Participar en labores de rescate que exijan un alto esfuerzo físico."
+},
+{
+"item_code": "RIA_R_036",
+"dimension": "R",
+"enunciado": "Realizar acrobacias o ser doble de riesgo en producciones de video."
+},
+{
+"item_code": "RIA_R_037",
+"dimension": "R",
+"enunciado": "Operar cámaras y equipos de iluminación pesados en un set de grabación."
+},
+{
+"item_code": "RIA_R_038",
+"dimension": "R",
+"enunciado": "Trabajar como técnico de mantenimiento en un parque de diversiones."
+},
+{
+"item_code": "RIA_R_039",
+"dimension": "R",
+"enunciado": "Instalar antenas de telecomunicaciones en torres de gran altura."
+},
+{
+"item_code": "RIA_R_040",
+"dimension": "R",
+"enunciado": "Reparar relojes analógicos o aparatos mecánicos muy pequeños."
+},
+{
+"item_code": "RIA_R_041",
+"dimension": "R",
+"enunciado": "Limpiar, desarmar y dar mantenimiento a armas de fuego."
+},
+{
+"item_code": "RIA_R_042",
+"dimension": "R",
+"enunciado": "Conducir vehículos todoterreno en rutas exploratorias."
+},
+{
+"item_code": "RIA_R_043",
+"dimension": "R",
+"enunciado": "Trabajar en la tala responsable de árboles y procesamiento de madera."
+},
+{
+"item_code": "RIA_R_044",
+"dimension": "R",
+"enunciado": "Fabricar prótesis ortopédicas ajustadas a las medidas de un paciente."
+},
+{
+"item_code": "RIA_R_045",
+"dimension": "R",
+"enunciado": "Instalar y programar sistemas de alarmas de seguridad en casas."
+},
+{
+"item_code": "RIA_R_046",
+"dimension": "R",
+"enunciado": "Dar forma y fundir vidrio o metales de manera artesanal."
+},
+{
+"item_code": "RIA_R_047",
+"dimension": "R",
+"enunciado": "Realizar entrenamientos físicos intensos diariamente."
+},
+{
+"item_code": "RIA_R_048",
+"dimension": "R",
+"enunciado": "Manejar maquinaria agrícola moderna guiada por GPS."
+},
+{
+"item_code": "RIA_R_049",
+"dimension": "R",
+"enunciado": "Excavar y preparar cimientos para grandes proyectos de infraestructura."
+},
+{
+"item_code": "RIA_R_050",
+"dimension": "R",
+"enunciado": "Mantener en buen estado las áreas verdes y campos deportivos."
+},
+{
+"item_code": "RIA_I_001",
+"dimension": "I",
+"enunciado": "Analizar muestras químicas en un laboratorio para identificar contaminantes en el agua."
+},
+{
+"item_code": "RIA_I_002",
+"dimension": "I",
+"enunciado": "Investigar el comportamiento y migración de aves en su hábitat natural."
+},
+{
+"item_code": "RIA_I_003",
+"dimension": "I",
+"enunciado": "Resolver ecuaciones matemáticas complejas para optimizar algoritmos."
+},
+{
+"item_code": "RIA_I_004",
+"dimension": "I",
+"enunciado": "Programar aplicaciones móviles utilizando lenguajes de código abierto."
+},
+{
+"item_code": "RIA_I_005",
+"dimension": "I",
+"enunciado": "Estudiar la composición de los planetas a través de datos de telescopios."
+},
+{
+"item_code": "RIA_I_006",
+"dimension": "I",
+"enunciado": "Leer artículos científicos sobre nuevos avances en medicina genética."
+},
+{
+"item_code": "RIA_I_007",
+"dimension": "I",
+"enunciado": "Realizar experimentos físicos para medir el impacto de la fricción."
+},
+{
+"item_code": "RIA_I_008",
+"dimension": "I",
+"enunciado": "Analizar grandes bases de datos para encontrar patrones de comportamiento del consumidor."
+},
+{
+"item_code": "RIA_I_009",
+"dimension": "I",
+"enunciado": "Diagnosticar enfermedades a partir de resultados de análisis de sangre y radiografías."
+},
+{
+"item_code": "RIA_I_010",
+"dimension": "I",
+"enunciado": "Estudiar civilizaciones antiguas mediante el análisis de restos arqueológicos."
+},
+{
+"item_code": "RIA_I_011",
+"dimension": "I",
+"enunciado": "Investigar los efectos del cambio climático en los corales marinos."
+},
+{
+"item_code": "RIA_I_012",
+"dimension": "I",
+"enunciado": "Crear modelos en computadora para predecir el comportamiento del clima."
+},
+{
+"item_code": "RIA_I_013",
+"dimension": "I",
+"enunciado": "Diseñar metodologías de investigación para encuestas sociológicas."
+},
+{
+"item_code": "RIA_I_014",
+"dimension": "I",
+"enunciado": "Examinar tejidos celulares usando microscopios de alta resolución."
+},
+{
+"item_code": "RIA_I_015",
+"dimension": "I",
+"enunciado": "Identificar vulnerabilidades de seguridad en el sistema de una red corporativa."
+},
+{
+"item_code": "RIA_I_016",
+"dimension": "I",
+"enunciado": "Estudiar los principios aerodinámicos para mejorar el diseño de un dron."
+},
+{
+"item_code": "RIA_I_017",
+"dimension": "I",
+"enunciado": "Analizar las fluctuaciones económicas para prever crisis financieras."
+},
+{
+"item_code": "RIA_I_018",
+"dimension": "I",
+"enunciado": "Realizar autopsias o estudios forenses para determinar causas de muerte."
+},
+{
+"item_code": "RIA_I_019",
+"dimension": "I",
+"enunciado": "Buscar curas para enfermedades tropicales a través de farmacología experimental."
+},
+{
+"item_code": "RIA_I_020",
+"dimension": "I",
+"enunciado": "Resolver rompecabezas lógicos y juegos de estrategia mental en el tiempo libre."
+},
+{
+"item_code": "RIA_I_021",
+"dimension": "I",
+"enunciado": "Investigar sobre la inteligencia artificial y el aprendizaje automático."
+},
+{
+"item_code": "RIA_I_022",
+"dimension": "I",
+"enunciado": "Estudiar textos de filosofía y lógica para entender diferentes teorías del pensamiento."
+},
+{
+"item_code": "RIA_I_023",
+"dimension": "I",
+"enunciado": "Analizar la estructura de los idiomas y su evolución histórica."
+},
+{
+"item_code": "RIA_I_024",
+"dimension": "I",
+"enunciado": "Comprender cómo funcionan los neurotransmisores en el cerebro humano."
+},
+{
+"item_code": "RIA_I_025",
+"dimension": "I",
+"enunciado": "Desarrollar nuevos materiales biodegradables para sustituir los plásticos."
+},
+{
+"item_code": "RIA_I_026",
+"dimension": "I",
+"enunciado": "Clasificar especies de insectos desconocidos encontrados en la selva."
+},
+{
+"item_code": "RIA_I_027",
+"dimension": "I",
+"enunciado": "Participar en ferias de ciencias presentando proyectos innovadores."
+},
+{
+"item_code": "RIA_I_028",
+"dimension": "I",
+"enunciado": "Probar la resistencia de nuevos materiales para la construcción de puentes."
+},
+{
+"item_code": "RIA_I_029",
+"dimension": "I",
+"enunciado": "Diseñar experimentos para estudiar la psicología del consumidor."
+},
+{
+"item_code": "RIA_I_030",
+"dimension": "I",
+"enunciado": "Analizar estadísticas deportivas para mejorar el rendimiento de un equipo."
+},
+{
+"item_code": "RIA_I_031",
+"dimension": "I",
+"enunciado": "Investigar el efecto de ciertos nutrientes en el crecimiento muscular."
+},
+{
+"item_code": "RIA_I_032",
+"dimension": "I",
+"enunciado": "Estudiar rocas y minerales para determinar la actividad sísmica de una zona."
+},
+{
+"item_code": "RIA_I_033",
+"dimension": "I",
+"enunciado": "Analizar huellas dactilares y ADN en la escena de un crimen."
+},
+{
+"item_code": "RIA_I_034",
+"dimension": "I",
+"enunciado": "Crear algoritmos de encriptación para proteger información confidencial."
+},
+{
+"item_code": "RIA_I_035",
+"dimension": "I",
+"enunciado": "Investigar la biografía de personajes históricos para escribir un artículo académico."
+},
+{
+"item_code": "RIA_I_036",
+"dimension": "I",
+"enunciado": "Observar el comportamiento de microorganismos usando placas de Petri."
+},
+{
+"item_code": "RIA_I_037",
+"dimension": "I",
+"enunciado": "Aplicar leyes de la física para predecir la trayectoria de objetos en movimiento."
+},
+{
+"item_code": "RIA_I_038",
+"dimension": "I",
+"enunciado": "Investigar sobre la física cuántica y las partículas subatómicas."
+},
+{
+"item_code": "RIA_I_039",
+"dimension": "I",
+"enunciado": "Hacer trabajo de campo para evaluar la calidad del aire en zonas industriales."
+},
+{
+"item_code": "RIA_I_040",
+"dimension": "I",
+"enunciado": "Desarrollar vacunas y estudiar la respuesta inmunológica del cuerpo."
+},
+{
+"item_code": "RIA_I_041",
+"dimension": "I",
+"enunciado": "Analizar documentos antiguos para comprobar su autenticidad."
+},
+{
+"item_code": "RIA_I_042",
+"dimension": "I",
+"enunciado": "Realizar estudios demográficos para proyectar el crecimiento de una población."
+},
+{
+"item_code": "RIA_I_043",
+"dimension": "I",
+"enunciado": "Crear simuladores de realidad virtual para entrenamientos médicos."
+},
+{
+"item_code": "RIA_I_044",
+"dimension": "I",
+"enunciado": "Investigar las propiedades medicinales de plantas endémicas."
+},
+{
+"item_code": "RIA_I_045",
+"dimension": "I",
+"enunciado": "Descifrar códigos informáticos y lenguajes de programación antiguos."
+},
+{
+"item_code": "RIA_I_046",
+"dimension": "I",
+"enunciado": "Investigar métodos para la purificación y desalinización del agua del mar."
+},
+{
+"item_code": "RIA_I_047",
+"dimension": "I",
+"enunciado": "Estudiar la anatomía comparada de diferentes especies de mamíferos."
+},
+{
+"item_code": "RIA_I_048",
+"dimension": "I",
+"enunciado": "Evaluar el impacto acústico y la contaminación sonora en las grandes ciudades."
+},
+{
+"item_code": "RIA_I_049",
+"dimension": "I",
+"enunciado": "Participar en debates académicos sobre ética en las nuevas tecnologías."
+},
+{
+"item_code": "RIA_I_050",
+"dimension": "I",
+"enunciado": "Diseñar sondas espaciales capaces de recolectar datos en otros planetas."
+},
+{
+"item_code": "RIA_A_001",
+"dimension": "A",
+"enunciado": "Pintar retratos o paisajes utilizando técnicas de óleo o acuarela."
+},
+{
+"item_code": "RIA_A_002",
+"dimension": "A",
+"enunciado": "Escribir historias de ficción, cuentos o guiones para cortometrajes."
+},
+{
+"item_code": "RIA_A_003",
+"dimension": "A",
+"enunciado": "Diseñar la interfaz visual y estética de una nueva aplicación móvil."
+},
+{
+"item_code": "RIA_A_004",
+"dimension": "A",
+"enunciado": "Actuar en obras de teatro escolar o producciones teatrales locales."
+},
+{
+"item_code": "RIA_A_005",
+"dimension": "A",
+"enunciado": "Tocar un instrumento musical en una banda, orquesta o como solista."
+},
+{
+"item_code": "RIA_A_006",
+"dimension": "A",
+"enunciado": "Tomar fotografías profesionales de paisajes, eventos o modelos."
+},
+{
+"item_code": "RIA_A_007",
+"dimension": "A",
+"enunciado": "Diseñar ropa, zapatos o accesorios de moda."
+},
+{
+"item_code": "RIA_A_008",
+"dimension": "A",
+"enunciado": "Decorar interiores de casas o locales comerciales combinando colores y muebles."
+},
+{
+"item_code": "RIA_A_009",
+"dimension": "A",
+"enunciado": "Crear ilustraciones digitales para libros infantiles o revistas."
+},
+{
+"item_code": "RIA_A_010",
+"dimension": "A",
+"enunciado": "Dirigir y editar videos musicales o documentales creativos."
+},
+{
+"item_code": "RIA_A_011",
+"dimension": "A",
+"enunciado": "Componer canciones, melodías o arreglos musicales."
+},
+{
+"item_code": "RIA_A_012",
+"dimension": "A",
+"enunciado": "Crear coreografías y bailar en espectáculos de danza."
+},
+{
+"item_code": "RIA_A_013",
+"dimension": "A",
+"enunciado": "Esculpir figuras en arcilla, madera o piedra."
+},
+{
+"item_code": "RIA_A_014",
+"dimension": "A",
+"enunciado": "Maquillar a actores o modelos para sesiones de fotos o cine."
+},
+{
+"item_code": "RIA_A_015",
+"dimension": "A",
+"enunciado": "Diseñar logotipos, carteles y la identidad visual de una marca."
+},
+{
+"item_code": "RIA_A_016",
+"dimension": "A",
+"enunciado": "Redactar artículos de opinión o crónicas para un blog o periódico."
+},
+{
+"item_code": "RIA_A_017",
+"dimension": "A",
+"enunciado": "Hacer animaciones en 2D o 3D para videojuegos o películas."
+},
+{
+"item_code": "RIA_A_018",
+"dimension": "A",
+"enunciado": "Crear artesanías, joyería o cerámica para vender o exhibir."
+},
+{
+"item_code": "RIA_A_019",
+"dimension": "A",
+"enunciado": "Organizar galerías y exposiciones de arte contemporáneo."
+},
+{
+"item_code": "RIA_A_020",
+"dimension": "A",
+"enunciado": "Traducir poemas o textos literarios manteniendo su estilo artístico."
+},
+{
+"item_code": "RIA_A_021",
+"dimension": "A",
+"enunciado": "Trabajar en diseño de iluminación para conciertos o escenarios teatrales."
+},
+{
+"item_code": "RIA_A_022",
+"dimension": "A",
+"enunciado": "Diseñar la escenografía y buscar utilería para una obra de teatro."
+},
+{
+"item_code": "RIA_A_023",
+"dimension": "A",
+"enunciado": "Restaurar obras de arte antiguas, como pinturas o frescos."
+},
+{
+"item_code": "RIA_A_024",
+"dimension": "A",
+"enunciado": "Cantar en un coro, grupo musical o hacer grabaciones vocales."
+},
+{
+"item_code": "RIA_A_025",
+"dimension": "A",
+"enunciado": "Dibujar cómics, mangas o novelas gráficas."
+},
+{
+"item_code": "RIA_A_026",
+"dimension": "A",
+"enunciado": "Diseñar empaques creativos y atractivos para productos de consumo."
+},
+{
+"item_code": "RIA_A_027",
+"dimension": "A",
+"enunciado": "Improvisar rutinas de comedia (stand-up) frente a un público."
+},
+{
+"item_code": "RIA_A_028",
+"dimension": "A",
+"enunciado": "Crear arreglos florales artísticos para eventos especiales."
+},
+{
+"item_code": "RIA_A_029",
+"dimension": "A",
+"enunciado": "Diseñar y crear tatuajes personalizados."
+},
+{
+"item_code": "RIA_A_030",
+"dimension": "A",
+"enunciado": "Realizar caligrafía y letras dibujadas a mano (lettering) para invitaciones."
+},
+{
+"item_code": "RIA_A_031",
+"dimension": "A",
+"enunciado": "Escribir reseñas críticas sobre películas, música o libros."
+},
+{
+"item_code": "RIA_A_032",
+"dimension": "A",
+"enunciado": "Diseñar personajes y mundos imaginarios para un videojuego."
+},
+{
+"item_code": "RIA_A_033",
+"dimension": "A",
+"enunciado": "Crear efectos especiales visuales para producciones audiovisuales."
+},
+{
+"item_code": "RIA_A_034",
+"dimension": "A",
+"enunciado": "Presentar programas de radio o podcasts sobre temas culturales."
+},
+{
+"item_code": "RIA_A_035",
+"dimension": "A",
+"enunciado": "Diseñar fuentes tipográficas para uso en diseño gráfico."
+},
+{
+"item_code": "RIA_A_036",
+"dimension": "A",
+"enunciado": "Tejer, bordar o diseñar patrones de textiles."
+},
+{
+"item_code": "RIA_A_037",
+"dimension": "A",
+"enunciado": "Dirigir sesiones de fotografía de moda con equipos de modelos y maquillistas."
+},
+{
+"item_code": "RIA_A_038",
+"dimension": "A",
+"enunciado": "Crear murales o arte urbano (graffiti) en espacios públicos."
+},
+{
+"item_code": "RIA_A_039",
+"dimension": "A",
+"enunciado": "Narrar audiolibros o hacer doblaje de voz para películas animadas."
+},
+{
+"item_code": "RIA_A_040",
+"dimension": "A",
+"enunciado": "Experimentar con ingredientes para emplatar comidas con alto valor estético."
+},
+{
+"item_code": "RIA_A_041",
+"dimension": "A",
+"enunciado": "Escribir el guion y planificar los diálogos para un programa de televisión."
+},
+{
+"item_code": "RIA_A_042",
+"dimension": "A",
+"enunciado": "Tocar como DJ o mezclar música en eventos y festivales."
+},
+{
+"item_code": "RIA_A_043",
+"dimension": "A",
+"enunciado": "Realizar acrobacias aéreas o presentaciones circenses artísticas."
+},
+{
+"item_code": "RIA_A_044",
+"dimension": "A",
+"enunciado": "Concebir la idea central y los bocetos para una campaña publicitaria."
+},
+{
+"item_code": "RIA_A_045",
+"dimension": "A",
+"enunciado": "Diseñar disfraces y vestuario de época para producciones de cine."
+},
+{
+"item_code": "RIA_A_046",
+"dimension": "A",
+"enunciado": "Moldear y hornear piezas de alfarería con diseños propios."
+},
+{
+"item_code": "RIA_A_047",
+"dimension": "A",
+"enunciado": "Hacer diseño de sonido y crear efectos auditivos para multimedia."
+},
+{
+"item_code": "RIA_A_048",
+"dimension": "A",
+"enunciado": "Practicar la improvisación teatral en talleres creativos."
+},
+{
+"item_code": "RIA_A_049",
+"dimension": "A",
+"enunciado": "Crear contenido visual atractivo para redes sociales de influencers."
+},
+{
+"item_code": "RIA_A_050",
+"dimension": "A",
+"enunciado": "Escribir y recitar discursos emotivos o poéticos."
+},
+{
+"item_code": "RIA_S_001",
+"dimension": "S",
+"enunciado": "Enseñar matemáticas o lenguaje a estudiantes de primaria."
+},
+{
+"item_code": "RIA_S_002",
+"dimension": "S",
+"enunciado": "Brindar primeros auxilios y cuidados médicos básicos a pacientes heridos."
+},
+{
+"item_code": "RIA_S_003",
+"dimension": "S",
+"enunciado": "Dar terapia psicológica a jóvenes con problemas de ansiedad o estrés."
+},
+{
+"item_code": "RIA_S_004",
+"dimension": "S",
+"enunciado": "Trabajar como trabajador social ayudando a familias en situación de pobreza."
+},
+{
+"item_code": "RIA_S_005",
+"dimension": "S",
+"enunciado": "Asesorar a estudiantes de secundaria sobre qué carrera universitaria elegir."
+},
+{
+"item_code": "RIA_S_006",
+"dimension": "S",
+"enunciado": "Organizar actividades recreativas y de integración para adultos mayores."
+},
+{
+"item_code": "RIA_S_007",
+"dimension": "S",
+"enunciado": "Apoyar la rehabilitación física de personas que sufrieron accidentes."
+},
+{
+"item_code": "RIA_S_008",
+"dimension": "S",
+"enunciado": "Trabajar como mediador escolar para resolver conflictos entre alumnos."
+},
+{
+"item_code": "RIA_S_009",
+"dimension": "S",
+"enunciado": "Ser voluntario en ONGs para llevar alimentos a zonas desfavorecidas."
+},
+{
+"item_code": "RIA_S_010",
+"dimension": "S",
+"enunciado": "Dar clases de educación física y fomentar el trabajo en equipo en jóvenes."
+},
+{
+"item_code": "RIA_S_011",
+"dimension": "S",
+"enunciado": "Atender dudas y brindar un servicio amable a clientes insatisfechos."
+},
+{
+"item_code": "RIA_S_012",
+"dimension": "S",
+"enunciado": "Orientar a inmigrantes recién llegados para que encuentren empleo y vivienda."
+},
+{
+"item_code": "RIA_S_013",
+"dimension": "S",
+"enunciado": "Cuidar niños en guarderías, estimulando su aprendizaje temprano."
+},
+{
+"item_code": "RIA_S_014",
+"dimension": "S",
+"enunciado": "Dirigir grupos de apoyo para personas que buscan superar adicciones."
+},
+{
+"item_code": "RIA_S_015",
+"dimension": "S",
+"enunciado": "Instruir a personas con discapacidades en habilidades para la vida independiente."
+},
+{
+"item_code": "RIA_S_016",
+"dimension": "S",
+"enunciado": "Participar en campañas comunitarias de prevención de enfermedades de transmisión sexual."
+},
+{
+"item_code": "RIA_S_017",
+"dimension": "S",
+"enunciado": "Capacitar a nuevos empleados para que se adapten a la cultura de la empresa."
+},
+{
+"item_code": "RIA_S_018",
+"dimension": "S",
+"enunciado": "Escuchar y consolar a amigos o compañeros que atraviesan momentos difíciles."
+},
+{
+"item_code": "RIA_S_019",
+"dimension": "S",
+"enunciado": "Diseñar programas de inclusión social para minorías discriminadas."
+},
+{
+"item_code": "RIA_S_020",
+"dimension": "S",
+"enunciado": "Ayudar a pacientes en hospitales con su aseo personal y alimentación."
+},
+{
+"item_code": "RIA_S_021",
+"dimension": "S",
+"enunciado": "Coordinar campamentos de verano y dirigir dinámicas grupales."
+},
+{
+"item_code": "RIA_S_022",
+"dimension": "S",
+"enunciado": "Ofrecer servicios de terapia del lenguaje para niños con dificultades para hablar."
+},
+{
+"item_code": "RIA_S_023",
+"dimension": "S",
+"enunciado": "Trabajar en líneas telefónicas de asistencia para prevención del suicidio."
+},
+{
+"item_code": "RIA_S_024",
+"dimension": "S",
+"enunciado": "Organizar eventos benéficos para recaudar fondos médicos para alguien enfermo."
+},
+{
+"item_code": "RIA_S_025",
+"dimension": "S",
+"enunciado": "Acompañar a pacientes en fase terminal y brindar consuelo a sus familias."
+},
+{
+"item_code": "RIA_S_026",
+"dimension": "S",
+"enunciado": "Dar tutorías extracurriculares a estudiantes que tienen bajas calificaciones."
+},
+{
+"item_code": "RIA_S_027",
+"dimension": "S",
+"enunciado": "Intervenir en situaciones de violencia doméstica como agente de apoyo social."
+},
+{
+"item_code": "RIA_S_028",
+"dimension": "S",
+"enunciado": "Brindar orientación espiritual o pastoral a los miembros de una comunidad."
+},
+{
+"item_code": "RIA_S_029",
+"dimension": "S",
+"enunciado": "Colaborar en asilos leyendo, conversando y paseando con ancianos."
+},
+{
+"item_code": "RIA_S_030",
+"dimension": "S",
+"enunciado": "Ser guía turístico, interactuando y enseñando la historia local a visitantes."
+},
+{
+"item_code": "RIA_S_031",
+"dimension": "S",
+"enunciado": "Trabajar en recursos humanos enfocándose en el bienestar de los trabajadores."
+},
+{
+"item_code": "RIA_S_032",
+"dimension": "S",
+"enunciado": "Promover los derechos humanos en comunidades con altos niveles de desigualdad."
+},
+{
+"item_code": "RIA_S_033",
+"dimension": "S",
+"enunciado": "Dar clases de español o alfabetización a adultos que no saben leer."
+},
+{
+"item_code": "RIA_S_034",
+"dimension": "S",
+"enunciado": "Acompañar a mujeres durante el proceso de parto como doula o enfermera obstetra."
+},
+{
+"item_code": "RIA_S_035",
+"dimension": "S",
+"enunciado": "Organizar brigadas de rescate animal y encontrar hogares para mascotas abandonadas."
+},
+{
+"item_code": "RIA_S_036",
+"dimension": "S",
+"enunciado": "Atender emergencias médicas comunitarias como paramédico."
+},
+{
+"item_code": "RIA_S_037",
+"dimension": "S",
+"enunciado": "Enseñar técnicas de relajación, yoga o mindfulness a grupos con estrés."
+},
+{
+"item_code": "RIA_S_038",
+"dimension": "S",
+"enunciado": "Ser consejero matrimonial para parejas al borde del divorcio."
+},
+{
+"item_code": "RIA_S_039",
+"dimension": "S",
+"enunciado": "Coordinar programas de reinserción social para personas que salen de prisión."
+},
+{
+"item_code": "RIA_S_040",
+"dimension": "S",
+"enunciado": "Colaborar en un centro de salud comunitaria pesando y midiendo niños."
+},
+{
+"item_code": "RIA_S_041",
+"dimension": "S",
+"enunciado": "Interpretar lenguaje de señas para facilitar la comunicación de personas sordas."
+},
+{
+"item_code": "RIA_S_042",
+"dimension": "S",
+"enunciado": "Facilitar talleres de inteligencia emocional en colegios."
+},
+{
+"item_code": "RIA_S_043",
+"dimension": "S",
+"enunciado": "Acoger temporalmente a niños en situación de riesgo en tu propio hogar."
+},
+{
+"item_code": "RIA_S_044",
+"dimension": "S",
+"enunciado": "Enseñar nutrición y hábitos saludables a familias en riesgo de obesidad."
+},
+{
+"item_code": "RIA_S_045",
+"dimension": "S",
+"enunciado": "Participar en la búsqueda de personas desaparecidas en la comunidad."
+},
+{
+"item_code": "RIA_S_046",
+"dimension": "S",
+"enunciado": "Asistir a personas ciegas o con poca visión en sus tareas diarias."
+},
+{
+"item_code": "RIA_S_047",
+"dimension": "S",
+"enunciado": "Brindar orientación sobre métodos anticonceptivos y planificación familiar."
+},
+{
+"item_code": "RIA_S_048",
+"dimension": "S",
+"enunciado": "Trabajar en la rehabilitación de jóvenes con problemas de pandillaje."
+},
+{
+"item_code": "RIA_S_049",
+"dimension": "S",
+"enunciado": "Organizar asambleas vecinales para escuchar las necesidades del barrio."
+},
+{
+"item_code": "RIA_S_050",
+"dimension": "S",
+"enunciado": "Dirigir un coro infantil en una iglesia o centro comunitario local."
+},
+{
+"item_code": "RIA_E_001",
+"dimension": "E",
+"enunciado": "Negociar contratos de venta y cerrar tratos con grandes empresas."
+},
+{
+"item_code": "RIA_E_002",
+"dimension": "E",
+"enunciado": "Dirigir mi propio negocio, asumiendo los riesgos financieros y la toma de decisiones."
+},
+{
+"item_code": "RIA_E_003",
+"dimension": "E",
+"enunciado": "Hacer presentaciones para convencer a inversores de que financien mi proyecto."
+},
+{
+"item_code": "RIA_E_004",
+"dimension": "E",
+"enunciado": "Manejar y supervisar al personal de ventas de una tienda departamental."
+},
+{
+"item_code": "RIA_E_005",
+"dimension": "E",
+"enunciado": "Participar en campañas políticas, organizando mítines y dando discursos."
+},
+{
+"item_code": "RIA_E_006",
+"dimension": "E",
+"enunciado": "Vender bienes raíces, mostrando propiedades y persuadiendo a los compradores."
+},
+{
+"item_code": "RIA_E_007",
+"dimension": "E",
+"enunciado": "Diseñar estrategias de marketing para aumentar las ganancias de una empresa."
+},
+{
+"item_code": "RIA_E_008",
+"dimension": "E",
+"enunciado": "Ser representante de ventas médicas, promoviendo nuevos medicamentos en hospitales."
+},
+{
+"item_code": "RIA_E_009",
+"dimension": "E",
+"enunciado": "Liderar un equipo de trabajo para cumplir con metas de producción mensuales."
+},
+{
+"item_code": "RIA_E_010",
+"dimension": "E",
+"enunciado": "Participar activamente en debates, defendiendo mi punto de vista ante el público."
+},
+{
+"item_code": "RIA_E_011",
+"dimension": "E",
+"enunciado": "Organizar eventos corporativos o conferencias buscando patrocinadores."
+},
+{
+"item_code": "RIA_E_012",
+"dimension": "E",
+"enunciado": "Crear y monetizar contenido en redes sociales buscando acuerdos con marcas."
+},
+{
+"item_code": "RIA_E_013",
+"dimension": "E",
+"enunciado": "Gestionar la imagen pública de una celebridad o figura importante."
+},
+{
+"item_code": "RIA_E_014",
+"dimension": "E",
+"enunciado": "Ser el vocero oficial de una compañía durante una conferencia de prensa."
+},
+{
+"item_code": "RIA_E_015",
+"dimension": "E",
+"enunciado": "Planificar la apertura de un nuevo restaurante, desde el menú hasta el personal."
+},
+{
+"item_code": "RIA_E_016",
+"dimension": "E",
+"enunciado": "Hacer llamadas en frío para vender seguros de vida o paquetes turísticos."
+},
+{
+"item_code": "RIA_E_017",
+"dimension": "E",
+"enunciado": "Postularme como presidente del centro de estudiantes en la escuela o universidad."
+},
+{
+"item_code": "RIA_E_018",
+"dimension": "E",
+"enunciado": "Representar legalmente a clientes en juicios defendiendo sus intereses."
+},
+{
+"item_code": "RIA_E_019",
+"dimension": "E",
+"enunciado": "Comprar productos al por mayor a bajo costo y revenderlos para obtener ganancias."
+},
+{
+"item_code": "RIA_E_020",
+"dimension": "E",
+"enunciado": "Entrevistar y contratar a los gerentes de diferentes áreas de una corporación."
+},
+{
+"item_code": "RIA_E_021",
+"dimension": "E",
+"enunciado": "Manejar las redes de contacto (networking) para conseguir clientes de alto perfil."
+},
+{
+"item_code": "RIA_E_022",
+"dimension": "E",
+"enunciado": "Liderar un sindicato y negociar aumentos salariales con los dueños de la empresa."
+},
+{
+"item_code": "RIA_E_023",
+"dimension": "E",
+"enunciado": "Subastar obras de arte o antigüedades logrando el precio más alto posible."
+},
+{
+"item_code": "RIA_E_024",
+"dimension": "E",
+"enunciado": "Trabajar como productor de televisión, consiguiendo fondos y talento."
+},
+{
+"item_code": "RIA_E_025",
+"dimension": "E",
+"enunciado": "Coordinar fusiones y adquisiciones de empresas en el sector financiero."
+},
+{
+"item_code": "RIA_E_026",
+"dimension": "E",
+"enunciado": "Establecer cuotas de ventas y motivar a los empleados para alcanzarlas."
+},
+{
+"item_code": "RIA_E_027",
+"dimension": "E",
+"enunciado": "Invertir en la bolsa de valores comprando y vendiendo acciones."
+},
+{
+"item_code": "RIA_E_028",
+"dimension": "E",
+"enunciado": "Supervisar las operaciones de una cadena de franquicias a nivel nacional."
+},
+{
+"item_code": "RIA_E_029",
+"dimension": "E",
+"enunciado": "Desarrollar y promover la marca personal de políticos locales."
+},
+{
+"item_code": "RIA_E_030",
+"dimension": "E",
+"enunciado": "Dar conferencias motivacionales frente a grandes audiencias empresariales."
+},
+{
+"item_code": "RIA_E_031",
+"dimension": "E",
+"enunciado": "Promocionar destinos turísticos y hoteles en ferias internacionales."
+},
+{
+"item_code": "RIA_E_032",
+"dimension": "E",
+"enunciado": "Manejar quejas graves de clientes VIP y encontrar soluciones que beneficien a la empresa."
+},
+{
+"item_code": "RIA_E_033",
+"dimension": "E",
+"enunciado": "Vender autos en un concesionario, convenciendo a la gente con planes de financiamiento."
+},
+{
+"item_code": "RIA_E_034",
+"dimension": "E",
+"enunciado": "Manejar un equipo deportivo profesional, contratando jugadores y cuerpo técnico."
+},
+{
+"item_code": "RIA_E_035",
+"dimension": "E",
+"enunciado": "Realizar auditorías externas para proponer recortes de personal si es necesario."
+},
+{
+"item_code": "RIA_E_036",
+"dimension": "E",
+"enunciado": "Promover campañas publicitarias en radio y televisión para lanzamientos de productos."
+},
+{
+"item_code": "RIA_E_037",
+"dimension": "E",
+"enunciado": "Ser el gerente comercial de un hotel o resort vacacional."
+},
+{
+"item_code": "RIA_E_038",
+"dimension": "E",
+"enunciado": "Buscar y reclutar talentos ejecutivos para posiciones de alta gerencia."
+},
+{
+"item_code": "RIA_E_039",
+"dimension": "E",
+"enunciado": "Competir por licitaciones gubernamentales para ganar contratos de construcción."
+},
+{
+"item_code": "RIA_E_040",
+"dimension": "E",
+"enunciado": "Organizar y dirigir las ventas de un catálogo de productos por comisión."
+},
+{
+"item_code": "RIA_E_041",
+"dimension": "E",
+"enunciado": "Manejar las relaciones públicas de una empresa en tiempos de crisis de reputación."
+},
+{
+"item_code": "RIA_E_042",
+"dimension": "E",
+"enunciado": "Exportar productos agrícolas locales hacia mercados en el extranjero."
+},
+{
+"item_code": "RIA_E_043",
+"dimension": "E",
+"enunciado": "Cobrar deudas difíciles a clientes morosos negociando formas de pago."
+},
+{
+"item_code": "RIA_E_044",
+"dimension": "E",
+"enunciado": "Diseñar programas de lealtad y recompensas para atraer más clientes."
+},
+{
+"item_code": "RIA_E_045",
+"dimension": "E",
+"enunciado": "Delegar tareas importantes y medir la productividad de un gran equipo de trabajo."
+},
+{
+"item_code": "RIA_E_046",
+"dimension": "E",
+"enunciado": "Negociar acuerdos de distribución exclusiva con proveedores."
+},
+{
+"item_code": "RIA_E_047",
+"dimension": "E",
+"enunciado": "Presentar y vender software empresarial a grandes corporativos."
+},
+{
+"item_code": "RIA_E_048",
+"dimension": "E",
+"enunciado": "Asumir la presidencia de una junta directiva y tomar las decisiones finales."
+},
+{
+"item_code": "RIA_E_049",
+"dimension": "E",
+"enunciado": "Organizar subastas benéficas convenciendo a personas ricas para que donen."
+},
+{
+"item_code": "RIA_E_050",
+"dimension": "E",
+"enunciado": "Expandir una pequeña empresa local hasta convertirla en una cadena nacional."
+},
+{
+"item_code": "RIA_C_001",
+"dimension": "C",
+"enunciado": "Llevar la contabilidad de una empresa, registrando ingresos y gastos."
+},
+{
+"item_code": "RIA_C_002",
+"dimension": "C",
+"enunciado": "Organizar y mantener actualizados los archivos de empleados en recursos humanos."
+},
+{
+"item_code": "RIA_C_003",
+"dimension": "C",
+"enunciado": "Revisar contratos legales asegurándose de que cumplan todas las normas."
+},
+{
+"item_code": "RIA_C_004",
+"dimension": "C",
+"enunciado": "Ingresar datos numéricos en bases de datos de Excel de forma rápida y sin errores."
+},
+{
+"item_code": "RIA_C_005",
+"dimension": "C",
+"enunciado": "Controlar el inventario de una bodega, registrando qué entra y qué sale."
+},
+{
+"item_code": "RIA_C_006",
+"dimension": "C",
+"enunciado": "Programar citas, responder correos y atender llamadas como secretario/a."
+},
+{
+"item_code": "RIA_C_007",
+"dimension": "C",
+"enunciado": "Preparar declaraciones de impuestos anuales para personas y negocios."
+},
+{
+"item_code": "RIA_C_008",
+"dimension": "C",
+"enunciado": "Verificar la exactitud de facturas, recibos y reportes de gastos diarios."
+},
+{
+"item_code": "RIA_C_009",
+"dimension": "C",
+"enunciado": "Catalogar libros, revistas y documentos siguiendo un sistema en una biblioteca."
+},
+{
+"item_code": "RIA_C_010",
+"dimension": "C",
+"enunciado": "Planificar la logística y rutas de entrega para una empresa de paquetería."
+},
+{
+"item_code": "RIA_C_011",
+"dimension": "C",
+"enunciado": "Hacer trámites aduaneros y papeleo de importación de mercancías."
+},
+{
+"item_code": "RIA_C_012",
+"dimension": "C",
+"enunciado": "Elaborar la nómina mensual y calcular los salarios de los empleados."
+},
+{
+"item_code": "RIA_C_013",
+"dimension": "C",
+"enunciado": "Atender la caja registradora de un banco o supermercado, cuadrando el dinero."
+},
+{
+"item_code": "RIA_C_014",
+"dimension": "C",
+"enunciado": "Supervisar el cumplimiento estricto de las normas de seguridad e higiene."
+},
+{
+"item_code": "RIA_C_015",
+"dimension": "C",
+"enunciado": "Realizar inspecciones de control de calidad de productos en una fábrica."
+},
+{
+"item_code": "RIA_C_016",
+"dimension": "C",
+"enunciado": "Transcribir grabaciones de audio a texto escrito o redactar actas de reuniones."
+},
+{
+"item_code": "RIA_C_017",
+"dimension": "C",
+"enunciado": "Administrar pólizas de seguro y procesar reclamos de clientes."
+},
+{
+"item_code": "RIA_C_018",
+"dimension": "C",
+"enunciado": "Ordenar y clasificar expedientes médicos en un hospital o clínica."
+},
+{
+"item_code": "RIA_C_019",
+"dimension": "C",
+"enunciado": "Elaborar manuales de procedimientos y normas internas para una oficina."
+},
+{
+"item_code": "RIA_C_020",
+"dimension": "C",
+"enunciado": "Comprar suministros y equipo de oficina asegurando el mejor precio."
+},
+{
+"item_code": "RIA_C_021",
+"dimension": "C",
+"enunciado": "Analizar historiales crediticios para aprobar o rechazar préstamos bancarios."
+},
+{
+"item_code": "RIA_C_022",
+"dimension": "C",
+"enunciado": "Manejar sistemas de reservas de vuelos y hoteles en una agencia de viajes."
+},
+{
+"item_code": "RIA_C_023",
+"dimension": "C",
+"enunciado": "Emitir certificados, licencias y permisos en una dependencia gubernamental."
+},
+{
+"item_code": "RIA_C_024",
+"dimension": "C",
+"enunciado": "Calcular los costos de producción y materiales para un presupuesto."
+},
+{
+"item_code": "RIA_C_025",
+"dimension": "C",
+"enunciado": "Verificar códigos de barras y etiquetas de precios en inventarios de tiendas."
+},
+{
+"item_code": "RIA_C_026",
+"dimension": "C",
+"enunciado": "Auditar las cuentas de una empresa para detectar posibles fraudes o desvíos."
+},
+{
+"item_code": "RIA_C_027",
+"dimension": "C",
+"enunciado": "Manejar y despachar correspondencia física y virtual en una corporación."
+},
+{
+"item_code": "RIA_C_028",
+"dimension": "C",
+"enunciado": "Organizar el calendario de citas de un ejecutivo de alto nivel."
+},
+{
+"item_code": "RIA_C_029",
+"dimension": "C",
+"enunciado": "Mantener actualizados los registros de calificaciones escolares de los alumnos."
+},
+{
+"item_code": "RIA_C_030",
+"dimension": "C",
+"enunciado": "Redactar cartas formales y memorandos de uso corporativo."
+},
+{
+"item_code": "RIA_C_031",
+"dimension": "C",
+"enunciado": "Manejar equipos de fotocopiado, encuadernación y archivo físico masivo."
+},
+{
+"item_code": "RIA_C_032",
+"dimension": "C",
+"enunciado": "Validar firmas y documentos en una notaría pública."
+},
+{
+"item_code": "RIA_C_033",
+"dimension": "C",
+"enunciado": "Procesar transacciones monetarias como cajero en el extranjero."
+},
+{
+"item_code": "RIA_C_034",
+"dimension": "C",
+"enunciado": "Crear gráficos financieros detallados para el reporte anual de la empresa."
+},
+{
+"item_code": "RIA_C_035",
+"dimension": "C",
+"enunciado": "Operar un conmutador telefónico distribuyendo llamadas en un gran edificio."
+},
+{
+"item_code": "RIA_C_036",
+"dimension": "C",
+"enunciado": "Hacer seguimiento a los pagos de los clientes y emitir recibos."
+},
+{
+"item_code": "RIA_C_037",
+"dimension": "C",
+"enunciado": "Clasificar los diferentes tipos de correos y paquetes en el servicio postal."
+},
+{
+"item_code": "RIA_C_038",
+"dimension": "C",
+"enunciado": "Actualizar diariamente los horarios y rutas en una central de autobuses."
+},
+{
+"item_code": "RIA_C_039",
+"dimension": "C",
+"enunciado": "Manejar un sistema informático de control de citas para un hospital grande."
+},
+{
+"item_code": "RIA_C_040",
+"dimension": "C",
+"enunciado": "Digitalizar grandes volúmenes de documentos históricos o legales antiguos."
+},
+{
+"item_code": "RIA_C_041",
+"dimension": "C",
+"enunciado": "Programar turnos de trabajo y vacaciones de una plantilla de 50 empleados."
+},
+{
+"item_code": "RIA_C_042",
+"dimension": "C",
+"enunciado": "Realizar encuestas telefónicas ingresando exactamente las respuestas del usuario."
+},
+{
+"item_code": "RIA_C_043",
+"dimension": "C",
+"enunciado": "Registrar propiedades y vehículos en dependencias del gobierno."
+},
+{
+"item_code": "RIA_C_044",
+"dimension": "C",
+"enunciado": "Llevar un control estricto de kilometraje y consumo de gasolina en una flota de autos."
+},
+{
+"item_code": "RIA_C_045",
+"dimension": "C",
+"enunciado": "Validar los requisitos y papeleos necesarios para otorgar una visa."
+},
+{
+"item_code": "RIA_C_046",
+"dimension": "C",
+"enunciado": "Corregir errores ortográficos y de formato en documentos antes de su impresión final."
+},
+{
+"item_code": "RIA_C_047",
+"dimension": "C",
+"enunciado": "Estructurar tablas y crear fórmulas de cálculo complejas en hojas de cálculo."
+},
+{
+"item_code": "RIA_C_048",
+"dimension": "C",
+"enunciado": "Coordinar servicios de mantenimiento y limpieza en un edificio de oficinas."
+},
+{
+"item_code": "RIA_C_049",
+"dimension": "C",
+"enunciado": "Llevar un registro exacto de las piezas utilizadas en un taller de reparaciones."
+},
+{
+"item_code": "RIA_C_050",
+"dimension": "C",
+"enunciado": "Revisar el cumplimiento de políticas de puntualidad y asistencia en el trabajo."
+}
+]

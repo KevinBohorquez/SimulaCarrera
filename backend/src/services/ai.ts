@@ -72,6 +72,8 @@ export async function generateFinalReport(params: {
   simulationResults: any[];
   studentName: string;
   careersData?: any[];
+  hollandCode?: string;
+  riasecScores?: Record<string, number>;
 }) {
   if (!isAIConfigured()) throw new Error("API de IA no configurada");
 

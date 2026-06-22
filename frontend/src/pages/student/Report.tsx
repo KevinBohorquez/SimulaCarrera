@@ -8,7 +8,11 @@ import { useState } from "react";
 
 export function ReportPage() {
   const { id } = useParams();
-  const q = useQuery({ queryKey: ["report", id], queryFn: () => api<any>(`/api/reports/${id}`) });
+  const q = useQuery({
+    queryKey: ["report", id],
+    queryFn: () => api<any>(`/api/reports/${id}`),
+    enabled: !!id && id !== "undefined",
+  });
   const [downloading, setDownloading] = useState(false);
 
   async function downloadPdf() {
@@ -17,6 +21,15 @@ export function ReportPage() {
       const r = await api<any>(`/api/reports/${id}/pdf`);
       window.open(r.url, "_blank");
     } finally { setDownloading(false); }
+  }
+
+  if (!id || id === "undefined") {
+    return (
+      <AppShell title="Reporte">
+        <p className="text-slate-600">Reporte no válido.</p>
+        <Link to="/estudiante" className="text-brand-morado text-sm mt-2 inline-block">Volver al panel</Link>
+      </AppShell>
+    );
   }
 
   if (q.isLoading) return <AppShell title="Reporte"><p className="text-slate-500">Generando vista...</p></AppShell>;
