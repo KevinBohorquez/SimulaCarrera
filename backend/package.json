@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "tsx watch src/server.ts",
-    "build": "tsc -p tsconfig.json && cp -r src/data dist/data",
+    "build": "tsc -p tsconfig.json && mkdir -p dist/data/bancodepreguntas && cp -r src/data/bancodepreguntas/. dist/data/bancodepreguntas/",
     "start": "node dist/server.js"
   },
   "dependencies": {
