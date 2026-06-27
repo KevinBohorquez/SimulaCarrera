@@ -4,6 +4,7 @@ import { Pricing } from "./pages/public/Pricing";
 import { Contact } from "./pages/public/Contact";
 import { HowItWorks } from "./pages/public/HowItWorks";
 import { Login } from "./pages/auth/Login";
+import { SelectRole } from "./pages/auth/SelectRole";
 import { ForgotPassword } from "./pages/auth/ForgotPassword";
 import { ResetPassword } from "./pages/auth/ResetPassword";
 import { EnterpriseSignup } from "./pages/auth/EnterpriseSignup";
@@ -40,7 +41,7 @@ import { LicensesAdmin } from "./pages/superadmin/Licenses";
 function RoleHome() {
   const { profile, loading } = useAuth();
   if (loading) return null;
-  if (!profile) return <Navigate to="/login" replace />;
+  if (!profile) return <Navigate to="/seleccionar-rol" replace />;
   const map: Record<string, string> = {
     superadmin: "/admin", enterprise: "/enterprise",
     institutional: "/institucion", student: "/estudiante",
@@ -56,7 +57,9 @@ export default function App() {
       <Route path="/precios" element={<Pricing />} />
       <Route path="/contacto" element={<Contact />} />
       <Route path="/como-funciona" element={<HowItWorks />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/seleccionar-rol" element={<SelectRole />} />
+      <Route path="/login" element={<SelectRole />} />
+      <Route path="/login/:roleType" element={<Login />} />
       <Route path="/recuperar" element={<ForgotPassword />} />
       <Route path="/reset-password" element={<ResetPassword />} />
       <Route path="/registro-enterprise" element={<EnterpriseSignup />} />

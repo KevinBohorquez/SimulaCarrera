@@ -53,16 +53,10 @@ function PublicNav() {
 
           <div className="flex gap-3 ml-2">
             <Link
-              to="/login"
-              className="btn-outline"
-            >
-              Acceso Instituciones
-            </Link>
-            <Link
-              to="/login"
+              to="/seleccionar-rol"
               className="btn-primary"
             >
-              Entrar como estudiante
+              Iniciar Sesión
             </Link>
           </div>
         </nav>
@@ -131,12 +125,9 @@ function HeroSection() {
           </p>
 
           <div className="flex gap-4 pt-2">
-            <Link to="/login" className="btn-hero-primary group">
-              Entrar como estudiante
+            <Link to="/seleccionar-rol" className="btn-hero-primary group">
+              Iniciar Sesión
               <span className="ml-2 group-hover:translate-x-1 transition-transform inline-block">→</span>
-            </Link>
-            <Link to="/registro-enterprise" className="btn-hero-outline">
-              Soy institución
             </Link>
           </div>
 

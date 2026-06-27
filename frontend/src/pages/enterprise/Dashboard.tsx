@@ -1,374 +1,406 @@
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { AppShell } from "@/components/AppShell";
-import { useQuery, useMutation, useQueryClient, useQueries } from "@tanstack/react-query";
+import { useQuery, useQueries, useQueryClient } from "@tanstack/react-query";
+import { useAuth } from "@/contexts/AuthContext";
 import { api } from "@/lib/api";
 import { Link } from "react-router-dom";
 import {
-  AlertCircle,
-  ArrowUpRight,
-  Building2,
-  Edit2,
-  LayoutGrid,
-  Loader2,
-  MapPin,
-  Network,
-  Plus,
-  School,
-  Sparkles,
-  Users,
-  X,
+  AlertCircle, ArrowUpRight, Building2, Edit2,
+  Loader2, Network, Plus, ShoppingCart, Users, X,
 } from "lucide-react";
 
-const planStyle: Record<string, string> = {
-  starter: "bg-slate-100 text-slate-600",
-  estandar: "bg-brand-lila/80 text-brand-morado",
-  pro: "bg-violet-100 text-violet-700",
-  enterprise: "bg-purple-100 text-purple-800",
-};
+// ── Modal Upsell ──────────────────────────────────────────────────────────────
 
-const typeLabel: Record<string, string> = {
-  school: "Colegio",
-  academy: "Academia / Instituto",
-};
+function UpsellModal({ onClose }: { onClose: () => void }) {
+  return (
+    <div className="fixed inset-0 bg-black/40 flex items-center justify-center p-4 z-50" onClick={onClose}>
+      <div className="card w-full max-w-sm text-center" onClick={e => e.stopPropagation()}>
+        <div className="w-12 h-12 rounded-xl bg-brand-lila flex items-center justify-center mx-auto mb-4">
+          <ShoppingCart size={22} className="text-brand-morado" />
+        </div>
+        <h3 className="text-lg font-semibold text-slate-900 mb-2">Adquirir cupos adicionales</h3>
+        <p className="text-sm text-slate-500 mb-3 leading-relaxed">
+          Has alcanzado el límite de cupos de tu plan actual. Para asignar más a tus sedes, amplía tu contrato.
+        </p>
+        <p className="text-xs text-brand-morado bg-brand-lila/50 rounded-lg px-3 py-2 mb-6">
+          🚧 Próximamente. Contacta a tu ejecutivo de cuenta para ampliar tu plan.
+        </p>
+        <button onClick={onClose} className="btn-primary w-full">Entendido</button>
+      </div>
+    </div>
+  );
+}
+
+// ── Dashboard principal ───────────────────────────────────────────────────────
 
 export function EnterpriseDashboard() {
-  const queryClient = useQueryClient();
+  const { profile } = useAuth();
+  const qc = useQueryClient();
+  const institutionId = profile?.institution_id ?? "";
 
-  const { data, isLoading, isError, error } = useQuery({
+  const { data, isLoading, isError } = useQuery({
     queryKey: ["enterprise-inst"],
     queryFn: () => api<any>("/api/institutions"),
-    retry: 1,
+    enabled: !!institutionId,
   });
 
-  const sedes: any[] = data?.institutions?.filter((i: any) => i.type !== "enterprise_network") ?? [];
+  // BUG FIX: institución principal y sedes separadas correctamente
+  const parentInst = useMemo(
+    () => data?.institutions?.find((i: any) => i.id === institutionId) ?? null,
+    [data, institutionId],
+  );
+  const sedes: any[] = useMemo(
+    () => data?.institutions?.filter((i: any) => i.parent_id === institutionId) ?? [],
+    [data, institutionId],
+  );
 
+  // Cupos
+  const totalQuota    = parentInst?.student_quota ?? 0;
+  const assignedQuota = useMemo(
+    () => sedes.reduce((sum: number, s: any) => sum + Number(s.student_quota ?? 0), 0),
+    [sedes],
+  );
+  const availableQuota = Math.max(0, totalQuota - assignedQuota);
+  const pctUsed        = totalQuota > 0 ? Math.min(100, Math.round((assignedQuota / totalQuota) * 100)) : 0;
+
+  // Alumnos por sede
   const studentQueries = useQueries({
-    queries: sedes.map((sede) => ({
-      queryKey: ["students", sede.id],
-      queryFn: () => api<any>(`/api/students?inst_id=${sede.id}`),
-      enabled: sedes.length > 0,
+    queries: sedes.map((s) => ({
+      queryKey: ["students", s.id],
+      queryFn:  () => api<any>(`/api/students?inst_id=${s.id}`),
+      enabled:  sedes.length > 0,
     })),
   });
 
-  function getSedeUsage(sedeId: string, quota: number) {
+  function getStudentsUsed(sedeId: string) {
     const idx = sedes.findIndex((s) => s.id === sedeId);
-    const used = studentQueries[idx]?.data?.students?.length ?? 0;
-    const pct = quota > 0 ? Math.min(100, Math.round((used / quota) * 100)) : 0;
-    return { used, pct };
+    return studentQueries[idx]?.data?.students?.length ?? 0;
   }
 
-  const [showModal, setShowModal] = useState(false);
-  const [editing, setEditing] = useState<any>(null);
-  const [form, setForm] = useState({ name: "", city: "", student_quota: 50, type: "school" });
+  // Modal estado
+  const [showModal,  setShowModal]  = useState(false);
+  const [upsellOpen, setUpsellOpen] = useState(false);
+  const [editing,    setEditing]    = useState<any>(null);
+  const [form,       setForm]       = useState({ name: "", city: "", student_quota: 10, type: "school" });
+  const [quotaErr,   setQuotaErr]   = useState<string | null>(null);
+  const [mutErr,     setMutErr]     = useState<string | null>(null);
+  const [mutBusy,    setMutBusy]    = useState(false);
 
-  const mut = useMutation({
-    mutationFn: (payload: any) =>
-      editing
-        ? api(`/api/institutions/${editing.id}`, { method: "PATCH", body: JSON.stringify(payload) })
-        : api("/api/institutions", { method: "POST", body: JSON.stringify(payload) }),
-    onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: ["enterprise-inst"] });
-      closeModal();
-    },
-  });
+  const availableForForm = editing
+    ? availableQuota + Number(editing.student_quota ?? 0)
+    : availableQuota;
+
+  function validateQuota(val: number) {
+    if (val < 1) return "Mínimo 1 cupo.";
+    if (val > availableForForm)
+      return `Solo hay ${availableForForm} cupo${availableForForm !== 1 ? "s" : ""} disponible${availableForForm !== 1 ? "s" : ""}.`;
+    return null;
+  }
 
   const openAdd = () => {
+    if (availableQuota === 0) { setUpsellOpen(true); return; }
     setEditing(null);
-    setForm({ name: "", city: "", student_quota: 50, type: "school" });
+    setForm({ name: "", city: "", student_quota: Math.min(10, availableQuota), type: "school" });
+    setQuotaErr(null); setMutErr(null);
     setShowModal(true);
   };
 
   const openEdit = (inst: any) => {
     setEditing(inst);
-    setForm({
-      name: inst.name,
-      city: inst.city ?? "",
-      student_quota: inst.student_quota,
-      type: inst.type,
-    });
+    setForm({ name: inst.name, city: inst.city ?? "", student_quota: inst.student_quota, type: inst.type });
+    setQuotaErr(null); setMutErr(null);
     setShowModal(true);
   };
 
-  const closeModal = () => {
-    setShowModal(false);
-    setEditing(null);
-  };
+  const closeModal = () => { setShowModal(false); setEditing(null); };
 
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
-    mut.mutate({ ...form, student_quota: Number(form.student_quota) });
+    const err = validateQuota(form.student_quota);
+    if (err) { setQuotaErr(err); return; }
+    setMutBusy(true); setMutErr(null);
+    try {
+      const payload = { ...form, student_quota: Number(form.student_quota), parent_id: institutionId };
+      if (editing) {
+        await api(`/api/institutions/${editing.id}`, { method: "PATCH", body: JSON.stringify(payload) });
+      } else {
+        await api("/api/institutions", { method: "POST", body: JSON.stringify(payload) });
+      }
+      qc.invalidateQueries({ queryKey: ["enterprise-inst"] });
+      closeModal();
+    } catch (e: any) {
+      setMutErr(e.message ?? "Error al guardar.");
+    } finally {
+      setMutBusy(false);
+    }
   };
-
-  const totalQuota = sedes.reduce((sum, sede) => sum + Number(sede.student_quota ?? 0), 0);
-  const activePlans = new Set(sedes.map((sede) => sede.plan ?? "starter")).size;
 
   return (
-    <AppShell title="Red Enterprise" hideTitle>
-      {/* HERO SECTION */}
-      <section className="relative overflow-hidden rounded-2xl border border-purple-100 bg-white p-8 mb-8 shadow-sm">
-        <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-morado via-purple-400 to-brand-celeste" />
+    <AppShell title={parentInst?.name ?? "Panel de red"}>
 
-        <div className="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-8">
-          <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 rounded-full border border-purple-200 bg-purple-50 px-3 py-1 text-xs font-semibold text-brand-morado mb-4">
-              <Sparkles size={13} />
-              Gestión centralizada
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-950 leading-tight mb-3">
-              Administra tus sedes
-            </h1>
-            <p className="text-slate-600 text-base leading-relaxed max-w-xl">
-              Crea sedes, revisa cupos y monitorea alumnos, reportes y ciclos académicos desde aquí.
+      {/* Banner */}
+      <div className="card bg-gradient-to-r from-brand-morado to-brand-lavanda text-white mb-6 p-8">
+        <div className="flex items-start gap-3">
+          <Network size={24} className="shrink-0 mt-1" />
+          <div>
+            <h2 className="text-xl font-semibold mb-1">Gestión centralizada de sedes</h2>
+            <p className="text-white/85 text-sm">
+              Distribuye cupos entre tus sedes y monitorea el uso desde un solo lugar.
             </p>
           </div>
-          <button onClick={openAdd} className="btn-primary flex items-center gap-2 self-start lg:self-auto whitespace-nowrap">
-            <Plus size={16} /> Nueva sede
-          </button>
         </div>
+      </div>
 
-        {/* STATS - 3 cards */}
-        <div className="grid sm:grid-cols-3 gap-4">
-          <div className="rounded-xl border border-slate-100 bg-white/80 p-5 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-100/60 transition-all duration-300">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-lg bg-brand-lila text-brand-morado flex items-center justify-center">
-                <Network size={16} />
-              </div>
-              <span className="text-xs font-semibold text-slate-500">Sedes</span>
+      {/* Stats de cupos */}
+      {!isLoading && parentInst && (
+        <div className="grid sm:grid-cols-3 gap-4 mb-6">
+          {[
+            { label: "Cupos totales",     value: totalQuota,     sub: "test adquiridos",   warn: false },
+            { label: "Asignados a sedes", value: assignedQuota,  sub: `${pctUsed}% del total`, warn: false },
+            { label: "Disponibles",       value: availableQuota, sub: availableQuota === 0 ? "Sin cupos libres" : "para distribuir",
+              warn: availableQuota === 0 },
+          ].map(({ label, value, sub, warn }) => (
+            <div key={label} className={`card ${warn ? "border-amber-300 bg-amber-50" : ""}`}>
+              <h3 className="text-sm text-slate-500 mb-1">{label}</h3>
+              <p className={`text-2xl font-bold ${warn ? "text-amber-700" : "text-slate-900"}`}>{value}</p>
+              <p className={`text-xs mt-0.5 ${warn ? "text-amber-600" : "text-slate-400"}`}>{sub}</p>
             </div>
-            <p className="text-3xl font-bold text-slate-950">{sedes.length}</p>
+          ))}
+        </div>
+      )}
+
+      {/* Barra de distribución */}
+      {!isLoading && parentInst && totalQuota > 0 && (
+        <div className="card mb-6">
+          <div className="flex items-center justify-between mb-2">
+            <span className="text-sm font-medium text-slate-700">Distribución de cupos</span>
+            {availableQuota === 0 && (
+              <button
+                onClick={() => setUpsellOpen(true)}
+                className="btn-outline text-xs py-1 px-3 flex items-center gap-1"
+              >
+                <ShoppingCart size={13} /> Adquirir más cupos
+              </button>
+            )}
           </div>
-
-          <div className="rounded-xl border border-slate-100 bg-white/80 p-5 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-100/60 transition-all duration-300">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-lg bg-brand-lila text-brand-morado flex items-center justify-center">
-                <Users size={16} />
-              </div>
-              <span className="text-xs font-semibold text-slate-500">Cupo total</span>
-            </div>
-            <p className="text-3xl font-bold text-slate-950">{totalQuota}</p>
+          <div className="flex justify-between text-xs text-slate-400 mb-1">
+            <span>{assignedQuota} asignados de {totalQuota}</span>
+            <span>{pctUsed}%</span>
           </div>
-
-          <div className="rounded-xl border border-slate-100 bg-white/80 p-5 hover:-translate-y-1 hover:shadow-lg hover:shadow-purple-100/60 transition-all duration-300">
-            <div className="flex items-center gap-3 mb-3">
-              <div className="w-10 h-10 rounded-lg bg-brand-lila text-brand-morado flex items-center justify-center">
-                <School size={16} />
-              </div>
-              <span className="text-xs font-semibold text-slate-500">Planes activos</span>
-            </div>
-            <p className="text-3xl font-bold text-slate-950">{sedes.length ? activePlans : 0}</p>
+          <div className="h-2 bg-slate-100 rounded-full overflow-hidden">
+            <div
+              className={`h-full rounded-full transition-all duration-500 ${
+                pctUsed >= 100 ? "bg-red-400" : pctUsed >= 80 ? "bg-amber-400" : "bg-brand-morado"
+              }`}
+              style={{ width: `${pctUsed}%` }}
+            />
           </div>
         </div>
-      </section>
+      )}
 
-      {/* LOADING */}
+      {/* Encabezado de sedes */}
+      <div className="flex flex-wrap items-center justify-between gap-3 mb-4">
+        <h2 className="text-lg font-semibold text-slate-900">
+          Sedes {!isLoading && <span className="text-slate-400 font-normal text-base">({sedes.length})</span>}
+        </h2>
+        <button onClick={openAdd} className="btn-primary flex items-center gap-2 text-sm">
+          <Plus size={15} /> Nueva sede
+        </button>
+      </div>
+
+      {/* Loading */}
       {isLoading && (
-        <div className="flex items-center justify-center py-20 text-brand-morado gap-3 rounded-2xl border border-purple-100 bg-white">
-          <Loader2 size={24} className="animate-spin" />
-          <span className="text-slate-500">Cargando sedes...</span>
+        <div className="card flex items-center justify-center py-12 gap-3">
+          <Loader2 size={20} className="animate-spin text-brand-morado" />
+          <span className="text-slate-500 text-sm">Cargando sedes…</span>
         </div>
       )}
 
-      {/* ERROR */}
+      {/* Error */}
       {isError && (
-        <div className="rounded-2xl border border-red-100 bg-red-50 p-6 flex items-start gap-4">
-          <AlertCircle size={22} className="text-red-500 flex-shrink-0 mt-0.5" />
-          <div>
-            <p className="font-semibold text-red-700">No se pudo conectar con el servidor</p>
-            <p className="text-sm text-red-500 mt-1">{(error as any)?.message ?? "ERR_CONNECTION_REFUSED"}</p>
-          </div>
+        <div className="card border-red-200 bg-red-50 flex items-start gap-3">
+          <AlertCircle size={18} className="text-red-500 shrink-0 mt-0.5" />
+          <p className="text-sm text-red-700">No se pudo cargar la información. Intenta de nuevo.</p>
         </div>
       )}
 
-      {/* EMPTY STATE */}
+      {/* Sin sedes */}
       {!isLoading && !isError && sedes.length === 0 && (
-        <div className="text-center py-24 border-2 border-dashed border-purple-100 rounded-2xl bg-gradient-to-b from-purple-50 to-white">
-          <div className="mx-auto mb-6 flex h-20 w-20 items-center justify-center rounded-2xl bg-brand-lila text-brand-morado">
-            <LayoutGrid size={40} />
-          </div>
-          <p className="text-2xl font-bold text-slate-900 mb-2">Aún no tienes sedes creadas</p>
-          <p className="text-slate-600 mb-8 max-w-md mx-auto">
-            Cuando agregues sedes, aparecerán aquí con accesos rápidos a alumnos, reportes y ciclos.
-          </p>
+        <div className="card text-center py-12">
+          <Building2 size={32} className="text-brand-morado mx-auto mb-3" />
+          <p className="text-slate-600 mb-1 font-medium">Sin sedes registradas</p>
+          <p className="text-sm text-slate-400 mb-4">Agrega tu primera sede para comenzar a distribuir cupos.</p>
           <button onClick={openAdd} className="btn-primary inline-flex items-center gap-2">
-            <Plus size={16} /> Crear primera sede
+            <Plus size={15} /> Crear primera sede
           </button>
         </div>
       )}
 
-      {/* TUSSEDES SECTION */}
+      {/* Grid de sedes */}
       {sedes.length > 0 && (
-        <div>
-          <div className="flex items-center justify-between mb-6">
-            <h2 className="text-xl font-bold text-slate-900">Tus sedes ({sedes.length})</h2>
-            <button onClick={openAdd} className="btn-outline hidden lg:flex items-center gap-2">
-              <Plus size={16} /> Nueva sede
-            </button>
-          </div>
+        <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+          {sedes.map((sede: any) => {
+            const used = getStudentsUsed(sede.id);
+            const pct  = sede.student_quota > 0
+              ? Math.min(100, Math.round((used / sede.student_quota) * 100))
+              : 0;
+            const full = used >= sede.student_quota && sede.student_quota > 0;
 
-          <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-5">
-            {sedes.map((sede: any) => {
-              const { used, pct } = getSedeUsage(sede.id, sede.student_quota);
-              return (
-                <div
-                  key={sede.id}
-                  className="group relative overflow-hidden bg-white rounded-2xl border border-slate-100 p-6 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-100/60 hover:border-purple-200"
-                >
-                  <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-brand-morado via-purple-400 to-brand-celeste" />
+            return (
+              <div key={sede.id} className="card hover:border-brand-morado/40">
+                <div className="flex items-start justify-between mb-3">
+                  <div className="w-10 h-10 rounded-xl bg-brand-lila flex items-center justify-center">
+                    <Building2 size={18} className="text-brand-morado" />
+                  </div>
+                  <button
+                    onClick={() => openEdit(sede)}
+                    className="text-slate-400 hover:text-brand-morado transition-colors p-1"
+                    title="Editar sede"
+                  >
+                    <Edit2 size={15} />
+                  </button>
+                </div>
 
-                  <div className="flex items-start justify-between mb-4">
-                    <div className="w-11 h-11 rounded-xl bg-brand-lila text-brand-morado flex items-center justify-center transition-all duration-300 group-hover:bg-brand-morado group-hover:text-white">
-                      <Building2 size={20} />
-                    </div>
-                    <span className={`text-xs font-bold px-2.5 py-1 rounded-full ${planStyle[sede.plan] ?? planStyle.starter}`}>
-                      {sede.plan ?? "starter"}
+                <h3 className="font-semibold text-slate-900 mb-0.5">{sede.name}</h3>
+                {sede.city && <p className="text-xs text-slate-400 mb-3">{sede.city}</p>}
+
+                {/* Uso de alumnos */}
+                <div className="mb-4">
+                  <div className="flex justify-between text-xs text-slate-500 mb-1">
+                    <span className="flex items-center gap-1"><Users size={11} /> Alumnos</span>
+                    <span className={`font-medium ${full ? "text-red-500" : "text-slate-700"}`}>
+                      {used} / {sede.student_quota}
                     </span>
                   </div>
-
-                  <h3 className="font-bold text-slate-900 text-lg leading-tight mb-1">{sede.name}</h3>
-
-                  {sede.city && (
-                    <p className="text-sm text-slate-500 flex items-center gap-1 mb-4">
-                      <MapPin size={13} /> {sede.city}
-                    </p>
-                  )}
-
-                  <p className="text-xs text-slate-400 mb-4">{typeLabel[sede.type] ?? sede.type}</p>
-
-                  <div className="mb-5">
-                    <div className="flex justify-between text-xs text-slate-500 font-medium mb-2">
-                      <span>Cuota de alumnos</span>
-                      <span className="text-slate-700 font-bold">
-                        {used} / {sede.student_quota}
-                      </span>
-                    </div>
-                    <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
-                      <div
-                        className="h-full bg-gradient-to-r from-brand-morado to-brand-celeste rounded-full transition-all"
-                        style={{ width: `${pct}%` }}
-                      />
-                    </div>
-                    <p className="text-xs text-slate-400 mt-1">{pct}% utilizado</p>
+                  <div className="h-1.5 bg-slate-100 rounded-full overflow-hidden">
+                    <div
+                      className={`h-full rounded-full ${full ? "bg-red-400" : "bg-brand-morado"}`}
+                      style={{ width: `${pct}%` }}
+                    />
                   </div>
-
-                  <div className="flex items-center justify-between gap-2 pt-4 border-t border-slate-100">
-                    <button
-                      onClick={() => openEdit(sede)}
-                      className="text-xs text-slate-400 hover:text-brand-morado flex items-center gap-1 transition-colors"
-                    >
-                      <Edit2 size={13} /> Editar
-                    </button>
-                    <Link to={`/enterprise/sede/${sede.id}`} className="btn-primary text-xs px-3 py-1.5 flex items-center gap-1">
-                      Ver <ArrowUpRight size={13} />
-                    </Link>
-                  </div>
+                  <p className="text-[11px] text-slate-400 mt-1">{sede.student_quota} test adquiridos</p>
                 </div>
-              );
-            })}
-          </div>
+
+                <Link
+                  to={`/enterprise/sede/${sede.id}`}
+                  className="btn-outline w-full flex items-center justify-center gap-1 text-sm"
+                >
+                  Ver sede <ArrowUpRight size={14} />
+                </Link>
+              </div>
+            );
+          })}
         </div>
       )}
 
-      {/* MODAL */}
+      {/* ── Modal Crear / Editar ──────────────────────────────────────────── */}
       {showModal && (
         <div
-          className="fixed inset-0 bg-black/40 backdrop-blur-sm flex items-center justify-center z-50 p-4"
-          onClick={(e) => {
-            if (e.target === e.currentTarget) closeModal();
-          }}
+          className="fixed inset-0 bg-black/40 flex items-start justify-center p-4 z-50 overflow-y-auto"
+          onClick={closeModal}
         >
-          <div className="bg-white rounded-2xl shadow-xl shadow-purple-100/40 w-full max-w-md p-8 relative border border-purple-100">
-            <button onClick={closeModal} className="absolute top-6 right-6 text-slate-400 hover:text-slate-600 transition-colors">
-              <X size={20} />
-            </button>
+          <div className="card my-10 w-full max-w-md" onClick={e => e.stopPropagation()}>
+            <div className="flex items-center justify-between mb-5">
+              <h2 className="text-lg font-semibold text-slate-900">
+                {editing ? "Editar sede" : "Nueva sede"}
+              </h2>
+              <button onClick={closeModal} className="btn-ghost p-1 text-slate-400"><X size={17} /></button>
+            </div>
 
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-brand-lila text-brand-morado flex items-center justify-center">
-                <Building2 size={20} />
-              </div>
-              <h2 className="text-xl font-bold text-slate-900">{editing ? "Editar sede" : "Nueva sede"}</h2>
+            {/* Cupos disponibles */}
+            <div className="flex items-center justify-between text-sm bg-brand-lila/40 border border-purple-100 rounded-lg px-3 py-2 mb-4">
+              <span className="text-slate-600">Cupos disponibles</span>
+              <span className={`font-bold ${availableForForm === 0 ? "text-red-500" : "text-brand-morado"}`}>
+                {availableForForm}
+              </span>
             </div>
 
             <form onSubmit={submit} className="space-y-4">
               <div>
-                <label className="label flex items-center gap-1.5">
-                  <Building2 size={14} className="text-brand-morado" /> Nombre de la sede *
-                </label>
+                <label className="label">Nombre de la sede *</label>
                 <input
-                  required
-                  className="input"
-                  placeholder="Ej: Colegio San Martín"
+                  required className="input"
+                  placeholder="Ej: Sede Lima Norte"
                   value={form.name}
-                  onChange={(e) => setForm({ ...form, name: e.target.value })}
+                  onChange={e => setForm(f => ({ ...f, name: e.target.value }))}
                 />
               </div>
 
               <div>
-                <label className="label flex items-center gap-1.5">
-                  <MapPin size={14} className="text-brand-morado" /> Ciudad
-                </label>
+                <label className="label">Ciudad</label>
                 <input
-                  className="input"
-                  placeholder="Ej: Lima"
+                  className="input" placeholder="Ej: Lima"
                   value={form.city}
-                  onChange={(e) => setForm({ ...form, city: e.target.value })}
+                  onChange={e => setForm(f => ({ ...f, city: e.target.value }))}
                 />
               </div>
 
               <div>
-                <label className="label flex items-center gap-1.5">
-                  <Users size={14} className="text-brand-morado" /> Cupo de alumnos *
-                </label>
-                <input
-                  required
-                  type="number"
-                  min="1"
-                  className="input"
-                  value={form.student_quota}
-                  onChange={(e) => setForm({ ...form, student_quota: parseInt(e.target.value) || 0 })}
-                />
-              </div>
-
-              <div>
-                <label className="label flex items-center gap-1.5">
-                  <School size={14} className="text-brand-morado" /> Tipo de institución
-                </label>
-                <select className="input" value={form.type} onChange={(e) => setForm({ ...form, type: e.target.value })}>
+                <label className="label">Tipo</label>
+                <select
+                  className="input" value={form.type}
+                  onChange={e => setForm(f => ({ ...f, type: e.target.value }))}
+                >
                   <option value="school">Colegio</option>
                   <option value="academy">Academia / Instituto</option>
                 </select>
               </div>
 
-              {mut.isError && (
-                <div className="flex items-start gap-2 text-sm text-red-600 bg-red-50 border border-red-100 rounded-lg px-3 py-2">
-                  <AlertCircle size={16} className="flex-shrink-0 mt-0.5" />
-                  <span>{(mut.error as any)?.message ?? "Error al guardar."}</span>
+              <div>
+                <label className="label">Cupos asignados *</label>
+                <input
+                  required type="number" min={1} max={availableForForm}
+                  className="input"
+                  value={form.student_quota}
+                  onChange={e => {
+                    const v = Number(e.target.value);
+                    setForm(f => ({ ...f, student_quota: v }));
+                    setQuotaErr(validateQuota(v));
+                  }}
+                />
+                {quotaErr
+                  ? <p className="text-xs text-red-500 mt-1 flex items-center gap-1"><AlertCircle size={11} />{quotaErr}</p>
+                  : <p className="text-xs text-slate-400 mt-1">Máximo {availableForForm} cupos disponibles.</p>
+                }
+              </div>
+
+              {availableForForm === 0 && (
+                <div className="rounded-lg bg-amber-50 border border-amber-200 px-3 py-2 flex items-center justify-between gap-2">
+                  <p className="text-xs text-amber-700">Sin cupos disponibles para distribuir.</p>
+                  <button
+                    type="button"
+                    onClick={() => { closeModal(); setUpsellOpen(true); }}
+                    className="text-xs text-amber-700 underline flex items-center gap-1"
+                  >
+                    <ShoppingCart size={11} /> Ampliar plan
+                  </button>
                 </div>
               )}
 
-              <div className="flex gap-3 pt-2">
+              {mutErr && (
+                <p className="text-sm text-red-600 bg-red-50 border border-red-200 rounded-lg px-3 py-2 flex items-center gap-2">
+                  <AlertCircle size={14} /> {mutErr}
+                </p>
+              )}
+
+              <div className="flex gap-3 pt-1">
+                <button type="button" onClick={closeModal} className="btn-ghost flex-1">Cancelar</button>
                 <button
-                  type="button"
-                  onClick={closeModal}
-                  className="flex-1 py-2 rounded-lg text-sm font-semibold border border-slate-200 text-slate-700 hover:bg-slate-50 transition-colors"
+                  disabled={mutBusy || !!quotaErr || availableForForm === 0}
+                  className="btn-primary flex-1 flex items-center justify-center gap-2"
                 >
-                  Cancelar
-                </button>
-                <button disabled={mut.isPending} className="flex-1 btn-primary py-2 flex items-center justify-center gap-2">
-                  {mut.isPending ? (
-                    <>
-                      <Loader2 size={14} className="animate-spin" /> Guardando...
-                    </>
-                  ) : (
-                    <>
-                      <Plus size={14} /> {editing ? "Guardar" : "Crear"}
-                    </>
-                  )}
+                  {mutBusy
+                    ? <><Loader2 size={14} className="animate-spin" /> Guardando…</>
+                    : editing ? "Guardar cambios" : "Crear sede"
+                  }
                 </button>
               </div>
             </form>
           </div>
         </div>
       )}
+
+      {upsellOpen && <UpsellModal onClose={() => setUpsellOpen(false)} />}
     </AppShell>
   );
 }

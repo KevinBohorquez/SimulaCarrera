@@ -36,7 +36,7 @@ export function ForgotPassword() {
             <button disabled={busy} className="btn-primary w-full py-2.5">{busy ? "Enviando..." : "Enviar enlace"}</button>
           </form>
         )}
-        <div className="mt-4 text-sm"><Link to="/login" className="text-brand-morado">← Volver al login</Link></div>
+        <div className="mt-4 text-sm"><Link to="/seleccionar-rol" className="text-brand-morado">← Volver al login</Link></div>
       </div>
     </div>
   );

@@ -33,7 +33,7 @@ export function AppShell({ title, children, hideTitle }: { title: string; childr
                 <span className="text-brand-morado font-medium">{profile.role}</span>
               </span>
             )}
-            <button onClick={async () => { await signOut(); nav("/login"); }} className="btn-ghost">
+            <button onClick={async () => { await signOut(); nav("/seleccionar-rol"); }} className="btn-ghost">
               <LogOut size={16} className="mr-1" /> Salir
             </button>
           </div>
